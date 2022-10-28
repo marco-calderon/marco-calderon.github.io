@@ -1,18 +1,19 @@
 import type { AppProps } from 'next/app';
 import { useEffect } from 'react';
-import AOS from 'aos';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
-	useEffect(() => {
-		AOS.init({
-			duration: 1000,
-			easing: 'ease-in-out',
-			once: true,
-			mirror: false,
-		});
-	}, []);
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false,
+    });
+  }, []);
 
-	return <Component {...pageProps} />;
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
