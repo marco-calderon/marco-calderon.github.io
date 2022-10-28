@@ -4,6 +4,9 @@ const nextConfig = {
 	swcMinify: true,
 	assetPrefix:
 		process.env.NODE_ENV === 'production' ? '/marco-calderon.gitlab.io' : '',
+	images: {
+		unoptimized: true
+	}
 };
 
 module.exports = nextConfig;
