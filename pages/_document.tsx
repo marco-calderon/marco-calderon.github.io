@@ -62,6 +62,7 @@ export default function Document() {
 					src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"
 					strategy="lazyOnload"
 				></Script>
+				<Script src="https://unpkg.com/aos@2.3.1/dist/aos.js" strategy="lazyOnload"></Script>
 			</Head>
 			<body>
 				<Main />
