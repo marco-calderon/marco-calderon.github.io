@@ -1,0 +1,7 @@
+![Overview](/dollar-insights-ionic/1.jpg)
+
+This is the mobile application for this service using Angular Ionic mobile app that was designed for multiplatform interaction (iOS, Android, Web). It uses the service as the backend through a REST API that also serves as the datasource for the front end.
+
+It uses known patterns for managing the information from the device and for front end development (Components / Containers / Pages), with the NgRx store managgement library.
+
+While it is made using web technologies (Angular 11) is fully supported for iOS and Android thanks to the Ionic Framework that brings the required drivers and components to use the mobile APIs from the application.
