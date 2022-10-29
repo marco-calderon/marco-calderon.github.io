@@ -56,11 +56,6 @@ export default function Document() {
         />
 
         <link href="/static/css/style.css" rel="stylesheet" />
-
-        <Script
-          src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"
-          strategy="lazyOnload"
-        ></Script>
       </Head>
       <body>
         <Main />
