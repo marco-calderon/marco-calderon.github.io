@@ -50,10 +50,6 @@ export default function Document() {
           rel="stylesheet"
         />
         <link href="/static/vendor/remixicon/remixicon.css" rel="stylesheet" />
-        <link
-          href="/static/vendor/swiper/swiper-bundle.min.css"
-          rel="stylesheet"
-        />
 
         <link href="/static/css/style.css" rel="stylesheet" />
       </Head>
