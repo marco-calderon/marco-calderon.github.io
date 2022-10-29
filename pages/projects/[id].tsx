@@ -6,9 +6,9 @@ import ProjectTitle from '../../components/ProjectTitle';
 import Layout from '../../components/Layout';
 
 export type ProjectDetailsPageProps = {
-	id: string;
-	project?: PortfolioModel;
-	contentHtml: string;
+  id: string;
+  project?: PortfolioModel;
+  contentHtml: string;
 };
 
 /**
@@ -18,26 +18,26 @@ export type ProjectDetailsPageProps = {
  * @returns the renderede component
  */
 const ProjectDetailsPage = ({
-	project,
-	contentHtml,
+  project,
+  contentHtml,
 }: ProjectDetailsPageProps) => {
-	return (
-		<Layout>
-			<main>
-				<section id="portfolio-details" className="portfolio-details mt-5">
-					<div className="container">
-						<ProjectTitle project={project!} />
+  return (
+    <Layout title={`${project!.title} - Antonio Calderon`}>
+      <main>
+        <section id="portfolio-details" className="portfolio-details mt-5">
+          <div className="container">
+            <ProjectTitle project={project!} />
 
-						<div className="row">
-							<div className="col-lg-8 offset-lg-2">
-								<div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-							</div>
-						</div>
-					</div>
-				</section>
-			</main>
-		</Layout>
-	);
+            <div className="row">
+              <div className="col-lg-8 offset-lg-2">
+                <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </Layout>
+  );
 };
 
 /**
@@ -47,12 +47,12 @@ const ProjectDetailsPage = ({
  * @returns all the paths available
  */
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
-	const files = await getProjects();
+  const files = await getProjects();
 
-	return {
-		paths: files.map((f) => ({ params: { id: f.replace('.md', '') } })),
-		fallback: 'blocking',
-	};
+  return {
+    paths: files.map((f) => ({ params: { id: f.replace('.md', '') } })),
+    fallback: 'blocking',
+  };
 };
 
 /**
@@ -62,11 +62,11 @@ export const getStaticPaths: GetStaticPaths = async (ctx) => {
  * @returns the properties of the project
  */
 export const getStaticProps: GetStaticProps = async (ctx) => {
-	const props = await getProject(ctx.params!.id as string);
+  const props = await getProject(ctx.params!.id as string);
 
-	return {
-		props,
-	};
+  return {
+    props,
+  };
 };
 
 export default ProjectDetailsPage;
