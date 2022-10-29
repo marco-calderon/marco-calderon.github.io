@@ -7,7 +7,7 @@ const Navbar = () => {
 			<div className="container-fluid container-xl d-flex align-items-center justify-content-between">
 				<Link href="/">
 					<div className="cursor-pointer logo d-flex align-items-center">
-						<h4 className="mb-0 fw-bold">Antonio Calderon</h4>
+						<h4 className="mb-0 fw-bold">Marco Calderon</h4>
 					</div>
 				</Link>
 				<nav id="navbar" className="navbar">
