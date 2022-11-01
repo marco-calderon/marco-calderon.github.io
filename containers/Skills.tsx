@@ -113,7 +113,7 @@ const Skills = () => {
             <h5 className="">Platforms</h5>
           </div>
           <div className="col-lg-5 col-md-12">
-            <p>Windows, Linux, macOs, Docker, Kubernetes</p>
+            <p>Windows, Linux, macOs, iOS, Docker, Kubernetes</p>
           </div>
         </div>
         <div className="row mb-2">
