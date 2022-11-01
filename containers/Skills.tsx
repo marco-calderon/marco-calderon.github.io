@@ -30,7 +30,8 @@ const Skills = () => {
             <p>
               React, Next.js, Angular 2+, Bootstrap 3/4/5,
               HTML5/CSS3/JavaScript, jQuery, Flutter, SwiftUI, Ionic Framework,
-              React Native, Material UI, Emotion, styled-components
+              React Native, Tailwind CSS, Material UI, Emotion,
+              styled-components
             </p>
           </div>
         </div>
@@ -40,14 +41,14 @@ const Skills = () => {
           </div>
           <div className="col-lg-5 col-md-12">
             <p>
-              Django, Node.js, Nest.js, Express.js, ASP.NET Core, ASP.NET,
-              Spring Framework, Electron
+              Django, Node.js, Nest.js, Next.js, Express.js, ASP.NET Core,
+              ASP.NET, Spring Framework, Electron, Prisma.js, Framer motion
             </p>
           </div>
         </div>
         <div className="row mb-2">
           <div className="col-lg-5 offset-lg-1 col-md-12">
-            <h5 className="">Automation tools / testing</h5>
+            <h5 className="">Automation tools and testing</h5>
           </div>
           <div className="col-lg-5 col-md-12">
             <p>Jest, Playwright, Puppeteer, Selenium IDE</p>
@@ -60,7 +61,8 @@ const Skills = () => {
           <div className="col-lg-5 col-md-12">
             <p>
               Redux, NgRx, RxJs, Nest.js, MapBox, GraphQL, OpenLayers, Chart.js,
-              Pusher, S3, EC2, WebSockets, PayPal, Stripe
+              Pusher, S3, EC2, WebSockets, PayPal, Stripe, Pisma.js, Framer
+              motion
             </p>
           </div>
         </div>
@@ -90,7 +92,7 @@ const Skills = () => {
             <p>
               Model View Controller, MVVM, Object Oriented Programming, Agile
               Software development, Functional Programming, Test Driven
-              Development, REST
+              Development, REST, Monorepo
             </p>
           </div>
         </div>
@@ -100,10 +102,9 @@ const Skills = () => {
           </div>
           <div className="col-lg-5 col-md-12">
             <p>
-              Python, C#, Javascript, Java, TypeScript, C, C++, Ruby, SQL,
-              T-SQLGit, Nginx, GUnicorn, Linux, Subversion, Visual Studio,
-              Visual Studio Code, GitHub, GitLab, Bitbucket, Jira, Trello,
-              Slack, Asana
+              Git, Nginx, GUnicorn, Linux, Subversion, Visual Studio, Visual
+              Studio Code, GitHub, GitLab, Bitbucket, Jira, Trello, Slack,
+              Asana, Notion
             </p>
           </div>
         </div>
