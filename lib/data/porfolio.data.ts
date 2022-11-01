@@ -308,7 +308,7 @@ export const portfolioData: PortfolioModel[] = [
   {
     id: 'finance-management-react-native',
     title: 'Finance Management Mobile App',
-    category: 'full',
+    category: 'mobile',
     repoUrl: 'https://github.com/marco-calderon/finance-app-react-native',
     tags: [
       {
