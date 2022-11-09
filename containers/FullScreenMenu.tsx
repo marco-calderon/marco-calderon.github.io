@@ -22,6 +22,8 @@ const item = {
 	show: { opacity: 1 },
 };
 
+const linkStyle = { cursor: 'pointer' };
+
 const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
 	return (
 		<AnimatePresence>
@@ -39,32 +41,32 @@ const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
 						className="d-flex flex-column items-center text-center gap-4"
 					>
 						<Link href="/#about" className="nav-link scrollto fw-normal">
-							<motion.h4 variants={item} onClick={onClose}>
+							<motion.h4 variants={item} onClick={onClose} style={linkStyle}>
 								About
 							</motion.h4>
 						</Link>
 						<Link href="/#services" className="nav-link scrollto fw-normal">
-							<motion.h4 variants={item} onClick={onClose}>
+							<motion.h4 variants={item} onClick={onClose} style={linkStyle}>
 								Services
 							</motion.h4>
 						</Link>
 						<Link href="/#skills" className="nav-link scrollto fw-normal">
-							<motion.h4 variants={item} onClick={onClose}>
+							<motion.h4 variants={item} onClick={onClose} style={linkStyle}>
 								Skills
 							</motion.h4>
 						</Link>
 						<Link href="/#portfolio" className="nav-link scrollto fw-normal">
-							<motion.h4 variants={item} onClick={onClose}>
+							<motion.h4 variants={item} onClick={onClose} style={linkStyle}>
 								Portfolio
 							</motion.h4>
 						</Link>
 						<Link href="/#contact" className="nav-link scrollto fw-normal">
-							<motion.h4 variants={item} onClick={onClose}>
+							<motion.h4 variants={item} onClick={onClose} style={linkStyle}>
 								Contact
 							</motion.h4>
 						</Link>
 						<Link href="/resume" className="nav-link scrollto fw-normal">
-							<motion.h4 variants={item} onClick={onClose}>
+							<motion.h4 variants={item} onClick={onClose} style={linkStyle}>
 								Resume
 							</motion.h4>
 						</Link>
