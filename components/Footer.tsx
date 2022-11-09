@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
@@ -62,7 +63,9 @@ const Footer = () => {
 						<div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
 							<h4>Contact</h4>
 							<p>
-								<a href="">Upwork profile</a>
+								<Link href="https://www.upwork.com/freelancers/~01b28af275156f5d9e">
+									Upwork profile
+								</Link>
 							</p>
 						</div>
 					</div>
