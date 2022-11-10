@@ -99,6 +99,33 @@ export const portfolioData: PortfolioModel[] = [
 		height: 600,
 	},
 	{
+		id: 'store-base-firebase-nextjs',
+		title: 'StoreBase Web App',
+		demoUrl: 'https://store-base-nextjs.vercel.app/',
+		repoUrl: 'https://github.com/marco-calderon/store-base-nextjs',
+		category: 'full',
+		tags: [
+			{
+				id: '340f960a-2afc-4377-8a6f-96b48cf35ee8',
+				class: 'primary',
+				name: 'React',
+			},
+			{
+				id: '5cfe9141-4c16-4cce-96bc-54eadcad3660',
+				class: 'dark',
+				name: 'Next.js',
+			},
+			{
+				id: 'cf4fcb4f-bbfa-4d01-8e12-c6e2d22069f6',
+				class: 'warning',
+				name: 'Firebase',
+			},
+		],
+		imgUrl: '/store-base-firebase-nextjs/thumb.jpg',
+		width: 800,
+		height: 600,
+	},
+	{
 		id: 'miliu-django-react',
 		title: 'Miliu Web Application',
 		category: 'full',
