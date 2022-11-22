@@ -138,11 +138,6 @@ export const portfolioData: PortfolioModel[] = [
         name: 'Next.js',
       },
       {
-        id: 'cf4fcb4f-bbfa-4d01-8e12-c6e2d22069f6',
-        class: 'warning',
-        name: 'Firebase',
-      },
-      {
         id: 'f58882f1-7803-4f2f-8fe6-1a3fe35a111c',
         class: 'info',
         name: 'TailwindCSS',
