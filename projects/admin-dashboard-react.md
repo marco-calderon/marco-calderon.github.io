@@ -1,4 +1,4 @@
-![Overview](/admin-dashboard-react/1.jpg);
+![Overview](/admin-dashboard-react/1.jpg)
 
 An admin dashboard that displays general information about statistics in form of charts, tables and maps, and also offering the user to change their account information.
 
