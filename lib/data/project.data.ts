@@ -6,7 +6,7 @@ import rehypeRewrite from 'rehype-rewrite';
 import matter from 'gray-matter';
 import path from 'path';
 import fs from 'fs';
-import { portfolioData } from './porfolio.data';
+import { portfolioData } from './portfolio.data';
 
 const postsDirectory = 'projects';
 

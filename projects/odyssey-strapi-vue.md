@@ -1,0 +1,19 @@
+![Overview](/odyssey-strapi-vue/1.jpg)
+
+This is the first sample project in which I demonstrate how I can implement beautiful interfaces using Vue and TailwindCSS. I also integrate Strapi CMS as the backend to manage all the information through a GraphQL endpoint. It also supports both dark and light themes.
+
+![Primary](/odyssey-strapi-vue/3.jpg)
+
+E-commerce is always evolving in its styling solutions and migrates complex backend infrastructure into headless CMS technologies - that's why I explore and integrate these kind of technologies into my frontend skillset.
+
+![Primary](/odyssey-strapi-vue/4.jpg)
+
+The reason I used Vue instead of React or Angular in this project is to show that for myself I can manage to work with the frontend mindset, by configuring internal states through a store, manage data interactions between a backend and still maintaining a great performance on the apps I develop.
+
+![Primary](/odyssey-strapi-vue/5.jpg)
+
+![Primary](/odyssey-strapi-vue/6.jpg)
+
+![Primary](/odyssey-strapi-vue/8.jpg)
+
+![Primary](/odyssey-strapi-vue/9.jpg)

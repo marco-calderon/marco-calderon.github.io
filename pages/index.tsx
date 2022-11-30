@@ -4,7 +4,7 @@ import Contact from '../containers/Contact';
 import Portfolio from '../containers/Portfolio';
 import Services from '../containers/Services';
 import Skills from '../containers/Skills';
-import { portfolioData } from '../lib/data/porfolio.data';
+import { portfolioData } from '../lib/data/portfolio.data';
 import { PortfolioModel } from '../lib/models/portfolio.model';
 
 export type HomePageProps = {
