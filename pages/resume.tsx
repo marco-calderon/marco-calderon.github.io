@@ -82,7 +82,7 @@ const Resume = () => {
 								<div className="mb-1 d-flex flex-column">
 									<h5 className="">Front End / Mobile</h5>
 									<p>
-										React, Next.js, Angular 2+, Bootstrap,
+										React, Next.js, Vue, Angular 2+, Bootstrap,
 										HTML5/CSS3/JavaScript, jQuery, Ionic Framework, React Native
 									</p>
 								</div>
