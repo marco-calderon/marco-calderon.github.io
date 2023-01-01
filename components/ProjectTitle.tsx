@@ -1,6 +1,8 @@
+import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React from 'react';
 import { PortfolioModel } from '../lib/models/portfolio.model';
+import Tag from './Tag';
 
 export type ProjectTitleProps = {
 	project: PortfolioModel;
@@ -8,53 +10,52 @@ export type ProjectTitleProps = {
 
 const ProjectTitle = ({ project }: ProjectTitleProps) => {
 	return (
-		<div className="row mb-4">
-			<div className="col-lg-8 offset-lg-2">
-				<div className="d-flex flex-wrap justify-content-between mb-2">
-					<h2 className="font-weight-bold">{project.title}</h2>
-					<div className="links-container d-flex flex-row gap-2">
-						{project.repoUrl && (
-							<Link href={project.repoUrl} target="_blank">
-								<button
-									type="button"
-									className="btn btn-secondary d-inline-flex align-items-center justify-content-center"
-								>
-									<span>Repository</span>&nbsp;<i className="bi bi-github"></i>
-								</button>
-							</Link>
-						)}
+		<div className="mb-4">
+			<div className="flex flex-wrap justify-between mb-2">
+				<h2 className="mb-4 text-4xl font-bold">{project.title}</h2>
+				<div className="flex flex-row gap-4">
+					{project.repoUrl && (
+						<Link href={project.repoUrl} target="_blank">
+							<button
+								type="button"
+								className="inline-flex items-center justify-center px-4 py-2 text-blue-500 transition-all border border-blue-500 rounded-lg hover:text-blue-700 hover:border-blue-700 dark:hover:text-blue-300 dark:hover:border-blue-300"
+							>
+								<span>Repository</span>&nbsp;
+								<Icon icon="bi:github" />
+							</button>
+						</Link>
+					)}
 
-						{project.demoUrl && (
-							<Link href={project.demoUrl} target="_blank">
-								<button
-									type="button"
-									className="btn btn-outline btn-primary d-inline-flex align-items-center justify-content-center"
-								>
-									<span>Demo</span>&nbsp;<i className="bi bi-window"></i>
-								</button>
-							</Link>
-						)}
+					{project.demoUrl && (
+						<Link href={project.demoUrl} target="_blank">
+							<button
+								type="button"
+								className="inline-flex items-center justify-center px-4 py-2 text-orange-500 transition-all border border-orange-500 rounded-lg hover:text-orange-700 hover:border-orange-700 dark:hover:text-orange-300 dark:hover:border-orange-300"
+							>
+								<span>Demo</span>&nbsp;
+								<Icon icon="bi:window" />
+							</button>
+						</Link>
+					)}
 
-						{project.linkUrl && (
-							<Link href={project.linkUrl} target="_blank">
-								<button
-									type="button"
-									className="btn btn-primary d-inline-flex align-items-center justify-content-center"
-								>
-									<span>Link</span>&nbsp;<i className="bi bi-link"></i>
-								</button>
-							</Link>
-						)}
-					</div>
+					{project.linkUrl && (
+						<Link href={project.linkUrl} target="_blank">
+							<button
+								type="button"
+								className="inline-flex items-center justify-center px-4 py-2 text-green-500 transition-all border border-green-500 rounded-lg hover:text-green-700 hover:border-green-700 dark:hover:text-green-300 dark:hover:border-green-300"
+							>
+								<span>Link</span>&nbsp;
+								<Icon icon="bi:link" />
+							</button>
+						</Link>
+					)}
 				</div>
-				<div className="mb-2 d-flex flex-row gap-1">
-					{project.tags &&
-						project.tags.map((t) => (
-							<span key={t.id} className={`badge bg-${t.class}`}>
-								{t.name}
-							</span>
-						))}
-				</div>
+			</div>
+			<div className="flex flex-row gap-4 mb-2">
+				{project.tags &&
+					project.tags.map((t) => (
+						<Tag key={t.id} tag={t.name} icon={t.icon} />
+					))}
 			</div>
 		</div>
 	);

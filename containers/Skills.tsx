@@ -3,30 +3,33 @@ import React from 'react';
 const Skills = () => {
   return (
 		<section id="skills" data-aos="fade-up">
-			<div className="container" data-aos-delay="200">
+			<div
+				className="w-full px-8 mt-20 xs:px-20 sm:px-20 md:px-40 lg:px-40 xl:px-40"
+				data-aos-delay="200"
+			>
 				<div className="row">
 					<div className="col-12">
-						<header className="section-header">
-							<p>Skills</p>
+						<header className="flex flex-col items-center mb-5 w-100">
+							<p className="text-4xl ">Skills</p>
 						</header>
 					</div>
 				</div>
-				<div className="row mb-2">
-					<div className="col-lg-5 offset-lg-1 col-md-12">
-						<h5 className="">Languages</h5>
+				<div className="grid gap-8 mb-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+					<div className="">
+						<h5 className="text-xl">Languages</h5>
 					</div>
-					<div className="col-lg-5 col-md-12">
+					<div className="mb-2">
 						<p>
 							Javascript, TypeScript, Python, HTML5, CSS3, Sass/Less, Swift, C#,
 							Java, C, C++, Ruby, SQL, T-SQL.
 						</p>
 					</div>
 				</div>
-				<div className="row mb-2">
-					<div className="col-lg-5 offset-lg-1 col-md-12">
-						<h5 className="">Front End / Mobile</h5>
+				<div className="grid gap-8 mb-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+					<div className="">
+						<h5 className="text-xl">Front End / Mobile</h5>
 					</div>
-					<div className="col-lg-5 col-md-12">
+					<div className="mb-2">
 						<p>
 							React, Next.js, Vue, Angular 2+, Bootstrap 3/4/5,
 							HTML5/CSS3/JavaScript, jQuery, Flutter, SwiftUI, Ionic Framework,
@@ -35,30 +38,30 @@ const Skills = () => {
 						</p>
 					</div>
 				</div>
-				<div className="row mb-2">
-					<div className="col-lg-5 offset-lg-1 col-md-12">
-						<h5 className="">Frameworks</h5>
+				<div className="grid gap-8 mb-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+					<div className="">
+						<h5 className="text-xl">Frameworks</h5>
 					</div>
-					<div className="col-lg-5 col-md-12">
+					<div className="mb-2">
 						<p>
 							Django, Node.js, Nest.js, Next.js, Express.js, ASP.NET Core,
 							ASP.NET, Spring Framework, Electron, Prisma.js, Framer motion
 						</p>
 					</div>
 				</div>
-				<div className="row mb-2">
-					<div className="col-lg-5 offset-lg-1 col-md-12">
-						<h5 className="">Automation tools and testing</h5>
+				<div className="grid gap-8 mb-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+					<div className="">
+						<h5 className="text-xl">Automation tools and testing</h5>
 					</div>
-					<div className="col-lg-5 col-md-12">
+					<div className="mb-2">
 						<p>Jest, Playwright, Puppeteer, Selenium IDE</p>
 					</div>
 				</div>
-				<div className="row mb-2">
-					<div className="col-lg-5 offset-lg-1 col-md-12">
-						<h5 className="">Libraries / APIs</h5>
+				<div className="grid gap-8 mb-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+					<div className="">
+						<h5 className="text-xl">Libraries / APIs</h5>
 					</div>
-					<div className="col-lg-5 col-md-12">
+					<div className="mb-2">
 						<p>
 							Redux, NgRx, RxJs, Nest.js, MapBox, GraphQL, OpenLayers, Chart.js,
 							Pusher, S3, EC2, WebSockets, PayPal, Stripe, Pisma.js, Framer
@@ -66,29 +69,30 @@ const Skills = () => {
 						</p>
 					</div>
 				</div>
-				<div className="row mb-2">
-					<div className="col-lg-5 offset-lg-1 col-md-12">
-						<h5 className="">Services</h5>
+				<div className="grid gap-8 mb-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+					<div className="">
+						<h5 className="text-xl">Services</h5>
 					</div>
-					<div className="col-lg-5 col-md-12">
+					<div className="mb-2">
 						<p>
-							Heroku, AWS, Digital Ocean, Vercel, Serverless, Cloudinary, Auth0
+							Heroku, AWS, Digital Ocean, Vercel, Firebase, Serverless,
+							Cloudinary, Auth0
 						</p>
 					</div>
 				</div>
-				<div className="row mb-2">
-					<div className="col-lg-5 offset-lg-1 col-md-12">
-						<h5 className="">Storage</h5>
+				<div className="grid gap-8 mb-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+					<div className="">
+						<h5 className="text-xl">Storage</h5>
 					</div>
-					<div className="col-lg-5 col-md-12">
+					<div className="mb-2">
 						<p>MySQL, SQL Server, PostgreSQL, MongoDB, Redis, CouchDB</p>
 					</div>
 				</div>
-				<div className="row mb-2">
-					<div className="col-lg-5 offset-lg-1 col-md-12">
-						<h5 className="">Paradigms</h5>
+				<div className="grid gap-8 mb-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+					<div className="">
+						<h5 className="text-xl">Paradigms</h5>
 					</div>
-					<div className="col-lg-5 col-md-12">
+					<div className="mb-2">
 						<p>
 							Model View Controller, MVVM, Object Oriented Programming, Agile
 							Software development, Functional Programming, Test Driven
@@ -96,11 +100,11 @@ const Skills = () => {
 						</p>
 					</div>
 				</div>
-				<div className="row mb-2">
-					<div className="col-lg-5 offset-lg-1 col-md-12">
-						<h5 className="">Tools</h5>
+				<div className="grid gap-8 mb-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+					<div className="">
+						<h5 className="text-xl">Tools</h5>
 					</div>
-					<div className="col-lg-5 col-md-12">
+					<div className="mb-2">
 						<p>
 							Git, Nginx, GUnicorn, Linux, Subversion, Visual Studio, Visual
 							Studio Code, GitHub, GitLab, Bitbucket, Jira, Trello, Slack,
@@ -108,19 +112,19 @@ const Skills = () => {
 						</p>
 					</div>
 				</div>
-				<div className="row mb-2">
-					<div className="col-lg-5 offset-lg-1 col-md-12">
-						<h5 className="">Platforms</h5>
+				<div className="grid gap-8 mb-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+					<div className="">
+						<h5 className="text-xl">Platforms</h5>
 					</div>
-					<div className="col-lg-5 col-md-12">
+					<div className="mb-2">
 						<p>Windows, Linux, macOs, iOS, Docker, Kubernetes</p>
 					</div>
 				</div>
-				<div className="row mb-2">
-					<div className="col-lg-5 offset-lg-1 col-md-12">
-						<h5 className="">Other</h5>
+				<div className="grid gap-8 mb-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+					<div className="">
+						<h5 className="text-xl">Other</h5>
 					</div>
-					<div className="col-lg-5 col-md-12">
+					<div className="mb-2">
 						<p>Bash scripting</p>
 					</div>
 				</div>

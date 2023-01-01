@@ -40,24 +40,10 @@ export default function Document() {
 					href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
 					rel="stylesheet"
 				/>
-
-				<link
-					href="/static/vendor/bootstrap/css/bootstrap.min.css"
-					rel="stylesheet"
-				/>
-				<link
-					href="/static/vendor/bootstrap-icons/bootstrap-icons.css"
-					rel="stylesheet"
-				/>
-				<link href="/static/vendor/remixicon/remixicon.css" rel="stylesheet" />
-
-				<link href="/static/css/style.css" rel="stylesheet" />
 			</Head>
 			<body>
 				<Main />
 				<NextScript />
-
-				<Script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js" />
 			</body>
 		</Html>
 	);

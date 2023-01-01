@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import FullScreenMenu from '../containers/FullScreenMenu';
@@ -7,56 +8,77 @@ const Navbar = () => {
 
 	return (
 		<>
-			<header id="header" className="header fixed-top bg-white-blur">
-				<div className="container-fluid container-xl d-flex align-items-center justify-content-between">
+			<header
+				id="header"
+				className="fixed z-[100] w-full px-8 py-6 backdrop-blur-md bg-white/50 dark:bg-gray-700/50"
+			>
+				<div className="flex items-center justify-between">
 					<Link href="/">
-						<div className="cursor-pointer logo d-flex align-items-center">
-							<h4 className="mb-0 fw-bold">Marco Calderon</h4>
+						<div className="cursor-pointer">
+							<h4 className="text-2xl font-bold text-blue-800 dark:text-white">
+								Marco Calderon
+							</h4>
 						</div>
 					</Link>
-					<nav id="navbar" className="navbar">
-						<ul>
+
+					<nav id="navbar">
+						<ul className="flex-row hidden gap-8 xs:hidden sm:hidden md:flex lg:flex xl:flex">
 							<li>
 								<Link
-									className="nav-link scrollto active fw-normal"
+									className="font-bold text-blue-700 transition-all dark:visited:text-white scrollto dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
 									href="/#about"
 								>
 									About
 								</Link>
 							</li>
 							<li>
-								<Link className="nav-link scrollto fw-normal" href="/#services">
+								<Link
+									className="font-bold text-blue-700 transition-all dark:visited:text-white scrollto dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
+									href="/#services"
+								>
 									Services
 								</Link>
 							</li>
 							<li>
-								<Link className="nav-link scrollto fw-normal" href="/#skills">
+								<Link
+									className="font-bold text-blue-700 transition-all dark:visited:text-white scrollto dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
+									href="/#skills"
+								>
 									Skills
 								</Link>
 							</li>
 							<li>
 								<Link
-									className="nav-link scrollto fw-normal"
+									className="font-bold text-blue-700 transition-all dark:visited:text-white scrollto dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
 									href="/#portfolio"
 								>
 									Portfolio
 								</Link>
 							</li>
 							<li>
-								<Link className="nav-link scrollto fw-normal" href="/#contact">
+								<Link
+									className="font-bold text-blue-700 transition-all dark:visited:text-white scrollto dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
+									href="/#contact"
+								>
 									Contact
 								</Link>
 							</li>
 							<li>
-								<Link className="nav-link scrollto fw-normal" href="/resume">
+								<Link
+									className="font-bold text-blue-700 transition-all dark:visited:text-white scrollto dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
+									href="/resume"
+								>
 									Resume
 								</Link>
 							</li>
 						</ul>
-						<i
-							className="bi bi-list mobile-nav-toggle"
-							onClick={() => setMenuOpened(!menuOpened)}
-						></i>
+						<div className="inline-block fixed top-4 right-4 xs:inline-block sm:inline-block md:hidden lg:hidden xl:hidden z-[100]">
+							<Icon
+								icon="bi:list"
+								className="w-12 h-12 text-lg text-black cursor-pointer dark:text-white"
+								onClick={() => setMenuOpened(!menuOpened)}
+							></Icon>
+						</div>
 					</nav>
 				</div>
 			</header>

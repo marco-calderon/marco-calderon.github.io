@@ -1,24 +1,34 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
 
 const Services = () => {
 	return (
-		<section id="services" className="services">
-			<div className="container" data-aos="fade-up">
-				<header className="section-header mb-5">
-					<h2>Services</h2>
-					<p>What I can do</p>
+		<section id="services">
+			<div
+				className="w-full px-8 mt-20 xs:px-20 sm:px-20 md:px-40 lg:px-40 xl:px-40"
+				data-aos="fade-up"
+			>
+				<header className="flex flex-col items-center mb-5 w-100">
+					<h2 className="text-base font-bold text-blue-700 uppercase dark:text-blue-300">
+						Services
+					</h2>
+					<p className="text-4xl ">What I can do</p>
 				</header>
 
-				<div className="row gy-4">
+				<div className="grid gap-16 auto-rows-1fr xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
 					<div
-						className="col-lg-4 col-md-6"
 						data-aos="fade-up"
 						data-aos-delay="200"
+						className="flex flex-col items-center justify-center h-100"
 					>
-						<div className="service-box blue">
-							<i className="ri-window-line icon"></i>
-							<h3>Front End</h3>
-							<p>
+						<div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-blue-500 min-h-72 py-auto h-100 group rounded-xl hover:bg-blue-500">
+							<div className="flex flex-col items-center justify-center w-24 h-24 mb-16 bg-blue-500 group-hover:bg-white group-hover:text-blue-500 rounded-xl">
+								<Icon icon="ri:window-line" className="text-5xl" />
+							</div>
+							<h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
+								Front End
+							</h3>
+							<p className="flex-1 flex-grow group-hover:text-white">
 								Modern Front End development with React, Angular and plain HTML,
 								JavaScript and CSS. I can also work with Bootstrap, TailwindCSS,
 								Foundation, and other styling solutions for your projects.
@@ -27,14 +37,18 @@ const Services = () => {
 					</div>
 
 					<div
-						className="col-lg-4 col-md-6"
 						data-aos="fade-up"
 						data-aos-delay="300"
+						className="flex flex-col items-center justify-center h-100"
 					>
-						<div className="service-box orange">
-							<i className="ri-server-line icon"></i>
-							<h3>Back End</h3>
-							<p>
+						<div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-orange-500 min-h-72 py-auto h-100 group rounded-xl hover:bg-orange-500">
+							<div className="flex flex-col items-center justify-center w-24 h-24 mb-16 bg-orange-500 group-hover:bg-white group-hover:text-orange-500 rounded-xl">
+								<Icon icon="ri:server-line" className="text-5xl" />
+							</div>
+							<h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
+								Back End
+							</h3>
+							<p className="flex-1 flex-grow mb-20 group-hover:text-white">
 								Using modern technologies and used frameworks such as Django,
 								ASP.NET, Spring Framework, Express, Nest.js, Ruby on Rails. If
 								you have another option, we can discuss it.
@@ -43,14 +57,18 @@ const Services = () => {
 					</div>
 
 					<div
-						className="col-lg-4 col-md-6"
 						data-aos="fade-up"
 						data-aos-delay="400"
+						className="flex flex-col items-center justify-center h-100"
 					>
-						<div className="service-box green">
-							<i className="ri-global-line icon"></i>
-							<h3>REST API Development</h3>
-							<p>
+						<div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-green-500 min-h-72 py-auto h-100 group rounded-xl hover:bg-green-500">
+							<div className="flex flex-col items-center justify-center w-24 h-24 mb-16 bg-green-500 group-hover:bg-white group-hover:text-green-500 rounded-xl">
+								<Icon icon="ri:global-line" className="text-5xl" />
+							</div>
+							<h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
+								REST API Development
+							</h3>
+							<p className="flex-1 flex-grow mb-20 group-hover:text-white">
 								Integrating, implementing REST APIs with your selected
 								technology. Optimization of existing code for performance (in
 								time and memory).
@@ -59,14 +77,18 @@ const Services = () => {
 					</div>
 
 					<div
-						className="col-lg-4 col-md-6"
 						data-aos="fade-up"
 						data-aos-delay="500"
+						className="flex flex-col items-center justify-center h-100"
 					>
-						<div className="service-box red">
-							<i className="ri-database-2-line icon"></i>
-							<h3>Database Administration and Development</h3>
-							<p>
+						<div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-red-500 min-h-72 py-auto h-100 group rounded-xl hover:bg-red-500">
+							<div className="flex flex-col items-center justify-center w-24 h-24 mb-16 bg-red-500 group-hover:bg-white group-hover:text-red-500 rounded-xl">
+								<Icon icon="ri:database-2-line" className="text-5xl" />
+							</div>
+							<h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
+								Database Administration and Development
+							</h3>
+							<p className="flex-1 flex-grow mb-20 group-hover:text-white">
 								From making performant queries to database schema migrations. I
 								can also work with ETL tasks.
 							</p>
@@ -74,14 +96,18 @@ const Services = () => {
 					</div>
 
 					<div
-						className="col-lg-4 col-md-6"
 						data-aos="fade-up"
 						data-aos-delay="600"
+						className="flex flex-col items-center justify-center h-100"
 					>
-						<div className="service-box purple">
-							<i className="ri-pie-chart-line icon"></i>
-							<h3>Data Mining and Processing</h3>
-							<p>
+						<div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-purple-500 min-h-72 py-auto h-100 group rounded-xl hover:bg-purple-500">
+							<div className="flex flex-col items-center justify-center w-24 h-24 mb-16 bg-purple-500 group-hover:bg-white group-hover:text-purple-500 rounded-xl">
+								<Icon icon="ri:pie-chart-line" className="text-5xl" />
+							</div>
+							<h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
+								Data Mining and Processing
+							</h3>
+							<p className="flex-1 flex-grow mb-20 group-hover:text-white">
 								Integrate business logic into data processing from different
 								sources, such as APIs and dynamic websites.
 							</p>
@@ -89,14 +115,18 @@ const Services = () => {
 					</div>
 
 					<div
-						className="col-lg-4 col-md-6"
 						data-aos="fade-up"
 						data-aos-delay="700"
+						className="flex flex-col items-center justify-center h-100"
 					>
-						<div className="service-box blue">
-							<i className="ri-cloud-line icon"></i>
-							<h3>DevOps</h3>
-							<p>
+						<div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-indigo-500 min-h-72 py-auto h-100 group rounded-xl hover:bg-indigo-500">
+							<div className="flex flex-col items-center justify-center w-24 h-24 mb-16 bg-indigo-500 group-hover:bg-white group-hover:text-indigo-500 rounded-xl">
+								<Icon icon="ri:cloud-line" className="text-5xl" />
+							</div>
+							<h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
+								DevOps
+							</h3>
+							<p className="flex-1 flex-grow mb-20 group-hover:text-white">
 								If you need to manage your development operations, I can help
 								you in the cloud your project uses.
 							</p>

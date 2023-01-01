@@ -27,10 +27,11 @@ export async function getProject(id: string) {
 		.use(html)
 		.use(remarkRehype, { allowDangerousHtml: true })
 		.use(rehypeRewrite, {
-			selector: 'img',
 			rewrite: (node) => {
-				if (node.type === 'element') {
-					node!.properties!.className = 'img-fluid mb-2';
+				if (node.type === 'element' && node.tagName === 'img') {
+					node!.properties!.className = 'mb-4 rounded-xl';
+				} else if (node.type === 'element' && node.tagName === 'p') {
+					node!.properties!.className = 'mb-4';
 				}
 			},
 		})

@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React from 'react';
 
@@ -5,23 +6,25 @@ const Contact = () => {
 	return (
 		<section id="contact" className="mb-5 contact">
 			<div className="container" data-aos="fade-up">
-				<header className="section-header">
-					<h2>Contact</h2>
-					<p>Let&apos;s talk</p>
+				<header className="flex flex-col items-center mb-5 w-100">
+					<h2 className="text-base font-bold text-blue-700 uppercase dark:text-blue-300">
+						Contact
+					</h2>
+					<p className="text-4xl">Let&apos;s talk</p>
 				</header>
 
 				<div className="row gy-4">
-					<div className="col-12 d-flex flex-column align-items-center">
+					<div className="flex flex-col items-center col-12">
 						<Link
 							href="https://www.upwork.com/freelancers/~01b28af275156f5d9e"
 							target="_blank"
 						>
 							<button
 								type="button"
-								className="gap-2 btn btn-primary box-shadow scrollto d-inline-flex align-items-center justify-content-center align-self-center"
+								className="flex flex-row items-center justify-center gap-2 px-8 py-4 text-white bg-green-500 rounded-lg scrollto align-self-center"
 							>
 								<span>Upwork profile</span>
-								<i className="bi bi-arrow-right"></i>
+								<Icon icon="bi:arrow-right" />
 							</button>
 						</Link>
 					</div>

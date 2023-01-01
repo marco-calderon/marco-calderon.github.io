@@ -10,15 +10,15 @@ export type LayoutProps = {
 
 const Layout = ({ children, title }: LayoutProps) => {
   return (
-    <>
-      <Head>
-        <title>{title ?? 'Antonio Calderon'}</title>
-      </Head>
-      <Navbar />
-      {children}
-      <Footer />
-    </>
-  );
+		<div className="flex flex-col items-center text-gray-800 bg-white dark:bg-slate-800 dark:text-white">
+			<Head>
+				<title>{title ?? 'Marco Calderon'}</title>
+			</Head>
+			<Navbar />
+			{children}
+			<Footer />
+		</div>
+	);
 };
 
 export default Layout;
