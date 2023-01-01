@@ -15,7 +15,9 @@ const Layout = ({ children, title }: LayoutProps) => {
 				<title>{title ?? 'Marco Calderon'}</title>
 			</Head>
 			<Navbar />
-			{children}
+			<div className="w-[100vw]">
+				{children}
+			</div>
 			<Footer />
 		</div>
 	);
