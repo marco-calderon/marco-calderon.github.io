@@ -26,7 +26,7 @@ const Portfolio = ({ projects }: PortfolioProps) => {
 				className="w-full px-8 mt-20 xs:px-20 sm:px-20 md:px-40 lg:px-40 xl:px-40"
 				data-aos="fade-up"
 			>
-				<header className="flex flex-col items-center mb-5 w-100">
+				<header className="flex flex-col flex-wrap items-center w-full mb-5">
 					<h2 className="text-base font-bold text-blue-700 uppercase dark:text-blue-300">
 						Portfolio
 					</h2>
@@ -38,7 +38,7 @@ const Portfolio = ({ projects }: PortfolioProps) => {
 					data-aos="fade-up"
 					data-aos-delay="100"
 				>
-					<ul className="flex flex-row items-center gap-8 mb-8 ">
+					<ul className="flex flex-row flex-wrap items-center justify-center gap-4 mb-8">
 						<li
 							className={`rounded-full whitespace-nowrap overflow-hidden px-8 py-2 cursor-pointer border border-blue-500 transition-all ${
 								filter === 'all' ? 'bg-blue-500 text-white' : ''
