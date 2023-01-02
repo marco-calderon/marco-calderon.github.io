@@ -21,7 +21,7 @@ const Services = () => {
 						data-aos-delay="200"
 						className="flex flex-col items-center justify-center h-100"
 					>
-						<div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-blue-500 min-h-72 py-auto h-100 group rounded-xl hover:bg-blue-500">
+						<div className="flex flex-col items-center justify-center flex-1 p-20 px-8 text-center transition-all border-b-4 border-blue-500 min-h-72 py-auto h-100 group rounded-xl hover:bg-blue-500">
 							<div className="flex flex-col items-center justify-center w-24 h-24 mb-16 bg-blue-500 group-hover:bg-white group-hover:text-blue-500 rounded-xl">
 								<Icon icon="ri:window-line" className="text-5xl" />
 							</div>
