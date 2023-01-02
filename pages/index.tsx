@@ -15,7 +15,7 @@ const HomePage: NextPage<HomePageProps> = ({ projects }: HomePageProps) => {
 	return (
 		<Layout title="Home - Marco Calderon">
 			<section
-				className="flex items-center bg-white dark:bg-slate-800"
+				className="flex-col items-center w-full bg-white fle dark:bg-slate-800"
 				data-aos="fade-up"
 			>
 				<div className="flex flex-col items-center justify-center mt-24 h-72">
@@ -36,7 +36,7 @@ const HomePage: NextPage<HomePageProps> = ({ projects }: HomePageProps) => {
 						className="w-full px-8 mt-20 xs:px-20 sm:px-20 md:px-40 lg:px-40 xl:px-40"
 						data-aos="fade-up"
 					>
-						<div className="grid auto-rows-1fr grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">
+						<div className="grid grid-cols-1 gap-4 auto-rows-1fr xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
 							<div
 								className="flex flex-col flex-1 gap-8"
 								data-aos="zoom-out"
