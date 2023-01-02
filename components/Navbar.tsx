@@ -72,10 +72,10 @@ const Navbar = () => {
 								</Link>
 							</li>
 						</ul>
-						<div className="inline-block fixed top-4 right-4 xs:inline-block sm:inline-block md:hidden lg:hidden xl:hidden z-[100]">
+						<div className="inline-block fixed top-5 right-5 xs:inline-block sm:inline-block md:hidden lg:hidden xl:hidden z-[100]">
 							<Icon
 								icon="bi:list"
-								className="w-12 h-12 text-lg text-black cursor-pointer dark:text-white"
+								className="w-8 h-8 text-black cursor-pointer dark:text-white"
 								onClick={() => setMenuOpened(!menuOpened)}
 							></Icon>
 						</div>
