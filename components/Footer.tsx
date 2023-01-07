@@ -5,9 +5,9 @@ import React from 'react';
 const Footer = () => {
 	return (
 		<footer className="flex flex-row items-start justify-center w-full py-16 text-white bg-slate-600">
-			<div className="w-100">
-				<div className="flex flex-row items-start w-100">
-					<div className="flex-1 col-lg-2 col-6 footer-links">
+			<div className="w-full">
+				<div className="flex flex-row items-start w-full">
+					<div className="flex flex-col items-center flex-1">
 						<h4 className="mb-4 text-lg font-bold">Links</h4>
 						<ul className="flex flex-col gap-2">
 							<li className="flex flex-row items-center transition-all hover:text-blue-600 dark:hover:text-blue-300">
@@ -64,7 +64,7 @@ const Footer = () => {
 						</ul>
 					</div>
 
-					<div className="flex-1 col-lg-2 col-6 footer-links">
+					<div className="flex flex-col items-center flex-1">
 						<h4 className="mb-4 text-lg font-bold">Services</h4>
 						<ul className="flex flex-col gap-2">
 							<li className="flex flex-row items-center transition-all hover:text-blue-600 dark:hover:text-blue-300">
@@ -90,7 +90,7 @@ const Footer = () => {
 						</ul>
 					</div>
 
-					<div className="flex-1 text-center col-lg-3 col-md-12 footer-contact text-md-start">
+					<div className="flex-1 text-center text-md-start">
 						<h4 className="mb-4 text-lg font-bold">Contact</h4>
 						<p>
 							<Link
