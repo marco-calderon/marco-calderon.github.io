@@ -18,13 +18,14 @@ const HomePage: NextPage<HomePageProps> = ({ projects }: HomePageProps) => {
 				className="flex-col items-center w-full bg-white fle dark:bg-slate-800"
 				data-aos="fade-up"
 			>
-				<div className="flex flex-col items-center justify-center mt-24 h-72">
+				<div className="flex flex-col items-center justify-center mt-24 h-[40vh]">
 					<div className="flex flex-col items-center gap-8 mx-12 font-bold text-center col-12">
-						<h1 className="text-4xl">
-							&lt; Hi, I&apos;m Marco a Full Stack Web Developer /&gt;
+						<h1 className="text-4xl">Marco Calderon</h1>
+						<h1 className="mb-8 text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-blue-300">
+							Full Stack Web Developer
 						</h1>
-						<h1 className="text-4xl">
-							I&apos;m here to help you to build successful software products.
+						<h1 className="text-3xl text-black/60 dark:text-white/60">
+							Taking ideas to reality and building your next successful project.
 						</h1>
 					</div>
 				</div>
@@ -71,22 +72,20 @@ const HomePage: NextPage<HomePageProps> = ({ projects }: HomePageProps) => {
 								data-aos="fade-up"
 								data-aos-delay="200"
 							>
-								<div className="flex flex-col p-12 bg-blue-300 rounded-lg dark:bg-blue-700">
-									<h3 className="font-bold text-blue-700 upercase dark:text-blue-200">
+								<div className="flex flex-col p-12 bg-blue-300 rounded-3xl dark:bg-blue-700">
+									<h3 className="mb-4 font-bold text-blue-700 upercase dark:text-blue-200">
 										About Me
 									</h3>
-									<h2 className="mb-12 text-2xl text-black dark:text-white">
-										Hello! I&apos;m Marco Calderon
-									</h2>
 									<p>
 										I&apos;m a Full stack web developer with 9 years of
-										experience in programming for web applications. I like
-										working on complex projects where Front end and Back end
-										interact with each other, dealing with the complexity of
-										integrating REST APIs, external services, and data
-										persistence layers. I&apos;m always happy to tackle new
-										programming languages, frameworks, and technologies and keep
-										up to date with innovation in my field.
+										experience in programming web applications with a variety of
+										technologies and stacks. I like working on complex projects
+										where Front end and Back end interact with each other,
+										dealing with the complexity of integrating REST APIs,
+										external services, and data persistence layers. I&apos;m
+										always happy to tackle new programming languages,
+										frameworks, and technologies and keep up to date with
+										innovation in my field.
 									</p>
 								</div>
 							</div>

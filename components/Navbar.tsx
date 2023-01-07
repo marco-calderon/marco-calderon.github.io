@@ -10,7 +10,7 @@ const Navbar = () => {
 		<>
 			<header
 				id="header"
-				className="fixed z-[100] w-full px-8 py-6 backdrop-blur-md bg-white/50 dark:bg-gray-700/50"
+				className="fixed z-[100] w-full px-8 py-6 backdrop-blur-md bg-white/50 dark:bg-gray-800/50"
 			>
 				<div className="flex items-center justify-between">
 					<Link href="/">

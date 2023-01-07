@@ -21,7 +21,7 @@ const Contact = () => {
 						>
 							<button
 								type="button"
-								className="flex flex-row items-center justify-center gap-2 px-8 py-4 text-white bg-green-500 rounded-lg scrollto align-self-center"
+								className="flex flex-row items-center justify-center gap-2 px-8 py-4 text-white bg-green-500 rounded-full scrollto align-self-center"
 							>
 								<span>Upwork profile</span>
 								<Icon icon="bi:arrow-right" />

@@ -29,9 +29,9 @@ export async function getProject(id: string) {
 		.use(rehypeRewrite, {
 			rewrite: (node) => {
 				if (node.type === 'element' && node.tagName === 'img') {
-					node!.properties!.className = 'mb-4 rounded-xl';
+					node!.properties!.className = 'mb-5 rounded-3xl';
 				} else if (node.type === 'element' && node.tagName === 'p') {
-					node!.properties!.className = 'mb-4';
+					node!.properties!.className = 'mb-5';
 				}
 			},
 		})
