@@ -1,12 +1,18 @@
+---
+title: Matidor - Collaborative GIS
+tags:
+  - 3c588814-17ef-4be5-adf0-e68af66a6c97
+linkUrl: 'https://matidor.com'
+---
+
 ![Overview](/matidor.jpg)
 
-
 I took part of the development of a collaborative GIS web application focused on companies that relies on location-based solutions to be organized and notified about issues. It also offers budget and costs management.
-							
+
 The service is called Matidor, and it is based in Vancouver, Canada.
-							
+
 The main application functionality was already present when I joined the team, so I offered my expertise, give development advices regarding some changes and developed an admin dashboard that helped the management of the users, companies, and overall data of the application. It is built on Angular with the usage of NgRx library for the state management. The admin dashboard was also built with Angular, and used Boostrap for styling.
-							
+
 One of the things I learned while I worked with the team are some patterns that are common for enterprise ready solutions - such as Effects library usage with NgRx. State management here apply modern front end frameworks best practices, to avoid issues like passing down props very deep in the component tree. This was also the case for requesting the same information to the service. Effects library makes it easy to implement business logic code that executes in a stream of actions - just as the NgRx library works with the RxJs core - and react to changes of it instead of just relying on the state. This allows to dispatch different actions known as side effects, such as show an alert when a request has been completed successfully, or trigger a request to the service when certain criteria is met.
-							
+
 I also took part on some tasks regarding solving issues and develop features of the GIS map. One of this was taking the points of interests and display them when certain filter are applied to it. Archived projects is one example of it. These weren’t present on the map due to the bussiness logic filtered them out to be displayed as markers. I implemented logic over this to ensure that these points were displayed in a different layer of the map, helping a user to move from archive/unarchive state to the contrary and show on the map with different marker types.

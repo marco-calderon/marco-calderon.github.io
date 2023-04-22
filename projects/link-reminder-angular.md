@@ -1,3 +1,7 @@
+---
+title: Set me
+---
+
 ![Overview](/link-reminder/1.jpg)
 
 An application made for people who likes to share links for oneself and constantly changes its focus from computer to other devices. It allows to see in real time the links that are being shared to oneself and can be opened right away.

@@ -1,3 +1,13 @@
+---
+title: Dollar Insights Mobile App
+repoUrl: 'https://github.com/marco-calderon/dollar-scrap-django'
+demoUrl: 'https://dollar-web-app.herokuapp.com/'
+tags:
+  - 3c588814-17ef-4be5-adf0-e68af66a6c97
+  - 2449169b-3298-4728-95c8-e74f0035236f
+imageUrl: /dollar-insights-ionic/thumb.jpg
+---
+
 ![Overview](/dollar-insights-ionic/1.jpg)
 
 This is the mobile application for this service using Angular Ionic mobile app that was designed for multiplatform interaction (iOS, Android, Web). It uses the service as the backend through a REST API that also serves as the datasource for the front end.

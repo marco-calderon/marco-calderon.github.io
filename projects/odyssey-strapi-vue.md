@@ -1,3 +1,7 @@
+---
+title: Set me
+---
+
 ![Overview](/odyssey-strapi-vue/1.jpg)
 
 This is the first sample project in which I demonstrate how I can implement beautiful interfaces using Vue and TailwindCSS. I also integrate Strapi CMS as the backend to manage all the information through a GraphQL endpoint. It also supports both dark and light themes.

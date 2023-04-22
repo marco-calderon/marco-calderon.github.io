@@ -1,3 +1,7 @@
+---
+title: Admin Dashboard
+---
+
 ![Overview](/admin-dashboard-react/1.jpg)
 
 An admin dashboard that displays general information about statistics in form of charts, tables and maps, and also offering the user to change their account information.
@@ -18,7 +22,7 @@ While this application is not connected to a back end service, a service pattern
 
 You can see on the code below a sample of the usage of this pattern and see how simple it is, yet so powerful to use for scalable applications.
 
-```
+```typescript
 import { fetchFeed } from "../../services/api.service";
 
 export const REQUEST_FEED = 'REQUEST_FEED';
