@@ -1,3 +1,14 @@
+---
+title: Dollar Insights Web App
+repoUrl: 'https://github.com/marco-calderon/dollar-scrap-django'
+demoUrl: 'https://dollar-web-app.herokuapp.com/'
+tags:
+  - c509b2a7-c216-4a73-ac49-8528aec5f6d0
+  - c12c7d9b-30f0-448b-95ab-030b8462e792
+  - ad7bf409-520c-4230-bb2f-d569617afe06
+imageUrl: /dollar-insights/thumb.jpg
+---
+
 ![Overview](/dollar-insights/1.jpg)
 
 This project was developed for giving the user important details about the comparison between the USD and MXN. It compares its values and gives an insight about the top buy/sell prices of the currency.

@@ -1,15 +1,10 @@
 import React from 'react';
-import { GetStaticPaths, GetStaticProps } from 'next';
-import { getProject, getProjects } from '../../lib/data/project.data';
-import { PortfolioModel } from '../../lib/models/portfolio.model';
+import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import ProjectTitle from '../../components/ProjectTitle';
 import Layout from '../../components/Layout';
-
-export type ProjectDetailsPageProps = {
-	id: string;
-	project?: PortfolioModel;
-	contentHtml: string;
-};
+import { useTina } from 'tinacms/dist/react';
+import { client } from '../../tina/__generated__/client';
+import { TinaMarkdown } from 'tinacms/dist/rich-text';
 
 /**
  * Shows the details of the project.
@@ -17,26 +12,32 @@ export type ProjectDetailsPageProps = {
  * @param props is the props object passed down from getStaticProps
  * @returns the renderede component
  */
-const ProjectDetailsPage = ({
-	project,
-	contentHtml,
-}: ProjectDetailsPageProps) => {
-	return (
-		<Layout title={`${project!.title} - Marco Calderon`}>
-			<section
-				id="portfolio-details"
-				className="flex flex-col items-center w-full"
-			>
-				<div className="w-[100vw] xs:w-[100vw] sm:w-[100vw] md:w-[100vw] lg:w-[1000px] xl:w-[1000px] px-8 mt-20 xs:px-12 sm:px-20 md:px-20 lg:px-40 xl:px-40">
-					<ProjectTitle project={project!} />
+const ProjectDetailsPage = (
+  props: InferGetStaticPropsType<typeof getStaticProps>
+) => {
+  const { data } = useTina({
+    query: props.query,
+    variables: props.variables,
+    data: props.data,
+  });
 
-					<div className="">
-						<div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-					</div>
-				</div>
-			</section>
-		</Layout>
-	);
+  const content = data?.projects?.body;
+  console.log(data);
+
+  return (
+    <Layout title={`${data?.projects?.title} - Marco Calderon`}>
+      <section
+        id="portfolio-details"
+        className="flex flex-col items-center w-full"
+      >
+        <div className="w-[100vw] xs:w-[100vw] sm:w-[100vw] md:w-[100vw] lg:w-[1000px] xl:w-[1000px] px-8 mt-20 xs:px-12 sm:px-20 md:px-20 lg:px-40 xl:px-40">
+          <ProjectTitle project={data?.projects} />
+
+          <TinaMarkdown content={content} />
+        </div>
+      </section>
+    </Layout>
+  );
 };
 
 /**
@@ -46,12 +47,15 @@ const ProjectDetailsPage = ({
  * @returns all the paths available
  */
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
-	const files = await getProjects();
+  const { data } = await client.queries.projectsConnection();
+  const paths = data.projectsConnection.edges?.map((x) => {
+    return { params: { id: x?.node?._sys.filename } };
+  });
 
-	return {
-		paths: files.map((f) => ({ params: { id: f.replace('.md', '') } })),
-		fallback: 'blocking',
-	};
+  return {
+    paths: paths ?? [],
+    fallback: 'blocking',
+  };
 };
 
 /**
@@ -61,11 +65,17 @@ export const getStaticPaths: GetStaticPaths = async (ctx) => {
  * @returns the properties of the project
  */
 export const getStaticProps: GetStaticProps = async (ctx) => {
-	const props = await getProject(ctx.params!.id as string);
+  const { data, query, variables } = await client.queries.projects({
+    relativePath: ctx.params?.id + '.md',
+  });
 
-	return {
-		props,
-	};
+  return {
+    props: {
+      data,
+      query,
+      variables,
+    },
+  };
 };
 
 export default ProjectDetailsPage;

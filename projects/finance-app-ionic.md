@@ -1,3 +1,13 @@
+---
+title: Finance Mobile App
+repoUrl: 'https://github.com/marco-calderon/finance-app-ios'
+demoUrl: 'http://finance-app-ios.vercel.app/'
+tags:
+  - 3c588814-17ef-4be5-adf0-e68af66a6c97
+  - 2449169b-3298-4728-95c8-e74f0035236f
+imageUrl: /finance-app-ionic/thumb.jpg
+---
+
 ![Overview](/finance-app-ionic/1.jpg)
 
 A finance mobile app style implemented into Ionic Framework for iOS and Android devices, and potentially for web, that offers the user to manage their savings and expenses while having the information at hand at all times.

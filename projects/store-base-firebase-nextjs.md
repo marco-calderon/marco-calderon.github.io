@@ -1,3 +1,7 @@
+---
+title: Set me
+---
+
 ![Overview](/store-base-firebase-nextjs/1.jpg)
 
 A sample project that showcase the usage of Firebase and its Storage integration. This project was made using Next.js technology stack along with Firebase. On its styling solution I used emotion library for having a better performance and a themable solution for light and dark options.

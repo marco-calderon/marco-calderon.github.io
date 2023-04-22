@@ -1,3 +1,7 @@
+---
+title: Set me
+---
+
 ![Overview](/miliu-django-react/1.jpg)
 
 I worked along a backend developer for a creation for a MVP. This is a platform to help producers and directors manage people related to the movie and series production area - photographers, cameraman, script writers, and managed the information, dates and places in which they can coordinate efforts and timeframes.

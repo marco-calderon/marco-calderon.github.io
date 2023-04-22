@@ -1,3 +1,11 @@
+---
+title: Finance Management Mobile App
+repoUrl: 'https://github.com/marco-calderon/finance-app-react-native'
+tags:
+  - 550220c5-0c8c-488e-a05f-bf4d6515db40
+imageUrl: /finance-app-react-native/thumb.jpg
+---
+
 ![Overview](/finance-app-react-native/1.jpg)
 
 This application is made for managing financial in a more enterprise way for entrepreneurs that want to manage their incomes, expenses, and asset costs while having this information visible at all times in a user friendly way.

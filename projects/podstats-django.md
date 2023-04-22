@@ -1,3 +1,7 @@
+---
+title: Set me
+---
+
 ![Overview](/podstats.jpg)
 
 I developed a Podcast Statistics web application for showing charts and manage the scrap data results to insert into a database through Django. Made some services that interacted with a frontend made in Bootstrap/jQuery.

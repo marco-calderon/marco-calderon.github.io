@@ -1,3 +1,7 @@
+---
+title: Set me
+---
+
 ![Overview](/forum-django/1.jpg)
 
 This project allows sharing posts between users of this application, in which they can share thoughts, reply with information and vote for the most useful answer. All in a secure way to ensure data consistency and privacy between users.

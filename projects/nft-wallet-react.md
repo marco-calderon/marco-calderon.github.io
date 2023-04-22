@@ -1,3 +1,7 @@
+---
+title: Set me
+---
+
 ![Overview](/nft-wallet/1.jpg)
 
 This was a short project in which I collaborated with a frontend team for solving issues for a MVP. This was for an NFT wallet for managing all NFT a user uploads into their system. It is a React web application that was responsive and included the best practices for a better performance and for allowing collaboration with a large team of developers.

@@ -1,3 +1,7 @@
+---
+title: Set me
+---
+
 ![Overview](/scriptsquare-nodejs-nextjs/1.jpg)
 
 This web application is currently an MVP being developed that consist of a platform that helps writers and producers can collaborate, publish competitions, manage projects related to the movie, series and game industry, and find professional contracts that could help materialize their ideas.
