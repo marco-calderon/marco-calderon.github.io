@@ -81,6 +81,14 @@ export default defineConfig({
             description: 'The thumbnail image',
           },
           {
+            type: 'datetime',
+            name: 'createdDate',
+            label: 'Created date',
+            ui: {
+              dateFormat: 'MMM DD, YYYY',
+            },
+          },
+          {
             type: 'rich-text',
             label: 'Post Body',
             name: 'body',
