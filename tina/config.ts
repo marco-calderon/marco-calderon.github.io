@@ -1,4 +1,4 @@
-import { TinaField, defineConfig } from 'tinacms';
+import { defineConfig } from 'tinacms';
 import { tags } from '../lib/data/tags.data';
 import { categories } from '../lib/data/category.data';
 
@@ -31,6 +31,7 @@ export default defineConfig({
         name: 'projects',
         label: 'Projects',
         path: 'projects/',
+        format: 'mdx',
         fields: [
           {
             type: 'string',
@@ -84,6 +85,29 @@ export default defineConfig({
             label: 'Post Body',
             name: 'body',
             isBody: true,
+            templates: [
+              {
+                name: 'Video',
+                label: 'Video',
+                fields: [
+                  {
+                    name: 'width',
+                    label: 'Video width',
+                    type: 'number',
+                  },
+                  {
+                    name: 'height',
+                    label: 'Video height',
+                    type: 'number',
+                  },
+                  {
+                    name: 'src',
+                    label: 'Video src',
+                    type: 'string',
+                  },
+                ],
+              },
+            ],
           },
         ],
         ui: {
