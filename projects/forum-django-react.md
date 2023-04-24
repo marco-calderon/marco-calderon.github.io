@@ -1,5 +1,15 @@
 ---
-title: Set me
+title: Forum Web App
+repoUrl: 'https://github.com/marco-calderon/forum-django-react'
+demoUrl: 'https://forum-react-app.vercel.app/forum'
+tags:
+  - c509b2a7-c216-4a73-ac49-8528aec5f6d0
+  - 550220c5-0c8c-488e-a05f-bf4d6515db39
+  - 88df2dd0-28d3-426c-af24-16ed954b29d3
+imgUrl: /forum-django/thumb.jpg
+category:
+  - full
+  - web
 ---
 
 ![Overview](/forum-django/1.jpg)

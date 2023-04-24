@@ -4,6 +4,9 @@ repoUrl: 'https://github.com/marco-calderon/finance-app-react-native'
 tags:
   - 550220c5-0c8c-488e-a05f-bf4d6515db40
 imageUrl: /finance-app-react-native/thumb.jpg
+imgUrl: /finance-app-react-native/thumb.jpg
+category:
+  - mobile
 ---
 
 ![Overview](/finance-app-react-native/1.jpg)
@@ -20,7 +23,7 @@ One of the main goals of this app was to develop an application that is on React
 
 The styling and drivers such as the storage were bare React Native and Expo solutions for example. Although, they offer enough functionality to have it behave like a normal native application with some tradeoffs such as not having a translucent status bar and toolbar on iOS. For this application these obstacles were avoided using other solutions that also made this application available for the web. You can see a live demo of this app here.
 
-```
+```typescript
   export interface RoundedButtonProps {
     color: string;
     size: string;

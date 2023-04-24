@@ -1,5 +1,15 @@
 ---
-title: Set me
+title: Tracking Manager Web App
+repoUrl: 'https://github.com/marco-calderon/tracking-manager-django'
+tags:
+  - c509b2a7-c216-4a73-ac49-8528aec5f6d0
+  - 9abd6515-7f8c-4eec-b6a2-7a848a62a008
+  - 485901f6-9459-44de-a7ed-964cf38150c7
+  - 1f4eaad9-3f3e-4426-9835-c76d8c3d8d67
+imgUrl: /t_thumb.jpg
+category:
+  - web
+  - full
 ---
 
 ![Overview](/t1.jpg)

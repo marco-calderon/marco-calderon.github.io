@@ -10,7 +10,6 @@ import { PortfolioModel } from '../lib/models/portfolio.model';
 const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   projects,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  console.log(projects);
   return (
     <Layout title="Home - Marco Calderon">
       <section

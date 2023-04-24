@@ -3,6 +3,10 @@ title: Matidor - Collaborative GIS
 tags:
   - 3c588814-17ef-4be5-adf0-e68af66a6c97
 linkUrl: 'https://matidor.com'
+imgUrl: /matidor_thumb.jpg
+category:
+  - web
+  - mobile
 ---
 
 ![Overview](/matidor.jpg)

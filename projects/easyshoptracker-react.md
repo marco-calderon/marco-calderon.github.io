@@ -5,7 +5,10 @@ tags:
   - 550220c5-0c8c-488e-a05f-bf4d6515db39
   - 477513a2-578a-4e61-9cb9-4140a01458e9
   - 0b5d5b14-ee53-4912-be43-362fa974b0b8
-imageUrl: /easyshoptracker-react/thumb.jpg
+imgUrl: /easyshoptracker-react/thumb.jpg
+category:
+  - web
+  - mobile
 ---
 
 ![Overview](/easyshoptracker-react/3.jpg)
