@@ -17,7 +17,9 @@ const Portfolio = ({ projects }: PortfolioProps) => {
 
   const filteredProjects = useMemo(
     () =>
-      projects.filter((p) => (filter === 'all' ? true : p.category === filter)),
+      projects.filter((p) =>
+        filter === 'all' ? true : p.category?.includes(filter)
+      ),
     [projects, filter]
   );
 
@@ -90,7 +92,7 @@ const Portfolio = ({ projects }: PortfolioProps) => {
                   className={`filter-${p.category}`}
                   layout
                 >
-                  <Link href={p.id.replace('.md', '')}>
+                  <Link href={p.id.replace('.mdx', '')}>
                     <div className="relative transition-all cursor-pointer rounded-3xl bg-white/75 group">
                       {p.imgUrl ? (
                         <Image
