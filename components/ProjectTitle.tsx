@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import { PortfolioModel } from '../lib/models/portfolio.model';
 import Tag from './Tag';
+import { tags } from '../lib/data/tags.data';
 
 export type ProjectTitleProps = {
   project: PortfolioModel;
@@ -53,9 +54,10 @@ const ProjectTitle = ({ project }: ProjectTitleProps) => {
       </div>
       <div className="flex flex-row gap-6 mb-2">
         {project?.tags &&
-          project?.tags.map((t) => (
-            <Tag key={t.id} tag={t.name} icon={t.icon} />
-          ))}
+          project?.tags.map((tagId) => {
+            const t = tags.find((t) => t.id == tagId);
+            return <Tag key={t?.id} tag={t?.name ?? ''} icon={t?.icon ?? ''} />;
+          })}
       </div>
     </div>
   );
