@@ -1,5 +1,15 @@
 ---
-title: Set me
+title: StoreBase Web App
+repoUrl: 'https://github.com/marco-calderon/store-base-nextjs'
+demoUrl: 'https://store-base-nextjs.vercel.app/'
+tags:
+  - 550220c5-0c8c-488e-a05f-bf4d6515db39
+  - 10e238a0-5dd0-481f-9485-9a580d5ebc6e
+  - cf4fcb4f-bbfa-4d01-8e12-c6e2d22069f6
+imgUrl: /store-base-firebase-nextjs/thumb.jpg
+category:
+  - web
+  - full
 ---
 
 ![Overview](/store-base-firebase-nextjs/1.jpg)

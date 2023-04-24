@@ -1,5 +1,10 @@
 ---
-title: Set me
+title: NFT Wallet Extension Web App
+tags:
+  - 550220c5-0c8c-488e-a05f-bf4d6515db39
+imgUrl: /nft-wallet/thumb.jpg
+category:
+  - web
 ---
 
 ![Overview](/nft-wallet/1.jpg)

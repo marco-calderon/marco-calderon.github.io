@@ -1,5 +1,14 @@
 ---
-title: Set me
+title: ScriptSquare Web Application
+tags:
+  - 10e238a0-5dd0-481f-9485-9a580d5ebc6e
+  - 1bf05449-9fb0-4348-833f-5e41d283c214
+  - ad7bf409-520c-4230-bb2f-d569617afe06
+  - 4dc57694-8169-4418-bf3f-bf84bcd66191
+imgUrl: /scriptsquare-nodejs-nextjs/thumb.jpg
+category:
+  - web
+  - full
 ---
 
 ![Overview](/scriptsquare-nodejs-nextjs/1.jpg)

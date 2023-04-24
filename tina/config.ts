@@ -1,5 +1,6 @@
 import { TinaField, defineConfig } from 'tinacms';
 import { tags } from '../lib/data/tags.data';
+import { categories } from '../lib/data/category.data';
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || 'main';
@@ -8,14 +9,6 @@ const allTags = tags?.map((tag) => ({
   label: tag.name,
   value: tag.id,
 }));
-
-const tagField: TinaField = {
-  type: 'string',
-  name: 'tags',
-  label: 'Tags',
-  options: allTags,
-  list: true,
-};
 
 export default defineConfig({
   branch,
@@ -73,8 +66,16 @@ export default defineConfig({
             list: true,
           },
           {
+            type: 'string',
+            name: 'category',
+            label: 'Categories',
+            description: 'The categories of this project',
+            options: categories,
+            list: true,
+          },
+          {
             type: 'image',
-            name: 'imageUrl',
+            name: 'imgUrl',
             label: 'Image URL',
             description: 'The thumbnail image',
           },

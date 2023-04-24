@@ -4,6 +4,7 @@ import React, { useMemo, useState } from 'react';
 import { PortfolioModel } from '../lib/models/portfolio.model';
 import { motion, AnimatePresence } from 'framer-motion';
 import Tag from '../components/Tag';
+import { tags } from '../lib/data/tags.data';
 
 export type PortfolioProps = {
   projects: PortfolioModel[];
@@ -89,24 +90,33 @@ const Portfolio = ({ projects }: PortfolioProps) => {
                   className={`filter-${p.category}`}
                   layout
                 >
-                  <Link href={`/projects/${p.id}`}>
+                  <Link href={p.id.replace('.md', '')}>
                     <div className="relative transition-all cursor-pointer rounded-3xl bg-white/75 group">
-                      <Image
-                        src={p.imgUrl}
-                        className="transition-all rounded-3xl"
-                        alt=""
-                        width={800}
-                        height={600}
-                      />
+                      {p.imgUrl ? (
+                        <Image
+                          src={p.imgUrl}
+                          className="transition-all rounded-3xl"
+                          alt=""
+                          width={800}
+                          height={600}
+                        />
+                      ) : null}
                       <div className="absolute top-0 bottom-0 left-0 right-0 z-50 flex flex-col items-center justify-center p-4 text-center transition-all opacity-0 rounded-3xl backdrop-blur-md bg-white/50 group-hover:opacity-100">
                         <h4 className="text-lg font-bold text-blue-900">
                           {p.title}
                         </h4>
                         <div className="flex-row gap-1 mb-2 text-black d-flex">
                           {p.tags &&
-                            p.tags.map((t) => (
-                              <Tag key={t.id} tag={t.name} icon={t.icon} />
-                            ))}
+                            p.tags.map((tagId) => {
+                              const t = tags.find((t) => t.id === tagId);
+                              return (
+                                <Tag
+                                  key={t?.id}
+                                  tag={t?.name ?? ''}
+                                  icon={t?.icon ?? ''}
+                                />
+                              );
+                            })}
                         </div>
                       </div>
                     </div>

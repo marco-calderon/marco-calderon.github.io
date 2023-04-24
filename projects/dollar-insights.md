@@ -7,6 +7,9 @@ tags:
   - c12c7d9b-30f0-448b-95ab-030b8462e792
   - ad7bf409-520c-4230-bb2f-d569617afe06
 imageUrl: /dollar-insights/thumb.jpg
+imgUrl: /dollar-insights/thumb.jpg
+category:
+  - mobile
 ---
 
 ![Overview](/dollar-insights/1.jpg)

@@ -6,6 +6,9 @@ tags:
   - 477513a2-578a-4e61-9cb9-4140a01458e9
   - 8778ba31-cd88-48c9-b032-9e9eeb1d590e
 imageUrl: /donately_thumb.jpg
+imgUrl: /donately_thumb.jpg
+category:
+  - web
 ---
 
 ![Overview](/donately.jpg)

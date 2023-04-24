@@ -1,5 +1,14 @@
 ---
-title: Set me
+title: Headless Wordpress Web App
+repoUrl: 'https://github.com/marco-calderon/headless-wp-nextjs'
+demoUrl: 'https://headless-wp-nextjs-lime.vercel.app'
+tags:
+  - 10e238a0-5dd0-481f-9485-9a580d5ebc6e
+  - 8778ba31-cd88-48c9-b032-9e9eeb1d590e
+imgUrl: /headless-wp-nextjs/thumb.jpg
+category:
+  - web
+  - full
 ---
 
 ![Overview](/headless-wp-nextjs/1.jpg)

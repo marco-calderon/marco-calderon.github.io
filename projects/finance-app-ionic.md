@@ -6,6 +6,9 @@ tags:
   - 3c588814-17ef-4be5-adf0-e68af66a6c97
   - 2449169b-3298-4728-95c8-e74f0035236f
 imageUrl: /finance-app-ionic/thumb.jpg
+imgUrl: /finance-app-ionic/thumb.jpg
+category:
+  - mobile
 ---
 
 ![Overview](/finance-app-ionic/1.jpg)

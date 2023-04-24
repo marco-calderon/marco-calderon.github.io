@@ -1,5 +1,15 @@
 ---
-title: Set me
+title: Odyssey Shopping Web App
+repoUrl: 'https://github.com/marco-calderon/shoppi-strapi-vue'
+demoUrl: 'https://shoppi-strapi-vue.vercel.app'
+tags:
+  - 94b3ac41-3b85-4cb4-bc40-b12c297ce607
+  - 2eb5d0e0-cf1f-464b-9f3f-21bf351dd175
+  - 8778ba31-cd88-48c9-b032-9e9eeb1d590e
+imgUrl: /odyssey-strapi-vue/thumb.jpg
+category:
+  - full
+  - web
 ---
 
 ![Overview](/odyssey-strapi-vue/1.jpg)

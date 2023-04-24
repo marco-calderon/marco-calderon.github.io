@@ -1,5 +1,15 @@
 ---
 title: Admin Dashboard
+imgUrl: /admin-dashboard-react/thumb.jpg
+repoUrl: 'https://github.com/marco-calderon/dashboard-react'
+demoUrl: 'https://dashboard-react-flexocarpius.vercel.app/'
+tags:
+  - 550220c5-0c8c-488e-a05f-bf4d6515db39
+  - f61af9c7-ab6c-49ec-994a-18ee4906c61d
+  - 9abd6515-7f8c-4eec-b6a2-7a848a62a008
+category:
+  - mobile
+  - web
 ---
 
 ![Overview](/admin-dashboard-react/1.jpg)
