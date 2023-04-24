@@ -22,7 +22,6 @@ const ProjectDetailsPage = (
   });
 
   const content = data?.projects?.body;
-  console.log(data);
 
   return (
     <Layout title={`${data?.projects?.title} - Marco Calderon`}>
