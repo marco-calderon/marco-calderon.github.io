@@ -5,6 +5,13 @@ import Layout from '../../components/Layout';
 import { useTina } from 'tinacms/dist/react';
 import { client } from '../../tina/__generated__/client';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
+import Video from '../../components/Video';
+
+const components = {
+  Video: (props: any) => (
+    <Video width={props.width} height={props.height} src={props.src} />
+  ),
+};
 
 /**
  * Shows the details of the project.
@@ -32,7 +39,7 @@ const ProjectDetailsPage = (
         <div className="w-[100vw] xs:w-[100vw] sm:w-[100vw] md:w-[100vw] lg:w-[1000px] xl:w-[1000px] px-8 mt-20 xs:px-12 sm:px-20 md:px-20 lg:px-40 xl:px-40">
           <ProjectTitle project={data?.projects} />
 
-          <TinaMarkdown content={content} />
+          <TinaMarkdown content={content} components={components} />
         </div>
       </section>
     </Layout>
@@ -65,7 +72,7 @@ export const getStaticPaths: GetStaticPaths = async (ctx) => {
  */
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { data, query, variables } = await client.queries.projects({
-    relativePath: ctx.params?.id + '.md',
+    relativePath: ctx.params?.id + '.mdx',
   });
 
   return {
