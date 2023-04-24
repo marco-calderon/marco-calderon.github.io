@@ -11,4 +11,5 @@ export interface PortfolioModel {
   repoUrl?: string;
   demoUrl?: string;
   linkUrl?: string;
+  createdDate?: Date;
 }

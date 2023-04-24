@@ -6,6 +6,7 @@ import Services from '../containers/Services';
 import Skills from '../containers/Skills';
 import { client } from '../tina/__generated__/client';
 import { PortfolioModel } from '../lib/models/portfolio.model';
+import LogoIcon from '../components/icons/Logo';
 
 const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   projects,
@@ -13,11 +14,12 @@ const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   return (
     <Layout title="Home - Marco Calderon">
       <section
-        className="flex-col items-center w-full bg-white fle dark:bg-slate-800"
+        className="flex-col items-center w-full bg-white fle dark:bg-slate-900"
         data-aos="fade-up"
       >
         <div className="flex flex-col items-center justify-center mt-24 h-[40vh]">
           <div className="flex flex-col items-center gap-8 mx-12 font-bold text-center col-12">
+            <LogoIcon className="text-[144px]" />
             <h1 className="text-4xl">Marco Calderon</h1>
             <h1 className="mb-8 text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-blue-300">
               Full Stack Web Developer
@@ -104,7 +106,10 @@ const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 };
 
 export async function getStaticProps(context: NextPageContext) {
-  const { data } = await client.queries.projectsConnection();
+  const { data } = await client.queries.projectsConnection({
+    sort: 'createdDate',
+    last: 100,
+  });
   const projects = data.projectsConnection.edges?.map(
     (x) => x?.node as unknown as PortfolioModel
   );
