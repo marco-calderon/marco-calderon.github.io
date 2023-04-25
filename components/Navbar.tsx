@@ -2,7 +2,6 @@ import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import FullScreenMenu from '../containers/FullScreenMenu';
-import LogoIcon from './icons/Logo';
 
 const Navbar = () => {
   const [menuOpened, setMenuOpened] = useState(false);
