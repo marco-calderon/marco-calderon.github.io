@@ -1,12 +1,12 @@
 import type { InferGetStaticPropsType, NextPage, NextPageContext } from 'next';
 import Layout from '../components/Layout';
 import Contact from '../containers/Contact';
-import Portfolio from '../containers/Portfolio';
 import Services from '../containers/Services';
 import Skills from '../containers/Skills';
 import { client } from '../tina/__generated__/client';
 import { PortfolioModel } from '../lib/models/portfolio.model';
 import LogoIcon from '../components/icons/Logo';
+import PortfolioSquared from '../containers/PortfolioSquared';
 
 const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   projects,
@@ -97,7 +97,7 @@ const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
         <Skills />
 
-        <Portfolio projects={projects ?? []} />
+        <PortfolioSquared projects={projects ?? []} />
 
         <Contact />
       </main>
