@@ -17,7 +17,7 @@ const Navbar = () => {
           <Link href="/">
             <div className="cursor-pointer">
               <h4 className="text-2xl font-bold text-blue-800 dark:text-white">
-                <LogoIcon className="text-5xl" />
+                Marco Calderon
               </h4>
             </div>
           </Link>

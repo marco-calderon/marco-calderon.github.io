@@ -19,7 +19,6 @@ const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       >
         <div className="flex flex-col items-center justify-center mt-24 h-[40vh]">
           <div className="flex flex-col items-center gap-8 mx-12 font-bold text-center col-12">
-            <LogoIcon className="text-[144px]" />
             <h1 className="text-4xl">Marco Calderon</h1>
             <h1 className="mb-8 text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-blue-300">
               Full Stack Web Developer
