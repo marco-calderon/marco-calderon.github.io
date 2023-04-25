@@ -5,7 +5,6 @@ import Services from '../containers/Services';
 import Skills from '../containers/Skills';
 import { client } from '../tina/__generated__/client';
 import { PortfolioModel } from '../lib/models/portfolio.model';
-import LogoIcon from '../components/icons/Logo';
 import PortfolioSquared from '../containers/PortfolioSquared';
 
 const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
