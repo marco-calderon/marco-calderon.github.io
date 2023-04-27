@@ -22,7 +22,7 @@ const Navbar = () => {
           </Link>
 
           <nav id="navbar">
-            <ul className="flex-row hidden gap-12 xs:hidden sm:hidden md:flex lg:flex xl:flex">
+            <ul className="flex-row hidden gap-12 bg-transparent xs:hidden sm:hidden md:flex lg:flex xl:flex">
               <li>
                 <Link
                   className="font-bold text-blue-700 transition-all dark:visited:text-white scrollto dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
