@@ -21,7 +21,7 @@ const Navbar = () => {
             </div>
           </Link>
 
-          <nav id="navbar">
+          <nav id="navbar" className="flex flex-row items-center gap-8">
             <ul className="flex-row hidden gap-12 bg-transparent xs:hidden sm:hidden md:flex lg:flex xl:flex">
               <li>
                 <Link
@@ -72,6 +72,25 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
+
+            <div className="flex flex-row items-center gap-4">
+              <Link
+                href="https://github.com/marco-calderon"
+                target="_blank"
+                className="transition-all dark:text-white hover:text-gray-500"
+              >
+                <Icon icon="mdi:github" className="text-2xl" />
+              </Link>
+
+              <Link
+                href="https://www.upwork.com/freelancers/~01b28af275156f5d9e"
+                target="_blank"
+                className="transition-all dark:text-white hover:text-green-500"
+              >
+                <Icon icon="bxl:upwork" className="text-2xl" />
+              </Link>
+            </div>
+
             <div className="inline-block fixed top-5 right-5 xs:inline-block sm:inline-block md:hidden lg:hidden xl:hidden z-[100]">
               <Icon
                 icon="bi:list"
