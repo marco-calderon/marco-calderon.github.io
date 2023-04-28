@@ -2,13 +2,13 @@ import { defineConfig } from 'tinacms';
 import { tags } from '../lib/data/tags.data';
 import { categories } from '../lib/data/category.data';
 
-// Your hosting provider likely exposes this as an environment variable
-const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || 'main';
-
 const allTags = tags?.map((tag) => ({
   label: tag.name,
   value: tag.id,
 }));
+
+// Your hosting provider likely exposes this as an environment variable
+const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || 'main';
 
 export default defineConfig({
   branch,
