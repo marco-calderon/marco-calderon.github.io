@@ -71,6 +71,18 @@ const Navbar = () => {
                   Resume
                 </Link>
               </li>
+              <li>
+                <Link
+                  className="flex flex-row items-center gap-2 font-bold text-transparent transition-all bg-clip-text bg-gradient-to-r from-green-300 hover:from-blue-300 to-blue-300 hover:to-green-300 group"
+                  href="/store"
+                >
+                  <Icon
+                    icon="ph:bag-simple-fill"
+                    className="text-green-300 transition-all dark:text-green-300 group-hover:text-blue-400"
+                  />
+                  Store
+                </Link>
+              </li>
             </ul>
 
             <div className="flex-row items-center hidden gap-4 bg-transparent xs:hidden sm:hidden md:flex lg:flex xl:flex">
