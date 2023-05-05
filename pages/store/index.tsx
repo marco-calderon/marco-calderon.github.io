@@ -27,7 +27,7 @@ const StorePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           Store
         </h1>
         <h2 className="text-lg text-gray-700 dark:text-gray-400">
-          Projects that could help you which I&apos;ve developed.
+          Buy some of the products I&apos;ve worked on to fulfill your needs.
         </h2>
       </section>
 
