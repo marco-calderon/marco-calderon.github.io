@@ -20,18 +20,22 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-textarea-autosize": "^8.4.1",
+    "react-type-animation": "^3.0.1",
     "rehype": "^12.0.1",
     "rehype-rewrite": "^3.0.6",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "remark-rehype": "^10.1.0",
-    "tinacms": "^1.5.1"
+    "three": "^0.152.2",
+    "tinacms": "^1.5.1",
+    "vanta": "^0.5.24"
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
     "@types/node": "18.11.0",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "@types/three": "^0.152.0",
     "autoprefixer": "^10.4.13",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
