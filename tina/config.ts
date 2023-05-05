@@ -28,6 +28,36 @@ export default defineConfig({
   schema: {
     collections: [
       {
+        name: 'products',
+        label: 'Products',
+        path: 'store/',
+        format: 'mdx',
+        fields: [
+          {
+            type: 'string',
+            name: 'title',
+            label: 'Title',
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'description',
+            label: 'Description',
+            required: true,
+          },
+          {
+            type: 'string',
+            name: 'storeUrl',
+            label: 'URL',
+            description: 'The link to the buy site, if any',
+          },
+        ],
+        ui: {
+          router: ({ document }) => `/store/${document._sys.filename}`,
+        },
+      },
+      {
         name: 'projects',
         label: 'Projects',
         path: 'projects/',
