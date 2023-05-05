@@ -6,17 +6,41 @@ import Skills from '../containers/Skills';
 import { client } from '../tina/__generated__/client';
 import { PortfolioModel } from '../lib/models/portfolio.model';
 import PortfolioSquared from '../containers/PortfolioSquared';
+import { useEffect, useRef } from 'react';
+import DOTS from 'vanta/dist/vanta.dots.min';
 
 const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   projects,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
+  const heroSectionRef = useRef(null);
+
+  useEffect(() => {
+    DOTS({
+      el: heroSectionRef.current,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: 0x53a8ff,
+      color2: 0x49d4f7,
+      backgroundColor: '#111827',
+      size: 2.8,
+      spacing: 34.0,
+      showLines: false,
+    });
+  }, []);
+
   return (
     <Layout title="Home - Marco Calderon">
       <section
-        className="flex-col items-center w-full bg-white fle dark:bg-slate-900"
+        className="relative flex flex-col items-center w-full bg-white dark:bg-slate-900"
         data-aos="fade-up"
+        ref={heroSectionRef}
       >
-        <div className="flex flex-col items-center justify-center mt-24 h-[40vh]">
+        <div className="flex flex-col items-center justify-center h-[60vh]">
           <div className="flex flex-col items-center gap-8 mx-12 font-bold text-center col-12">
             <h1 className="text-4xl">Marco Calderon</h1>
             <h1 className="mb-8 text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-blue-300">
@@ -27,6 +51,8 @@ const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
             </h1>
           </div>
         </div>
+
+        <div id="animated-bg" className="absolute inset-0"></div>
       </section>
 
       <main id="main">
