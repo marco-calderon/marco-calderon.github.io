@@ -30,7 +30,7 @@ export default defineConfig({
       {
         name: 'products',
         label: 'Products',
-        path: 'store/',
+        path: 'products/',
         format: 'mdx',
         fields: [
           {
@@ -45,6 +45,21 @@ export default defineConfig({
             name: 'description',
             label: 'Description',
             required: true,
+            isBody: true,
+          },
+          {
+            type: 'datetime',
+            name: 'createdDate',
+            label: 'Created date',
+            ui: {
+              dateFormat: 'MMM DD, YYYY',
+            },
+          },
+          {
+            type: 'image',
+            name: 'imgUrl',
+            label: 'Image URL',
+            description: 'The thumbnail image, should be 256x256px',
           },
           {
             type: 'string',
