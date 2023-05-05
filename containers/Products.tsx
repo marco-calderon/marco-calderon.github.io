@@ -14,7 +14,7 @@ const Products = ({ products }: ProductsProps) => {
         <Link
           href={p.storeUrl}
           key={p.storeUrl}
-          className="flex flex-row items-center w-full gap-5 p-10 text-gray-700 transition-all border border-gray-500 border-solid dark:border-gray-600 rounded-xl dark:text-white hover:text-gray-700 dark:hover:text-white hover:border-gray-300 dark:hover:border-gray-500"
+          className="flex flex-row items-center justify-between w-full gap-5 p-10 text-gray-700 transition-all border border-gray-500 border-solid dark:border-gray-600 rounded-xl dark:text-white hover:text-gray-700 dark:hover:text-white hover:border-gray-300 dark:hover:border-gray-500"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -26,7 +26,7 @@ const Products = ({ products }: ProductsProps) => {
           {p.imgUrl ? (
             <Image
               src={p.imgUrl}
-              className="flex-1 w-[128px] h-auto transition-all rounded-3xl"
+              className="w-[128px] h-auto transition-all rounded-3xl"
               alt=""
               width={128}
               height={128}
