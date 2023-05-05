@@ -73,7 +73,7 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <div className="flex flex-row items-center gap-4">
+            <div className="flex-row items-center hidden gap-4 bg-transparent xs:hidden sm:hidden md:flex lg:flex xl:flex">
               <Link
                 href="https://github.com/marco-calderon"
                 target="_blank"
