@@ -6,15 +6,16 @@ import Navbar from './Navbar';
 export type LayoutProps = {
   children: React.ReactNode;
   title?: string;
+  navbarTransparent?: boolean;
 };
 
-const Layout = ({ children, title }: LayoutProps) => {
+const Layout = ({ children, title, navbarTransparent }: LayoutProps) => {
   return (
     <div className="flex flex-col items-center text-gray-800 bg-white dark:bg-slate-900 dark:text-white">
       <Head>
         <title>{title ?? 'Marco Calderon'}</title>
       </Head>
-      <Navbar />
+      <Navbar transparent={navbarTransparent} />
       <div className="w-full">{children}</div>
       <Footer />
     </div>
