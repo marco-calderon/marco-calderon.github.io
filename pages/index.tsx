@@ -6,13 +6,27 @@ import Skills from '../containers/Skills';
 import { client } from '../tina/__generated__/client';
 import { PortfolioModel } from '../lib/models/portfolio.model';
 import PortfolioSquared from '../containers/PortfolioSquared';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import DOTS from 'vanta/dist/vanta.dots.min';
 
 const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   projects,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const heroSectionRef = useRef(null);
+  const [transparent, setTransparent] = useState(true);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setTransparent(position < 500);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     DOTS({
@@ -34,7 +48,7 @@ const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   }, []);
 
   return (
-    <Layout title="Home - Marco Calderon">
+    <Layout title="Home - Marco Calderon" navbarTransparent={transparent}>
       <section
         className="relative flex flex-col items-center w-full bg-white dark:bg-slate-900"
         data-aos="fade-up"

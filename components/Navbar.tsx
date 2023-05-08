@@ -3,14 +3,22 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import FullScreenMenu from '../containers/FullScreenMenu';
 
-const Navbar = () => {
+export type NavbarProps = {
+  transparent?: boolean;
+};
+
+const Navbar = ({ transparent }: NavbarProps) => {
   const [menuOpened, setMenuOpened] = useState(false);
 
   return (
     <>
       <header
         id="header"
-        className="fixed z-[100] w-full px-[20px] lg:px-[60px] py-6 backdrop-blur-md bg-white/50 dark:bg-gray-900/50"
+        className={`fixed z-[100] w-full px-[20px] lg:px-[60px] py-6 transition-all ${
+          !transparent
+            ? 'backdrop-blur-md bg-white/50 dark:bg-gray-900/50'
+            : 'bg-transparent'
+        }`}
       >
         <div className="flex items-center justify-between">
           <Link href="/">
