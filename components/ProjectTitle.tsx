@@ -13,7 +13,9 @@ const ProjectTitle = ({ project }: ProjectTitleProps) => {
   return (
     <div className="mb-4">
       <div className="flex flex-wrap justify-between mb-2">
-        <h2 className="mb-4 text-4xl font-bold">{project?.title}</h2>
+        <h2 className="mb-4 text-4xl font-bold md:text-6xl">
+          {project?.title}
+        </h2>
         <div className="flex flex-row gap-4">
           {project?.repoUrl && (
             <Link href={project?.repoUrl} target="_blank">
