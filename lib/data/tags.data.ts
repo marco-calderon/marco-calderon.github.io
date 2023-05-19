@@ -151,4 +151,16 @@ export const tags: TagModel[] = [
     name: 'NgRx',
     icon: 'simple-icons:singlestore',
   },
+  {
+    id: '2ee02cf5-8049-4f94-9e49-89b49afd59d6',
+    class: 'primary',
+    name: 'Supabase',
+    icon: 'tabler:brand-supabase',
+  },
+  {
+    id: '1560852c-0a89-4f25-a437-a9d5ee7fcce5',
+    class: 'primary',
+    name: 'Cloudinary',
+    icon: 'material-symbols:cloud',
+  },
 ];
