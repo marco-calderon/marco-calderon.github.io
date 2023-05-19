@@ -13,6 +13,7 @@
     "@iconify/react": "^4.0.1",
     "@tinacms/cli": "^1.5.8",
     "@vercel/analytics": "^1.0.0",
+    "@vercel/og": "^0.5.4",
     "aos": "^2.3.4",
     "framer-motion": "^7.6.2",
     "gray-matter": "^4.0.3",
