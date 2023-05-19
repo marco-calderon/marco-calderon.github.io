@@ -55,6 +55,7 @@ const HomePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           property="og:image"
           content="https://marco-calderon.vercel.app/api/og"
         />
+        <meta property="og:title" content=""></meta>
       </Head>
       <Layout title="Home - Marco Calderon" navbarTransparent={transparent}>
         <section
