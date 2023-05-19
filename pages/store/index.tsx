@@ -23,11 +23,14 @@ const StorePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         id="header"
         className="w-full flex flex-col items-center justify-center h-[40vh]"
       >
-        <h1 className="mb-8 text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-blue-300">
+        <h1 className="mb-8 font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-green-300 to-blue-300">
           Store
         </h1>
-        <h2 className="text-lg text-gray-700 dark:text-gray-400">
-          Buy some of the products I&apos;ve worked on to fulfill your needs.
+        <h2 className="text-xl text-center text-gray-700 dark:text-white">
+          Buy or try some of the products I&apos;ve worked on to fulfill your
+          needs.
+          <br />
+          Crafted with the latest technologies.
         </h2>
       </section>
 
