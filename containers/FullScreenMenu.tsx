@@ -119,12 +119,12 @@ const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
               </Link>
 
               <Link
-                href="https://www.upwork.com/freelancers/~01b28af275156f5d9e"
+                href="https://forms.gle/XDuP2JsE5c6DirPn8"
                 target="_blank"
                 className="transition-all dark:text-white hover:text-green-500"
               >
                 <motion.h4 variants={item} onClick={onClose} style={linkStyle}>
-                  <Icon icon="bxl:upwork" className="text-4xl" />
+                  <Icon icon="mdi:form" className="text-4xl" />
                 </motion.h4>
               </Link>
             </div>
