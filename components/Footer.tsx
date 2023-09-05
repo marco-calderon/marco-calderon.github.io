@@ -90,12 +90,19 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex-1 text-center text-md-start flex items-center justify-center">
+          <div className="flex-1 text-center text-md-start flex items-center justify-center gap-4">
             <Link
               className="transition-all text-inherit hover:text-blue-600 dark:hover:text-blue-300"
               href="https://github.com/marco-calderon"
             >
               <Icon icon="mdi:github" className="text-2xl" />
+            </Link>
+
+            <Link
+              className="transition-all text-inherit hover:text-blue-600 dark:hover:text-blue-300"
+              href="https://github.com/marco-calderon"
+            >
+              <Icon icon="fluent:mail-16-filled" className="text-2xl" />
             </Link>
           </div>
         </div>

@@ -107,7 +107,7 @@ const Navbar = ({ transparent }: NavbarProps) => {
                 target="_blank"
                 className="transition-all dark:text-white hover:text-green-500"
               >
-                <Icon icon="mdi:form" className="text-2xl" />
+                <Icon icon="fluent:mail-16-filled" className="text-2xl" />
               </Link>
             </div>
 

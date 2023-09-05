@@ -20,7 +20,7 @@ const Contact = () => {
                 type="button"
                 className="flex flex-row items-center justify-center gap-2 px-8 py-4 text-white bg-green-500 rounded-full scrollto align-self-center"
               >
-                <Icon icon="mdi:form" className="text-4xl" />
+                <Icon icon="fluent:mail-16-filled" className="text-4xl" />
 
                 <span>Send Inquiry</span>
 

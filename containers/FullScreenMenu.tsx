@@ -124,7 +124,7 @@ const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
                 className="transition-all dark:text-white hover:text-green-500"
               >
                 <motion.h4 variants={item} onClick={onClose} style={linkStyle}>
-                  <Icon icon="mdi:form" className="text-4xl" />
+                  <Icon icon="fluent:mail-16-filled" className="text-4xl" />
                 </motion.h4>
               </Link>
             </div>
