@@ -101,6 +101,14 @@ const Navbar = ({ transparent }: NavbarProps) => {
               >
                 <Icon icon="mdi:github" className="text-2xl" />
               </Link>
+
+              <Link
+                href="https://forms.gle/XDuP2JsE5c6DirPn8"
+                target="_blank"
+                className="transition-all dark:text-white hover:text-green-500"
+              >
+                <Icon icon="mdi:form" className="text-2xl" />
+              </Link>
             </div>
 
             <div className="inline-block fixed top-5 right-5 xs:inline-block sm:inline-block md:hidden lg:hidden xl:hidden z-[100]">
