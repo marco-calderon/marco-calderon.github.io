@@ -20,9 +20,9 @@ const Contact = () => {
                 type="button"
                 className="flex flex-row items-center justify-center gap-2 px-8 py-4 text-white bg-green-500 rounded-full scrollto align-self-center"
               >
-                <Icon icon="fluent:mail-16-filled" className="text-4xl" />
+                <Icon icon="bxl:upwork" className="text-4xl" />
 
-                <span>Send Inquiry</span>
+                <span>Upwork profile</span>
 
                 <Icon icon="bi:arrow-right" />
               </button>
