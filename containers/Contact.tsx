@@ -15,7 +15,10 @@ const Contact = () => {
 
         <div className="flex flex-col gap-4">
           <div className="flex flex-col items-center col-12">
-            <Link href="https://forms.gle/XDuP2JsE5c6DirPn8" target="_blank">
+            <Link
+              href="https://www.upwork.com/freelancers/~01b28af275156f5d9e"
+              target="_blank"
+            >
               <button
                 type="button"
                 className="flex flex-row items-center justify-center gap-2 px-8 py-4 text-white bg-green-500 rounded-full scrollto align-self-center"

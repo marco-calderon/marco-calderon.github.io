@@ -103,11 +103,11 @@ const Navbar = ({ transparent }: NavbarProps) => {
               </Link>
 
               <Link
-                href="https://forms.gle/XDuP2JsE5c6DirPn8"
+                href="https://www.upwork.com/freelancers/~01b28af275156f5d9e"
                 target="_blank"
                 className="transition-all dark:text-white hover:text-green-500"
               >
-                <Icon icon="fluent:mail-16-filled" className="text-2xl" />
+                <Icon icon="bxl:upwork" className="text-2xl" />
               </Link>
             </div>
 
