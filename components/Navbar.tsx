@@ -14,7 +14,7 @@ const Navbar = ({ transparent }: NavbarProps) => {
     <>
       <header
         id="header"
-        className={`fixed z-[100] w-full px-[20px] lg:px-[60px] py-6 transition-all ${
+        className={`fixed z-[100] w-full px-[20px] lg:px-[60px] py-6 transition-all print:hidden ${
           !transparent
             ? 'backdrop-blur-md bg-white/50 dark:bg-gray-900/50'
             : 'bg-transparent'

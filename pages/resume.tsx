@@ -1,4 +1,3 @@
-import { Icon } from '@iconify/react';
 import React from 'react';
 import Experience from '../components/Experience';
 import Layout from '../components/Layout';
@@ -20,11 +19,11 @@ const Resume = () => {
             className="w-full px-8 mt-20 xs:px-20 sm:px-20 md:px-40 lg:px-40 xl:px-40"
             data-aos-delay="200"
           >
-            <div className="mt-5">
-              <h1 className="text-2xl">Full Stack Web Developer</h1>
+            <div className="mt-5 px-2 lg:px-20">
+              <h1 className="text-5xl">Full Stack Web Developer</h1>
             </div>
 
-            <p className="mt-5 mb-4">
+            <p className="mt-5 mb-4 px-2 lg:px-20 py-4 lg:py-20">
               I&apos;m a Full stack web developer with 8 years of experience in
               programming for web applications. I like working on complex
               projects where Front end and Back end interact with each other,
@@ -34,7 +33,7 @@ const Resume = () => {
               keep up to date with innovation in my field.
             </p>
 
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 auto-rows-1fr">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 auto-rows-1fr px-2 lg:px-20">
               <div className="flex-1 p-4 text-white shadow-md rounded-xl bg-slate-600 shadow-gray-300 dark:shadow-slate-700">
                 <h5 className="mb-4 font-bold">Hard Skills</h5>
                 <ul>
@@ -51,7 +50,7 @@ const Resume = () => {
                 <ul>
                   <li>Teamwork</li>
                   <li>Leadership</li>
-                  <li>Requirements gathering</li>
+                  <li>Communication and clarity on requirements</li>
                   <li>Problem-solving attitude</li>
                   <li>Project management</li>
                   <li>Process analyst</li>
@@ -73,15 +72,15 @@ const Resume = () => {
 
         <section data-aos="fade-up">
           <div
-            className="w-full px-8 xs:px-20 sm:px-20 md:px-40 lg:px-40 xl:px-40"
+            className="w-full px-8 sm:px-20 md:px-40 lg:px-40 xl:px-40"
             data-aos-delay="200"
           >
             <div className="row">
-              <header className="flex flex-col items-center mb-5 w-100">
-                <p className="text-4xl ">Experience</p>
+              <header className="flex flex-col items-center mb-5 w-full">
+                <p className="text-4xl">Experience</p>
               </header>
 
-              <div className="col-lg-8 col-md-9 col-sm-12">
+              <div className="col-lg-8 col-md-9 col-sm-12 px-4 lg:px-20">
                 <Experience
                   title="Full Stack Web Developer (Independent)"
                   location="Agency"
@@ -99,6 +98,10 @@ const Resume = () => {
                     'API integration with an existing React application for shop management.',
                     'React development with custom styling for a PDF files management platform.',
                     'Automation development for scraping and food order.',
+                    'Frontend development for crypto dashboard system with Firebase.',
+                    'Ecommerce platform development using Next.js and microservices.',
+                    'Frontend design implementation for an documentation research AI startup.',
+                    'Full stack development using React and Django (Python3).',
                   ])}
                 />
 
@@ -169,11 +172,11 @@ const Resume = () => {
             data-aos-delay="200"
           >
             <div className="row">
-              <header className="flex flex-col items-center mb-5 w-100">
+              <header className="flex flex-col items-center mb-5 w-full">
                 <p className="text-4xl ">Education</p>
               </header>
 
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 px-4 lg:px-20">
                 <div className="flex flex-col gap-2 mb-1">
                   <h5 className="text-xl text-blue-500 dark:text-blue-300">
                     M.Sc. in Computer Science
