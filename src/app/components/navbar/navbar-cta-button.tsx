@@ -2,6 +2,15 @@ import React, { ButtonHTMLAttributes } from 'react';
 
 type NavbarCtaButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
+const gradientBorderStyle = {
+  borderWidth: '2px',
+  borderRadius: '4px',
+  borderStyle: 'solid',
+  mozBorderImage: 'linear-gradient(200deg, #2C80FF, #6C46EA) 1',
+  webkitBorderImage: 'linear-gradient(200deg, #2C80FF, #6C46EA) 1',
+  borderImage: 'linear-gradient(200deg, #2C80FF, #6C46EA) 1',
+};
+
 const NavbarCtaButton: React.FC<NavbarCtaButtonProps> = ({
   children,
   className,
@@ -9,13 +18,16 @@ const NavbarCtaButton: React.FC<NavbarCtaButtonProps> = ({
   ...rest
 }) => {
   return (
-    <button
-      className={`px-10 py-4 bg-transparent text-white rounded border-[2px] border-blue transition font-medium tracking-widest ${className}`}
-      type={type ?? 'button'}
-      {...rest}
-    >
-      {children}
-    </button>
+    <div style={{ borderRadius: 4, overflow: 'hidden' }}>
+      <button
+        style={gradientBorderStyle}
+        className={`h-[50px] flex flex-row items-center justify-center px-10 text-white ${className}`}
+        type={type ?? 'button'}
+        {...rest}
+      >
+        {children}
+      </button>
+    </div>
   );
 };
 

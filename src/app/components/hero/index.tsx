@@ -1,12 +1,10 @@
-'use client';
-
 import React from 'react';
 import HeroCtaButton from './hero-cta-button';
 import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center text-white background-animated">
+    <section className="relative h-screen min-h-[800px] flex items-center justify-center text-white background-animated">
       <div className="max-w-[1300px] flex flex-col items-start z-10">
         <div className="flex flex-col items-start w-1/2 gap-10">
           <h1 className="text-[90px] leading-[97px] font-medium tracking-wider">

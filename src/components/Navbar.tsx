@@ -5,25 +5,24 @@ import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import NavbarCtaButton from '@/app/components/navbar/navbar-cta-button';
+import ChevronRight from '@/icons/chevron-right';
+import { cn } from '@/utils/cn';
 
 export type NavbarProps = {
   transparent?: boolean;
-};
+} & React.HTMLProps<HTMLElement>;
 
-const Navbar = ({ transparent }: NavbarProps) => {
+const Navbar = ({ className }: NavbarProps) => {
   const [menuOpened, setMenuOpened] = useState(false);
 
   return (
     <>
       <header
         id="header"
-        className={`fixed z-100 w-full px-[20px] lg:px-[60px] py-6 transition-all print:hidden ${
-          !transparent
-            ? 'backdrop-blur-md bg-white/50 dark:bg-gray-900/50'
-            : 'bg-transparent'
-        }`}
+        className={cn('z-100 w-full print:hidden', className)}
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center max-w-[1300px] h-[88px] mx-auto gap-[70px]">
           <Link href="/">
             <Image
               src="/logo.svg"
@@ -33,11 +32,11 @@ const Navbar = ({ transparent }: NavbarProps) => {
             />
           </Link>
 
-          <nav id="navbar" className="flex flex-row items-center gap-8">
-            <ul className="flex-row hidden gap-12 bg-transparent xs:hidden sm:hidden md:flex lg:flex xl:flex">
+          <nav id="navbar" className="w-full flex flex-row items-center gap-8">
+            <ul className="flex flex-row gap-[70px] bg-transparent text-white">
               <li>
                 <Link
-                  className="font-bold text-blue-700 transition-all dark:visited:text-white scrollto dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-[15px] font-medium tracking-widest text-white hover:text-white"
                   href="/#about"
                 >
                   About
@@ -45,7 +44,7 @@ const Navbar = ({ transparent }: NavbarProps) => {
               </li>
               <li>
                 <Link
-                  className="font-bold text-blue-700 transition-all dark:visited:text-white scrollto dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-[15px] font-medium tracking-widest text-white hover:text-white"
                   href="/#services"
                 >
                   Services
@@ -53,7 +52,7 @@ const Navbar = ({ transparent }: NavbarProps) => {
               </li>
               <li>
                 <Link
-                  className="font-bold text-blue-700 transition-all dark:visited:text-white scrollto dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-[15px] font-medium tracking-widest text-white hover:text-white"
                   href="/#skills"
                 >
                   Skills
@@ -61,7 +60,7 @@ const Navbar = ({ transparent }: NavbarProps) => {
               </li>
               <li>
                 <Link
-                  className="font-bold text-blue-700 transition-all dark:visited:text-white scrollto dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-[15px] font-medium tracking-widest text-white hover:text-white"
                   href="/#portfolio"
                 >
                   Portfolio
@@ -69,7 +68,7 @@ const Navbar = ({ transparent }: NavbarProps) => {
               </li>
               <li>
                 <Link
-                  className="font-bold text-blue-700 transition-all dark:visited:text-white scrollto dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-[15px] font-medium tracking-widest text-white hover:text-white"
                   href="/#contact"
                 >
                   Contact
@@ -77,43 +76,20 @@ const Navbar = ({ transparent }: NavbarProps) => {
               </li>
               <li>
                 <Link
-                  className="font-bold text-blue-700 transition-all dark:visited:text-white scrollto dark:text-white hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-[15px] font-medium tracking-widest text-white hover:text-white"
                   href="/resume"
                 >
                   Resume
                 </Link>
               </li>
-              <li>
-                <Link
-                  className="flex flex-row items-center gap-2 font-bold text-transparent transition-all bg-clip-text bg-linear-to-r from-green-300 hover:from-blue-300 to-blue-300 hover:to-green-300 group"
-                  href="/store"
-                >
-                  <Icon
-                    icon="ph:bag-simple-fill"
-                    className="text-green-300 transition-all dark:text-green-300 group-hover:text-blue-400"
-                  />
-                  Store
-                </Link>
-              </li>
             </ul>
 
-            <div className="flex-row items-center hidden gap-4 bg-transparent xs:hidden sm:hidden md:flex lg:flex xl:flex">
-              <Link
-                href="https://github.com/marco-calderon"
-                target="_blank"
-                className="transition-all dark:text-white hover:text-gray-500"
-              >
-                <Icon icon="mdi:github" className="text-2xl" />
-              </Link>
+            <div className="flex-1" />
 
-              <Link
-                href="https://www.upwork.com/freelancers/~01b28af275156f5d9e"
-                target="_blank"
-                className="transition-all dark:text-white hover:text-green-500"
-              >
-                <Icon icon="bxl:upwork" className="text-2xl" />
-              </Link>
-            </div>
+            <NavbarCtaButton className="hidden lg:flex flex-row items-center gap-2">
+              Contact
+              <ChevronRight />
+            </NavbarCtaButton>
 
             <div className="inline-block fixed top-5 right-5 xs:inline-block sm:inline-block md:hidden lg:hidden xl:hidden z-100">
               <Icon

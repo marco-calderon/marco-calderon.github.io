@@ -47,8 +47,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${clashDisplay.className} font-sans`}>
-        <div className="flex flex-col items-center text-gray-800 dark:text-white">
-          <Navbar />
+        <div className="flex flex-col items-center text-gray-800 dark:text-white relative">
+          <Navbar className="absolute top-0 left-0 right-0" />
           <div className="w-full">{children}</div>
           <Footer />
         </div>
