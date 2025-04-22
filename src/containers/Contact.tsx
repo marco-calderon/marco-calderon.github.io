@@ -21,26 +21,11 @@ const Contact = () => {
             >
               <button
                 type="button"
-                className="flex flex-row items-center justify-center gap-2 px-8 py-4 text-white bg-green-500 rounded-full scrollto align-self-center cursor-pointer"
+                className="flex flex-row items-center justify-center gap-2 px-8 h-[50px] text-white bg-green-500 rounded scrollto align-self-center cursor-pointer"
               >
                 <Icon icon="bxl:upwork" className="text-4xl" />
 
-                <span>Upwork profile</span>
-
-                <Icon icon="bi:arrow-right" />
-              </button>
-            </Link>
-          </div>
-
-          <div className="flex flex-col items-center col-12">
-            <Link href="https://github.com/marco-calderon" target="_blank">
-              <button
-                type="button"
-                className="flex flex-row items-center justify-center gap-2 px-8 py-4 text-black bg-white rounded-full scrollto align-self-center cursor-pointer"
-              >
-                <Icon icon="mdi:github" className="text-4xl" />
-
-                <span>GitHub profile</span>
+                <span>Hire me on Upwork</span>
 
                 <Icon icon="bi:arrow-right" />
               </button>
