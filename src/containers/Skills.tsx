@@ -9,7 +9,7 @@ const Skills = () => {
       >
         <div className="row">
           <div className="col-12">
-            <header className="flex flex-col items-center mb-5 w-100">
+            <header className="flex flex-col items-center mb-5 w-full">
               <p className="text-4xl ">Skills</p>
             </header>
           </div>

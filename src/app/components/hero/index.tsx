@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroCtaButton from './hero-cta-button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Hero: React.FC = () => {
   return (
@@ -17,9 +18,9 @@ const Hero: React.FC = () => {
             high-performance applications that are scalable, maintainable, and
             designed to grow with evolving user needs.
           </p>
-          <a href="#about" className="">
+          <Link href="#portfolio">
             <HeroCtaButton>Case Studies</HeroCtaButton>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="background-animated"></div>

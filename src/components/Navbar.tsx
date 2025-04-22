@@ -86,10 +86,12 @@ const Navbar = ({ className }: NavbarProps) => {
 
             <div className="flex-1" />
 
-            <NavbarCtaButton className="hidden lg:flex flex-row items-center gap-2">
-              Contact
-              <ChevronRight />
-            </NavbarCtaButton>
+            <Link href="/#contact">
+              <NavbarCtaButton className="hidden lg:flex flex-row items-center gap-2">
+                Contact
+                <ChevronRight />
+              </NavbarCtaButton>
+            </Link>
 
             <div className="inline-block fixed top-5 right-5 xs:inline-block sm:inline-block md:hidden lg:hidden xl:hidden z-100">
               <Icon
