@@ -4,10 +4,10 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="flex flex-row items-start justify-center w-full py-16 text-white bg-slate-600">
-      <div className="w-full">
-        <div className="flex flex-row items-start w-full">
-          <div className="flex flex-col items-center flex-1">
+    <footer className="flex flex-row items-start justify-center w-full py-16 text-white bg-[#10061F]">
+      <div className="min-w-[1300px]">
+        <div className="flex flex-row items-start justify-between w-full">
+          <div className="flex flex-col items-center">
             <h4 className="mb-4 text-lg font-bold">Links</h4>
             <ul className="flex flex-col gap-2">
               <li className="flex flex-row items-center transition-all hover:text-blue-600 dark:hover:text-blue-300">
@@ -64,33 +64,28 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="flex flex-col items-center flex-1">
+          <div className="flex flex-col items-start">
             <h4 className="mb-4 text-lg font-bold">Services</h4>
             <ul className="flex flex-col gap-2">
-              <li className="flex flex-row items-center transition-all hover:text-blue-600 dark:hover:text-blue-300">
-                <Icon icon="bi:chevron-right" />
+              <li className="flex flex-row items-center transition-all">
                 Back end development
               </li>
-              <li className="flex flex-row items-center transition-all hover:text-blue-600 dark:hover:text-blue-300">
-                <Icon icon="bi:chevron-right" />
+              <li className="flex flex-row items-center transition-all">
                 Front end development
               </li>
-              <li className="flex flex-row items-center transition-all hover:text-blue-600 dark:hover:text-blue-300">
-                <Icon icon="bi:chevron-right" />
+              <li className="flex flex-row items-center transition-all">
                 REST API development
               </li>
-              <li className="flex flex-row items-center transition-all hover:text-blue-600 dark:hover:text-blue-300">
-                <Icon icon="bi:chevron-right" />
+              <li className="flex flex-row items-center transition-all">
                 Mobile app development
               </li>
-              <li className="flex flex-row items-center transition-all hover:text-blue-600 dark:hover:text-blue-300">
-                <Icon icon="bi:chevron-right" />
+              <li className="flex flex-row items-center transition-all">
                 Database administration
               </li>
             </ul>
           </div>
 
-          <div className="flex-1 text-center text-md-start flex items-center justify-center gap-4">
+          <div className="text-center text-md-start flex items-center justify-center gap-4">
             <Link
               className="transition-all text-inherit hover:text-blue-600 dark:hover:text-blue-300"
               href="https://github.com/marco-calderon"
@@ -100,9 +95,9 @@ export default function Footer() {
 
             <Link
               className="transition-all text-inherit hover:text-blue-600 dark:hover:text-blue-300"
-              href="https://github.com/marco-calderon"
+              href="https://www.upwork.com/freelancers/~01c5799b491f5c8578"
             >
-              <Icon icon="fluent:mail-16-filled" className="text-2xl" />
+              <Icon icon="simple-icons:upwork" className="text-2xl" />
             </Link>
           </div>
         </div>
