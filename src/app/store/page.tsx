@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '../../components/Layout';
 import { InferGetStaticPropsType, NextPage, NextPageContext } from 'next';
 import client from '../../../tina/__generated__/client';
 import { ProductModel } from '../../lib/models/product.model';
@@ -18,7 +17,7 @@ const StorePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   const productsList = data.productsConnection.edges;
 
   return (
-    <Layout title="Store - Marco Calderon">
+    <>
       <section
         id="header"
         className="w-full flex flex-col items-center justify-center h-[40vh]"
@@ -41,7 +40,7 @@ const StorePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           }
         />
       </section>
-    </Layout>
+    </>
   );
 };
 
