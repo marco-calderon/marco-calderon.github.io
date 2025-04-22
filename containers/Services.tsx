@@ -28,7 +28,7 @@ const Services = () => {
 							<h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
 								Front End
 							</h3>
-							<p className="flex-1 flex-grow group-hover:text-white">
+							<p className="flex-1 grow group-hover:text-white">
 								Modern Front End development with React, Angular and plain HTML,
 								JavaScript and CSS. I can also work with Bootstrap, TailwindCSS,
 								Foundation, and other styling solutions for your projects.
@@ -48,7 +48,7 @@ const Services = () => {
 							<h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
 								Back End
 							</h3>
-							<p className="flex-1 flex-grow mb-20 group-hover:text-white">
+							<p className="flex-1 grow mb-20 group-hover:text-white">
 								Using modern technologies and used frameworks such as Django,
 								ASP.NET, Spring Framework, Express, Nest.js, Ruby on Rails. If
 								you have another option, we can discuss it.
@@ -68,7 +68,7 @@ const Services = () => {
 							<h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
 								REST API Development
 							</h3>
-							<p className="flex-1 flex-grow mb-20 group-hover:text-white">
+							<p className="flex-1 grow mb-20 group-hover:text-white">
 								Integrating, implementing REST APIs with your selected
 								technology. Optimization of existing code for performance (in
 								time and memory).
@@ -88,7 +88,7 @@ const Services = () => {
 							<h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
 								Database Administration and Development
 							</h3>
-							<p className="flex-1 flex-grow mb-20 group-hover:text-white">
+							<p className="flex-1 grow mb-20 group-hover:text-white">
 								From making performant queries to database schema migrations. I
 								can also work with ETL tasks.
 							</p>
@@ -107,7 +107,7 @@ const Services = () => {
 							<h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
 								Data Mining and Processing
 							</h3>
-							<p className="flex-1 flex-grow mb-20 group-hover:text-white">
+							<p className="flex-1 grow mb-20 group-hover:text-white">
 								Integrate business logic into data processing from different
 								sources, such as APIs and dynamic websites.
 							</p>
@@ -126,7 +126,7 @@ const Services = () => {
 							<h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
 								DevOps
 							</h3>
-							<p className="flex-1 flex-grow mb-20 group-hover:text-white">
+							<p className="flex-1 grow mb-20 group-hover:text-white">
 								If you need to manage your development operations, I can help
 								you in the cloud your project uses.
 							</p>

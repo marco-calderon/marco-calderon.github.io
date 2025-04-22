@@ -14,7 +14,7 @@ const Navbar = ({ transparent }: NavbarProps) => {
     <>
       <header
         id="header"
-        className={`fixed z-[100] w-full px-[20px] lg:px-[60px] py-6 transition-all print:hidden ${
+        className={`fixed z-100 w-full px-[20px] lg:px-[60px] py-6 transition-all print:hidden ${
           !transparent
             ? 'backdrop-blur-md bg-white/50 dark:bg-gray-900/50'
             : 'bg-transparent'
@@ -81,7 +81,7 @@ const Navbar = ({ transparent }: NavbarProps) => {
               </li>
               <li>
                 <Link
-                  className="flex flex-row items-center gap-2 font-bold text-transparent transition-all bg-clip-text bg-gradient-to-r from-green-300 hover:from-blue-300 to-blue-300 hover:to-green-300 group"
+                  className="flex flex-row items-center gap-2 font-bold text-transparent transition-all bg-clip-text bg-linear-to-r from-green-300 hover:from-blue-300 to-blue-300 hover:to-green-300 group"
                   href="/store"
                 >
                   <Icon
@@ -111,7 +111,7 @@ const Navbar = ({ transparent }: NavbarProps) => {
               </Link>
             </div>
 
-            <div className="inline-block fixed top-5 right-5 xs:inline-block sm:inline-block md:hidden lg:hidden xl:hidden z-[100]">
+            <div className="inline-block fixed top-5 right-5 xs:inline-block sm:inline-block md:hidden lg:hidden xl:hidden z-100">
               <Icon
                 icon="bi:list"
                 className="w-8 h-8 text-black cursor-pointer dark:text-white"

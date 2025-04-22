@@ -30,7 +30,7 @@ const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
     <AnimatePresence>
       {open && (
         <motion.div
-          className="z-[60] flex fixed top-0 bottom-0 left-0 right-0 bg-white/50 dark:bg-gray-900/50 w-full h-[100vh] items-center justify-center backdrop-blur-lg"
+          className="z-60 flex fixed top-0 bottom-0 left-0 right-0 bg-white/50 dark:bg-gray-900/50 w-full h-[100vh] items-center justify-center backdrop-blur-lg"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -90,7 +90,7 @@ const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
               </motion.h4>
             </Link>
             <Link
-              className="text-4xl font-bold text-transparent transition-all bg-clip-text bg-gradient-to-r from-green-300 hover:from-blue-300 to-blue-300 hover:to-green-300 group"
+              className="text-4xl font-bold text-transparent transition-all bg-clip-text bg-linear-to-r from-green-300 hover:from-blue-300 to-blue-300 hover:to-green-300 group"
               href="/store"
             >
               <motion.h4
