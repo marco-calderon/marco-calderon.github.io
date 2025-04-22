@@ -69,14 +69,6 @@ const Navbar = ({ className }: NavbarProps) => {
               <li>
                 <Link
                   className="text-[15px] font-medium tracking-widest text-white hover:text-white"
-                  href="/#contact"
-                >
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-[15px] font-medium tracking-widest text-white hover:text-white"
                   href="/resume"
                 >
                   Resume
