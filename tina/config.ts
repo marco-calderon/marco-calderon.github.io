@@ -1,6 +1,6 @@
 import { defineConfig } from 'tinacms';
-import { tags } from '../lib/data/tags.data';
-import { categories } from '../lib/data/category.data';
+import { tags } from '../src/lib/data/tags.data';
+import { categories } from '../src/lib/data/category.data';
 
 const allTags = tags?.map((tag) => ({
   label: tag.name,
