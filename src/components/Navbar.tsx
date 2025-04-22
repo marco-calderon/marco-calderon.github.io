@@ -4,6 +4,7 @@ import FullScreenMenu from '@/containers/FullScreenMenu';
 import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export type NavbarProps = {
   transparent?: boolean;
@@ -24,11 +25,12 @@ const Navbar = ({ transparent }: NavbarProps) => {
       >
         <div className="flex items-center justify-between">
           <Link href="/">
-            <div className="cursor-pointer">
-              <h4 className="text-2xl font-bold text-blue-800 dark:text-white">
-                Marco Calderon
-              </h4>
-            </div>
+            <Image
+              src="/logo.svg"
+              alt="Marco Calderon logo"
+              width={38}
+              height={38}
+            />
           </Link>
 
           <nav id="navbar" className="flex flex-row items-center gap-8">

@@ -87,21 +87,97 @@ export default function handler(request: NextRequest) {
             }}
           >
             <svg
+              width="38"
+              height="38"
+              viewBox="0 0 38 38"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              width="256"
-              height="256"
-              viewBox="0 0 24 24"
             >
-              <g
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+              <path
+                d="M4.46227 6.31267H12.1281L17.4011 19.1629H17.667L22.94 6.31267H30.6059V29H24.5796V15.8839H24.4023L19.3508 28.8228H15.7173L10.6658 15.7953H10.4886V29H4.46227V6.31267Z"
+                fill="white"
+              />
+              <foreignObject
+                x="23.3839"
+                y="21.015"
+                width="14.4322"
+                height="14.6216"
               >
-                <path d="M9 16V8l3 5l3-5v8" />
-                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9-9 9s-9-1.8-9-9s1.8-9 9-9z" />
+                <div
+                  style={{
+                    backdropFilter: 'blur(1.39px)',
+                    clipPath: 'url(#bgblur_0_6479_2_clip_path)',
+                    height: '100%',
+                    width: '100%',
+                  }}
+                ></div>
+              </foreignObject>
+              <g
+                filter="url(#filter0_d_6479_2)"
+                data-figma-bg-blur-radius="2.7729"
+              >
+                <circle
+                  cx="30.6"
+                  cy="28.188"
+                  r="4.40005"
+                  fill="url(#paint0_linear_6479_2)"
+                  shape-rendering="crispEdges"
+                />
               </g>
+              <defs>
+                <filter
+                  id="filter0_d_6479_2"
+                  x="23.3839"
+                  y="21.015"
+                  width="14.4322"
+                  height="14.6216"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="0.232598" />
+                  <feGaussianBlur stdDeviation="1.40802" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0.424575 0 0 0 0 0.27451 0 0 0 0 0.917647 0 0 0 0.5 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_6479_2"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_6479_2"
+                    result="shape"
+                  />
+                </filter>
+                <clipPath
+                  id="bgblur_0_6479_2_clip_path"
+                  transform="translate(-23.3839 -21.015)"
+                >
+                  <circle cx="30.6" cy="28.188" r="4.40005" />
+                </clipPath>
+                <linearGradient
+                  id="paint0_linear_6479_2"
+                  x1="32.8898"
+                  y1="26.5267"
+                  x2="27.9959"
+                  y2="31.6452"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#2C80FF" />
+                  <stop offset="1" stop-color="#6C46EA" stop-opacity="0.5" />
+                </linearGradient>
+              </defs>
             </svg>
           </div>
         </div>
