@@ -18,10 +18,10 @@ const NavbarCtaButton: React.FC<NavbarCtaButtonProps> = ({
   ...rest
 }) => {
   return (
-    <div style={{ borderRadius: 4, overflow: 'hidden' }}>
+    <div className="rounded overflow-hidden cursor-pointer">
       <button
         style={gradientBorderStyle}
-        className={`h-[50px] flex flex-row items-center justify-center px-10 text-white ${className}`}
+        className={`h-[50px] flex flex-row items-center justify-center px-10 text-white  ${className}`}
         type={type ?? 'button'}
         {...rest}
       >

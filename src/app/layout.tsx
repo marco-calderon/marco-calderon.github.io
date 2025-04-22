@@ -46,6 +46,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+      </head>
       <body className={`${clashDisplay.className} font-sans`}>
         <div className="flex flex-col items-center text-gray-800 dark:text-white relative">
           <Navbar className="absolute top-0 left-0 right-0" />
