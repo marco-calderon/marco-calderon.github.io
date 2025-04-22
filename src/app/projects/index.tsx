@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../../components/Layout';
+import Layout from '../../src/components/Layout';
 import { InferGetStaticPropsType, NextPage, NextPageContext } from 'next';
-import { PortfolioModel } from '../../lib/models/portfolio.model';
+import { PortfolioModel } from '../../src/lib/models/portfolio.model';
 import client from '../../tina/__generated__/client';
 import PortfolioSquared from '../../containers/PortfolioSquared';
 

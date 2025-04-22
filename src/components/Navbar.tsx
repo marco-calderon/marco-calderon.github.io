@@ -1,7 +1,9 @@
+'use client';
+
+import FullScreenMenu from '@/containers/FullScreenMenu';
 import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import FullScreenMenu from '../containers/FullScreenMenu';
 
 export type NavbarProps = {
   transparent?: boolean;

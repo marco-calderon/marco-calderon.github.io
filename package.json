@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@iconify/react": "^4.0.1",
+    "@iconify/react": "^5.2.1",
     "@tinacms/cli": "^1.5.8",
     "@vercel/analytics": "^1.0.0",
     "@vercel/og": "^0.5.4",

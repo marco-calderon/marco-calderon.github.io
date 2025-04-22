@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React from 'react';
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="flex flex-row items-start justify-center w-full py-16 text-white bg-slate-600">
       <div className="w-full">
@@ -109,6 +109,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import { InferGetStaticPropsType, NextPage, NextPageContext } from 'next';
-import client from '../../tina/__generated__/client';
+import client from '../../../tina/__generated__/client';
 import { ProductModel } from '../../lib/models/product.model';
 import Products from '../../containers/Products';
 import { useTina } from 'tinacms/dist/react';

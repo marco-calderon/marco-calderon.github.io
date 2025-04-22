@@ -1,18 +1,20 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useMemo, useState } from 'react';
-import { PortfolioModel } from '../lib/models/portfolio.model';
 import { motion, AnimatePresence } from 'framer-motion';
-import Tag from '../components/Tag';
+import { PortfolioModel } from '../lib/models/portfolio.model';
+import Tag from '@/components/Tag';
 import { tags } from '../lib/data/tags.data';
 
-export type PortfolioProps = {
+export type PortfolioSquaredProps = {
   projects: PortfolioModel[];
 };
 
 export type Filter = 'web' | 'mobile' | 'full' | 'all';
 
-const Portfolio = ({ projects }: PortfolioProps) => {
+const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
   const [filter, setFilter] = useState<Filter>('all');
 
   const filteredProjects = useMemo(
@@ -25,10 +27,7 @@ const Portfolio = ({ projects }: PortfolioProps) => {
 
   return (
     <section id="portfolio">
-      <div
-        className="w-full px-8 mt-20 xs:px-20 sm:px-20 md:px-40 lg:px-40 xl:px-40"
-        data-aos="fade-up"
-      >
+      <div className="w-full mt-20" data-aos="fade-up">
         <header className="flex flex-col flex-wrap items-center w-full mb-5">
           <h2 className="text-base font-bold text-blue-700 uppercase dark:text-blue-300">
             Portfolio
@@ -77,7 +76,7 @@ const Portfolio = ({ projects }: PortfolioProps) => {
           </ul>
         </div>
         <div
-          className="grid gap-8 transition-all xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3"
+          className="grid transition-all xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3"
           data-aos="fade-up"
           data-aos-delay="200"
         >
@@ -93,17 +92,17 @@ const Portfolio = ({ projects }: PortfolioProps) => {
                   layout
                 >
                   <Link href={p.id.replace('.mdx', '')}>
-                    <div className="relative transition-all cursor-pointer rounded-3xl bg-white/75 group">
+                    <div className="relative transition-all cursor-pointer bg-white/75 group">
                       {p.imgUrl ? (
                         <Image
                           src={p.imgUrl}
-                          className="transition-all rounded-3xl"
+                          className="transition-all"
                           alt=""
                           width={800}
                           height={600}
                         />
                       ) : null}
-                      <div className="absolute top-0 bottom-0 left-0 right-0 z-50 flex flex-col items-center justify-center p-4 text-center transition-all opacity-0 rounded-3xl backdrop-blur-md bg-white/50 group-hover:opacity-100">
+                      <div className="absolute top-0 bottom-0 left-0 right-0 z-50 flex flex-col items-center justify-center text-center transition-all opacity-0 backdrop-blur-md bg-white/50 group-hover:opacity-100">
                         <h4 className="text-lg font-bold text-blue-900">
                           {p.title}
                         </h4>
@@ -132,4 +131,4 @@ const Portfolio = ({ projects }: PortfolioProps) => {
   );
 };
 
-export default Portfolio;
+export default PortfolioSquared;

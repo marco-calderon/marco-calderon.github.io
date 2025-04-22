@@ -1,11 +1,11 @@
 import React from 'react';
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
-import ProjectTitle from '../../components/ProjectTitle';
-import Layout from '../../components/Layout';
+import ProjectTitle from '../../src/components/ProjectTitle';
+import Layout from '../../src/components/Layout';
 import { useTina } from 'tinacms/dist/react';
 import { client } from '../../tina/__generated__/client';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
-import Video from '../../components/Video';
+import Video from '../../src/components/Video';
 
 const components = {
   Video: (props: any) => (
