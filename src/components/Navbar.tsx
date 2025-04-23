@@ -22,7 +22,7 @@ const Navbar = ({ className }: NavbarProps) => {
         id="header"
         className={cn('z-100 w-full print:hidden', className)}
       >
-        <div className="flex items-center max-w-[1300px] h-[88px] mx-auto gap-[70px]">
+        <div className="flex items-center max-w-full lg:max-w-[1300px]  h-[88px] mx-auto gap-[70px]">
           <Link href="/">
             <Image
               src="/logo.svg"
