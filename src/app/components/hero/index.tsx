@@ -5,10 +5,10 @@ import Link from 'next/link';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative h-screen min-h-[800px] flex items-center justify-center text-white background-animated">
-      <div className="max-w-full lg:max-w-[1300px] flex flex-col items-start z-10">
-        <div className="flex flex-col items-start w-1/2 gap-10">
-          <h1 className="text-3xl md:text-4xl lg:text-[90px] leading-[97px] font-medium">
+    <section className="relative h-screen min-h-auto md:min-h-[800px] flex items-center justify-center text-white background-animated px-5 md:px-0">
+      <div className="max-w-auto lg:max-w-[1300px] flex flex-col items-start z-10">
+        <div className="flex flex-col items-start w-full lg:w-1/2 gap-10">
+          <h1 className="text-3xl md:text-4xl lg:text-[90px] lg:leading-[97px] font-medium">
             Modern
             <br /> Application
             <br /> Engineering

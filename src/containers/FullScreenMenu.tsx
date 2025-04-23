@@ -89,23 +89,6 @@ const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
                 Resume
               </motion.h4>
             </Link>
-            <Link
-              className="text-4xl font-bold text-transparent transition-all bg-clip-text bg-linear-to-r from-green-300 hover:from-blue-300 to-blue-300 hover:to-green-300 group"
-              href="/store"
-            >
-              <motion.h4
-                variants={item}
-                onClick={onClose}
-                style={linkStyle}
-                className="flex flex-row items-center gap-2"
-              >
-                <Icon
-                  icon="ph:bag-simple-fill"
-                  className="text-green-300 transition-all dark:text-green-300 group-hover:text-blue-400"
-                />
-                Store
-              </motion.h4>
-            </Link>
 
             <div className="flex flex-row items-center justify-center gap-4">
               <Link
@@ -124,7 +107,7 @@ const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
                 className="transition-all dark:text-white hover:text-green-500"
               >
                 <motion.h4 variants={item} onClick={onClose} style={linkStyle}>
-                  <Icon icon="fluent:mail-16-filled" className="text-4xl" />
+                  <Icon icon="simple-icons:upwork" className="text-4xl" />
                 </motion.h4>
               </Link>
             </div>

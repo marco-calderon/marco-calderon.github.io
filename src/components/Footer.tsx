@@ -5,8 +5,8 @@ import React from 'react';
 export default function Footer() {
   return (
     <footer className="flex flex-row items-start justify-center w-full py-16 text-white bg-[#10061F]">
-      <div className="min-w-[1300px]">
-        <div className="flex flex-row items-start justify-between w-full">
+      <div className="min-w-auto lg:min-w-[1300px]">
+        <div className="flex flex-col md:flex-row items-start justify-between w-full gap-5">
           <div className="flex flex-col items-center">
             <h4 className="mb-4 text-lg font-bold">Links</h4>
             <ul className="flex flex-col gap-2">
