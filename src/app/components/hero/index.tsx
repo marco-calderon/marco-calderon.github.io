@@ -8,10 +8,10 @@ const Hero: React.FC = () => {
     <section className="relative h-screen min-h-auto md:min-h-[800px] flex items-center justify-center text-white background-animated px-5 md:px-0">
       <div className="max-w-auto lg:max-w-[1300px] flex flex-col items-start z-10">
         <div className="flex flex-col items-start w-full lg:w-1/2 gap-10">
-          <h1 className="text-3xl md:text-4xl lg:text-[90px] lg:leading-[97px] font-medium">
+          <h1 className="text-5xl md:text-6xl lg:text-[90px] lg:leading-[97px] font-medium">
             Modern
-            <br /> Application
-            <br /> Engineering
+            <br className="hidden md:flex" /> Application
+            <br className="hidden md:flex" /> Engineering
           </h1>
           <p className="text-base md:text-lg leading-[24px] font-light">
             Partnering with innovative startups and companies to build
