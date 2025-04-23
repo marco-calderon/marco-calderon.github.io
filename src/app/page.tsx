@@ -102,19 +102,3 @@ export default async function HomePage() {
     </>
   );
 }
-
-// export async function getStaticProps(context: NextPageContext) {
-//   const { data } = await client.queries.projectsConnection({
-//     sort: 'createdDate',
-//     last: 100,
-//   });
-//   const projects = data.projectsConnection.edges?.map(
-//     (x) => x?.node as unknown as PortfolioModel
-//   );
-
-//   return {
-//     props: {
-//       projects,
-//     },
-//   };
-// }
