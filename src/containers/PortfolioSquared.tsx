@@ -30,7 +30,7 @@ const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
       <div className="w-full mt-20" data-aos="fade-up">
         <header className="flex flex-col flex-wrap items-center w-full mb-5">
           <h2 className="text-base font-bold text-blue-700 uppercase dark:text-blue-300">
-            Portfolio
+            Case Studies
           </h2>
           <p className="text-4xl ">My latest work</p>
         </header>
