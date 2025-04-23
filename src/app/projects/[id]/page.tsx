@@ -20,7 +20,9 @@ export default async function ProjectDetailsPage({
 export async function generateStaticParams() {
   const { data } = await client.queries.projectsConnection();
 
-  return data.projectsConnection.edges?.map((x) => {
-    return { id: x?.node?._sys.filename };
-  });
+  return (
+    data.projectsConnection.edges?.map((x) => {
+      return { id: x?.node?._sys.filename };
+    }) ?? []
+  );
 }
