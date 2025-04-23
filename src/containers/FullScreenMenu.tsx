@@ -41,7 +41,7 @@ const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
           >
             <Link
               href="/#about"
-              className="text-4xl font-bold transition-all scrollto"
+              className="text-4xl font-semibold transition-all scrollto"
             >
               <motion.h4
                 className="cursor-pointer"
@@ -53,7 +53,7 @@ const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
             </Link>
             <Link
               href="/#services"
-              className="text-4xl font-bold transition-all scrollto"
+              className="text-4xl font-semibold transition-all scrollto"
             >
               <motion.h4
                 className="cursor-pointer"
@@ -65,7 +65,7 @@ const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
             </Link>
             <Link
               href="/#skills"
-              className="text-4xl font-bold transition-all scrollto"
+              className="text-4xl font-semibold transition-all scrollto"
             >
               <motion.h4
                 className="cursor-pointer"
@@ -77,19 +77,19 @@ const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
             </Link>
             <Link
               href="/#portfolio"
-              className="text-4xl font-bold transition-all scrollto"
+              className="text-4xl font-semibold transition-all scrollto"
             >
               <motion.h4
                 className="cursor-pointer"
                 variants={item}
                 onClick={onClose}
               >
-                Portfolio
+                Case Studies
               </motion.h4>
             </Link>
             <Link
               href="/#contact"
-              className="text-4xl font-bold transition-all scrollto"
+              className="text-4xl font-semibold transition-all scrollto"
             >
               <motion.h4
                 className="cursor-pointer"
@@ -101,7 +101,7 @@ const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
             </Link>
             <Link
               href="/resume"
-              className="text-4xl font-bold transition-all scrollto"
+              className="text-4xl font-semibold transition-all scrollto"
             >
               <motion.h4
                 className="cursor-pointer"

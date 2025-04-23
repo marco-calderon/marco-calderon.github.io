@@ -4,14 +4,9 @@ import { Icon } from '@iconify/react';
 const Services = () => {
   return (
     <section id="services">
-      <div
-        className="w-full px-8 mt-20 xs:px-20 sm:px-20 md:px-40 lg:px-40 xl:px-40"
-        data-aos="fade-up"
-      >
+      <div className="w-full px-5 mt-20 md:px-40 xl:px-40" data-aos="fade-up">
         <header className="flex flex-col items-center mb-5 w-full">
-          <h2 className="text-base font-bold text-blue-700 uppercase dark:text-blue-300">
-            Services
-          </h2>
+          <h2 className="text-base font-bold text-blue uppercase">Services</h2>
           <p className="text-4xl ">What I can do</p>
         </header>
 

@@ -1,3 +1,4 @@
+import ChevronRight from '@/icons/chevron-right';
 import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React from 'react';
@@ -25,7 +26,7 @@ const Contact = () => {
               >
                 <span>Hire me on Upwork</span>
 
-                <Icon icon="bi:arrow-right" />
+                <ChevronRight />
               </button>
             </Link>
           </div>

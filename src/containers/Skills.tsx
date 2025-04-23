@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section id="skills" data-aos="fade-up">
       <div
-        className="w-full px-20 mx-auto md:w-3/4 xl:w-2/3"
+        className="w-full px-5 mx-auto md:w-3/4 xl:w-2/3"
         data-aos-delay="200"
       >
         <div className="row">
