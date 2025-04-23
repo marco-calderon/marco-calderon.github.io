@@ -60,6 +60,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --blue: #2c80ff;
+  --purple: #6c46ea;
   --container: 1300px;
 }
 
@@ -67,6 +68,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-blue: var(--blue);
+  --color-purple: var(--purple);
   --font-sans: var(--font-clash-display);
   --width-container: var(--container);
 }
