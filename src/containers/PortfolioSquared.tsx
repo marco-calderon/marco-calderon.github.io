@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useMemo, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import { PortfolioModel } from '../lib/models/portfolio.model';
 import Tag from '@/components/Tag';
 import { tags } from '../lib/data/tags.data';
