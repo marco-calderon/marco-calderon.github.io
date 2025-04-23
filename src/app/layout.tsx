@@ -7,7 +7,7 @@ const clashDisplay = localFont({
   variable: '--font-clash-display',
   src: [
     {
-      path: './assets/fonts/ClashDisplay-ExtraLight.otf',
+      path: './assets/fonts/ClashDisplay-Extralight.otf',
       weight: '200',
       style: 'normal',
     },
@@ -27,7 +27,7 @@ const clashDisplay = localFont({
       style: 'normal',
     },
     {
-      path: './assets/fonts/ClashDisplay-SemiBold.otf',
+      path: './assets/fonts/ClashDisplay-Semibold.otf',
       weight: '600',
       style: 'normal',
     },
