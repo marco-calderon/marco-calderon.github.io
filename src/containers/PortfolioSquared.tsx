@@ -100,6 +100,10 @@ const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
                     transition={{ duration: 0.3 }}
                     className="relative"
                   >
+                    <Link
+                      href={project.id.replace('.mdx', '')}
+                      className="w-full h-full block"
+                    ></Link>
                     <Card className="overflow-hidden bg-gray-900 border-gray-800 transition-all duration-300 hover:border-gray-700 rounded-none shadow-lg">
                       <div className="relative aspect-square overflow-hidden">
                         <Image
@@ -123,9 +127,14 @@ const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
                       }}
                       transition={{ duration: 0.3 }}
                     >
-                      <h3 className="text-xl font-bold text-white mb-2">
-                        {project.title}
-                      </h3>
+                      <Link
+                        href={project.id.replace('.mdx', '')}
+                        className="w-full h-full block"
+                      >
+                        <h3 className="text-xl font-bold text-white mb-2">
+                          {project.title}
+                        </h3>
+                      </Link>
                       <p className="text-gray-300 mb-4 line-clamp-2">
                         {project.description}
                       </p>
