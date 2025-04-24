@@ -85,18 +85,18 @@ const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className={`filter-${p.category} w-full h-full`}
+                  className={`filter-${p.category} w-full h-full aspect-[4/3]`}
                   layout
                 >
                   <Link
                     href={p.id.replace('.mdx', '')}
-                    className="w-full h-full"
+                    className="w-full h-full block"
                   >
-                    <div className="relative transition-all cursor-pointer bg-white/75 group">
+                    <div className="w-full h-full relative transition-all cursor-pointer bg-white/75 group">
                       {p.imgUrl ? (
                         <Image
                           src={p.imgUrl}
-                          className="h-full object-cover"
+                          className="h-full w-full object-cover"
                           alt={p.title}
                           width={800}
                           height={600}
