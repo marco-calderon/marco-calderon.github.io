@@ -82,8 +82,10 @@ const FullScreenMenu = ({ open, onClose }: FullScreenMenuProps) => {
               </motion.h4>
             </Link>
             <Link
-              href="/resume"
-              className="text-4xl font-bold text-blue-500 transition-all scrollto dark:text-white hover:text-blue-700 dark:hover:text-gray-200"
+              href="/Resume_Marco_Calderon.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-4xl font-semibold transition-all scrollto"
             >
               <motion.h4 variants={item} onClick={onClose} style={linkStyle}>
                 Resume

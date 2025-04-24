@@ -68,8 +68,10 @@ const Navbar = ({ className }: NavbarProps) => {
               </li>
               <li>
                 <Link
-                  className="text-[15px] font-medium tracking-widest text-white hover:text-white"
-                  href="/resume"
+                  className="text-[15px] font-medium text-white hover:text-white"
+                  href="/Resume_Marco_Calderon.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Resume
                 </Link>
