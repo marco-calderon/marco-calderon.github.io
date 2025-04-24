@@ -134,7 +134,6 @@ export default defineConfig({
             name: 'description',
             label: 'Description',
             description: 'The description of the project',
-            required: true,
           },
           {
             type: 'datetime',
