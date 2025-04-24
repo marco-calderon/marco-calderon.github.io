@@ -2,6 +2,7 @@ import localFont from 'next/font/local';
 import Footer from '@/components/Footer';
 import '../../styles/globals.css';
 import Navbar from '@/components/Navbar';
+import { ThemeProvider } from '@/components/theme-provider';
 
 const clashDisplay = localFont({
   variable: '--font-clash-display',
@@ -45,17 +46,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/logo.svg" type="image/svg+xml" />
       </head>
       <body className={`${clashDisplay.className} font-sans`}>
-        <div className="flex flex-col items-center text-gray-800 dark:text-white relative">
-          <Navbar className="absolute top-0 left-0 right-0" />
-          <div className="w-full">{children}</div>
-          <Footer />
-        </div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          disableTransitionOnChange
+        >
+          <div className="flex flex-col items-center text-gray-800 dark:text-white relative">
+            <Navbar className="absolute top-0 left-0 right-0" />
+            <div className="w-full">{children}</div>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
