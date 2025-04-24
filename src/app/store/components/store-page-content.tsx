@@ -1,24 +1,28 @@
-import React from 'react';
-import Layout from '../../components/Layout';
-import { InferGetStaticPropsType, NextPage, NextPageContext } from 'next';
-import client from '../../../tina/__generated__/client';
-import { ProductModel } from '../../lib/models/product.model';
-import Products from '../../containers/Products';
+'use client';
+
+import Products from '@/containers/Products';
+import { ProductModel } from '@/lib/models/product.model';
 import { useTina } from 'tinacms/dist/react';
 
-const StorePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
-  ...props
-}: InferGetStaticPropsType<typeof getStaticProps>) => {
+type StorePageContentProps = {
+  query: string;
+  variables: Record<string, any>;
+  data: any;
+};
+
+export default function StorePageContent({ ...props }: StorePageContentProps) {
   const { data } = useTina({
     query: props.query,
     variables: props.variables,
     data: props.data,
   });
 
-  const productsList = data.productsConnection.edges;
+  const productsList = data.productsConnection.edges as {
+    node: ProductModel;
+  }[];
 
   return (
-    <Layout title="Store - Marco Calderon">
+    <>
       <section
         id="header"
         className="w-full flex flex-col items-center justify-center h-[40vh]"
@@ -41,20 +45,6 @@ const StorePage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           }
         />
       </section>
-    </Layout>
+    </>
   );
-};
-
-export async function getStaticProps(context: NextPageContext) {
-  const { data, query, variables } = await client.queries.productsConnection();
-
-  return {
-    props: {
-      data,
-      query,
-      variables,
-    },
-  };
 }
-
-export default StorePage;

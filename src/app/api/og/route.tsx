@@ -5,7 +5,9 @@ export const config = {
   runtime: 'edge',
 };
 
-export default function handler(request: NextRequest) {
+export const dynamic = 'force-dynamic';
+
+export function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
 

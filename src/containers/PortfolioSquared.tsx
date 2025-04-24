@@ -3,10 +3,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useMemo, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import { PortfolioModel } from '../lib/models/portfolio.model';
+import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Icon } from '@iconify/react';
 import Tag from '@/components/Tag';
-import { tags } from '../lib/data/tags.data';
+import { tags } from '@/lib/data/tags.data';
 
 export type PortfolioSquaredProps = {
   projects: PortfolioModel[];
@@ -16,6 +20,7 @@ export type Filter = 'web' | 'mobile' | 'full' | 'all';
 
 const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
   const [filter, setFilter] = useState<Filter>('all');
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   const filteredProjects = useMemo(
     () =>
@@ -29,10 +34,7 @@ const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
     <section id="portfolio">
       <div className="w-full mt-20" data-aos="fade-up">
         <header className="flex flex-col flex-wrap items-center w-full mb-5">
-          <h2 className="text-base font-bold text-blue-700 uppercase dark:text-blue-300">
-            Portfolio
-          </h2>
-          <p className="text-4xl ">My latest work</p>
+          <h1 className="text-4xl md:text-5xl font-medium">Case Studies</h1>
         </header>
 
         <div
@@ -88,21 +90,26 @@ const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className={`filter-${p.category}`}
+                  className={`filter-${p.category} w-full h-full aspect-[4/3]`}
                   layout
                 >
-                  <Link href={p.id.replace('.mdx', '')}>
-                    <div className="relative transition-all cursor-pointer bg-white/75 group">
+                  <Link
+                    href={p.id.replace('.mdx', '')}
+                    className="w-full h-full block"
+                  >
+                    <div className="w-full h-full relative transition-all cursor-pointer bg-white/75 group">
                       {p.imgUrl ? (
                         <Image
                           src={p.imgUrl}
-                          className="transition-all"
-                          alt=""
+                          className="h-full w-full object-cover"
+                          alt={p.title}
                           width={800}
                           height={600}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          priority={false}
                         />
                       ) : null}
-                      <div className="absolute top-0 bottom-0 left-0 right-0 z-50 flex flex-col items-center justify-center text-center transition-all opacity-0 backdrop-blur-md bg-white/50 group-hover:opacity-100">
+                      <div className="absolute inset-0 z-50 flex flex-col items-center justify-center text-center transition-all opacity-0 backdrop-blur-md bg-white/50 group-hover:opacity-100">
                         <h4 className="text-lg font-bold text-blue-900">
                           {p.title}
                         </h4>

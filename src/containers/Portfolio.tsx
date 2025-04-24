@@ -2,9 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useMemo, useState } from 'react';
 import { PortfolioModel } from '../lib/models/portfolio.model';
-import { motion, AnimatePresence } from 'framer-motion';
-import Tag from '../src/components/Tag';
+import { motion, AnimatePresence } from 'motion/react';
 import { tags } from '../lib/data/tags.data';
+import Tag from '@/components/Tag';
 
 export type PortfolioProps = {
   projects: PortfolioModel[];

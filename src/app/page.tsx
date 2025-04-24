@@ -32,7 +32,7 @@ export default async function HomePage() {
       <main id="main">
         <section id="about">
           <div
-            className="w-full px-8 mt-20 xs:px-20 sm:px-20 md:px-40 lg:px-40 xl:px-40"
+            className="w-full mt-20 px-5 sm:px-20 md:px-40 lg:px-40 xl:px-40"
             data-aos="fade-up"
           >
             <div className="grid grid-cols-1 gap-4 auto-rows-1fr xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
@@ -102,19 +102,3 @@ export default async function HomePage() {
     </>
   );
 }
-
-// export async function getStaticProps(context: NextPageContext) {
-//   const { data } = await client.queries.projectsConnection({
-//     sort: 'createdDate',
-//     last: 100,
-//   });
-//   const projects = data.projectsConnection.edges?.map(
-//     (x) => x?.node as unknown as PortfolioModel
-//   );
-
-//   return {
-//     props: {
-//       projects,
-//     },
-//   };
-// }

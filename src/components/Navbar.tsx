@@ -22,7 +22,7 @@ const Navbar = ({ className }: NavbarProps) => {
         id="header"
         className={cn('z-100 w-full print:hidden', className)}
       >
-        <div className="flex items-center max-w-[1300px] h-[88px] mx-auto gap-[70px]">
+        <div className="flex items-center max-w-full lg:max-w-[1300px] h-[88px] mx-auto gap-[70px] px-5">
           <Link href="/">
             <Image
               src="/logo.svg"
@@ -32,11 +32,14 @@ const Navbar = ({ className }: NavbarProps) => {
             />
           </Link>
 
-          <nav id="navbar" className="w-full flex flex-row items-center gap-8">
+          <nav
+            id="navbar"
+            className="hidden w-full lg:flex flex-row items-center gap-8"
+          >
             <ul className="flex flex-row gap-[70px] bg-transparent text-white">
               <li>
                 <Link
-                  className="text-[15px] font-medium tracking-widest text-white hover:text-white"
+                  className="text-[15px] font-medium text-white hover:text-white"
                   href="/#about"
                 >
                   About
@@ -44,7 +47,7 @@ const Navbar = ({ className }: NavbarProps) => {
               </li>
               <li>
                 <Link
-                  className="text-[15px] font-medium tracking-widest text-white hover:text-white"
+                  className="text-[15px] font-medium text-white hover:text-white"
                   href="/#services"
                 >
                   Services
@@ -52,7 +55,7 @@ const Navbar = ({ className }: NavbarProps) => {
               </li>
               <li>
                 <Link
-                  className="text-[15px] font-medium tracking-widest text-white hover:text-white"
+                  className="text-[15px] font-medium text-white hover:text-white"
                   href="/#skills"
                 >
                   Skills
@@ -60,10 +63,10 @@ const Navbar = ({ className }: NavbarProps) => {
               </li>
               <li>
                 <Link
-                  className="text-[15px] font-medium tracking-widest text-white hover:text-white"
+                  className="text-[15px] font-medium text-white hover:text-white"
                   href="/#portfolio"
                 >
-                  Portfolio
+                  Case Studies
                 </Link>
               </li>
               <li>
@@ -86,15 +89,15 @@ const Navbar = ({ className }: NavbarProps) => {
                 <ChevronRight />
               </NavbarCtaButton>
             </Link>
-
-            <div className="inline-block fixed top-5 right-5 xs:inline-block sm:inline-block md:hidden lg:hidden xl:hidden z-100">
-              <Icon
-                icon="bi:list"
-                className="w-8 h-8 text-black cursor-pointer dark:text-white"
-                onClick={() => setMenuOpened(!menuOpened)}
-              ></Icon>
-            </div>
           </nav>
+
+          <div className="inline-block fixed top-5 right-5 sm:inline-block md:hidden z-100">
+            <Icon
+              icon="bi:list"
+              className="w-8 h-8 text-black cursor-pointer dark:text-white"
+              onClick={() => setMenuOpened(!menuOpened)}
+            ></Icon>
+          </div>
         </div>
       </header>
 

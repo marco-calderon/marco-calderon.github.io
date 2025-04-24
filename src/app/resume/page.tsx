@@ -1,7 +1,6 @@
+import Experience from '@/components/Experience';
+import Skills from '@/containers/Skills';
 import React from 'react';
-import Experience from '../components/Experience';
-import Layout from '../components/Layout';
-import Skills from '../containers/Skills';
 
 const getIdentifiableExperiences = (prefix: string, contents: string[]) => {
   return contents.map((c, i) => ({
@@ -10,31 +9,28 @@ const getIdentifiableExperiences = (prefix: string, contents: string[]) => {
   }));
 };
 
-const Resume = () => {
+export default async function ResumePage() {
   return (
-    <Layout title="Resume - Marco Calderon">
-      <main>
+    <main className="w-full flex flex-col items-center">
+      <div className="w-full max-w-[1300px] px-5">
         <section data-aos="fade-up">
-          <div
-            className="w-full px-8 mt-20 xs:px-20 sm:px-20 md:px-40 lg:px-40 xl:px-40"
-            data-aos-delay="200"
-          >
-            <div className="mt-5 px-2 lg:px-20">
-              <h1 className="text-5xl">Full Stack Web Developer</h1>
+          <div data-aos-delay="200">
+            <div className="mt-20">
+              <h1 className="text-5xl font-medium">Full Stack Web Developer</h1>
             </div>
 
-            <p className="mt-5 mb-4 px-2 lg:px-20 py-4 lg:py-20">
-              I&apos;m a Full stack web developer with 8 years of experience in
-              programming for web applications. I like working on complex
-              projects where Front end and Back end interact with each other,
-              dealing with the complexity of integrating REST APIs, external
-              services, and data persistence layers. I&apos;m always happy to
-              tackle new programming languages, frameworks, and technologies and
-              keep up to date with innovation in my field.
+            <p className="my-10 md:my-20">
+              I&apos;m a Full stack web developer with more than 10 years of
+              experience in programming for web applications. I like working on
+              complex projects where Front end and Back end interact with each
+              other, dealing with the complexity of integrating REST APIs,
+              external services, and data persistence layers. I&apos;m always
+              happy to tackle new programming languages, frameworks, and
+              technologies and keep up to date with innovation in my field.
             </p>
 
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 auto-rows-1fr px-2 lg:px-20">
-              <div className="flex-1 p-4 text-white shadow-md rounded-xl bg-slate-600 shadow-gray-300 dark:shadow-slate-700">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 auto-rows-1fr">
+              <div className="flex-1 p-8 text-white shadow-md rounded-xl bg-blue">
                 <h5 className="mb-4 font-bold">Hard Skills</h5>
                 <ul>
                   <li>Full stack Web Developer</li>
@@ -43,21 +39,23 @@ const Resume = () => {
                   <li>REST API</li>
                   <li>Web Services</li>
                   <li>Front end Frameworks</li>
+                  <li>Agile development</li>
                 </ul>
               </div>
-              <div className="flex-1 p-4 text-white shadow-md rounded-xl bg-slate-600 shadow-gray-300 dark:shadow-slate-700">
+              <div className="flex-1 p-8 text-white shadow-md rounded-xl bg-blue">
                 <h5 className="mb-4 font-bold">Soft Skills</h5>
                 <ul>
                   <li>Teamwork</li>
                   <li>Leadership</li>
-                  <li>Communication and clarity on requirements</li>
+                  <li>Communication</li>
                   <li>Problem-solving attitude</li>
                   <li>Project management</li>
                   <li>Process analyst</li>
                   <li>Time management</li>
+                  <li>Prioritization</li>
                 </ul>
               </div>
-              <div className="flex-1 p-4 text-white shadow-md rounded-xl bg-slate-600 shadow-gray-300 dark:shadow-slate-700">
+              <div className="flex-1 p-8 text-white shadow-md rounded-xl bg-blue">
                 <h5 className="mb-4 font-bold">Languages</h5>
                 <ul>
                   <li>Spanish: Native</li>
@@ -71,10 +69,7 @@ const Resume = () => {
         <Skills />
 
         <section data-aos="fade-up">
-          <div
-            className="w-full px-8 sm:px-20 md:px-40 lg:px-40 xl:px-40"
-            data-aos-delay="200"
-          >
+          <div className="w-full px-5 md:px-20" data-aos-delay="200">
             <div className="row">
               <header className="flex flex-col items-center mb-5 w-full">
                 <p className="text-4xl">Experience</p>
@@ -102,6 +97,7 @@ const Resume = () => {
                     'Ecommerce platform development using Next.js and microservices.',
                     'Frontend design implementation for an documentation research AI startup.',
                     'Full stack development using React and Django (Python3).',
+                    'eCommerce platform development for music licensing using Next.js and Nest.js (Node.js).',
                   ])}
                 />
 
@@ -167,10 +163,7 @@ const Resume = () => {
         </section>
 
         <section data-aos="fade-up">
-          <div
-            className="w-full px-8 mt-20 xs:px-20 sm:px-20 md:px-40 lg:px-40 xl:px-40"
-            data-aos-delay="200"
-          >
+          <div className="w-full px-5 mt-20 md:px-20" data-aos-delay="200">
             <div className="row">
               <header className="flex flex-col items-center mb-5 w-full">
                 <p className="text-4xl ">Education</p>
@@ -206,9 +199,7 @@ const Resume = () => {
             </div>
           </div>
         </section>
-      </main>
-    </Layout>
+      </div>
+    </main>
   );
-};
-
-export default Resume;
+}

@@ -1,3 +1,4 @@
+import ChevronRight from '@/icons/chevron-right';
 import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React from 'react';
@@ -21,28 +22,11 @@ const Contact = () => {
             >
               <button
                 type="button"
-                className="flex flex-row items-center justify-center gap-2 px-8 py-4 text-white bg-green-500 rounded-full scrollto align-self-center cursor-pointer"
+                className="flex flex-row items-center justify-center gap-2 px-8 h-[50px] text-white bg-linear-200 from-blue to-purple/50 rounded scrollto align-self-center cursor-pointer"
               >
-                <Icon icon="bxl:upwork" className="text-4xl" />
+                <span>Hire me on Upwork</span>
 
-                <span>Upwork profile</span>
-
-                <Icon icon="bi:arrow-right" />
-              </button>
-            </Link>
-          </div>
-
-          <div className="flex flex-col items-center col-12">
-            <Link href="https://github.com/marco-calderon" target="_blank">
-              <button
-                type="button"
-                className="flex flex-row items-center justify-center gap-2 px-8 py-4 text-black bg-white rounded-full scrollto align-self-center cursor-pointer"
-              >
-                <Icon icon="mdi:github" className="text-4xl" />
-
-                <span>GitHub profile</span>
-
-                <Icon icon="bi:arrow-right" />
+                <ChevronRight />
               </button>
             </Link>
           </div>
