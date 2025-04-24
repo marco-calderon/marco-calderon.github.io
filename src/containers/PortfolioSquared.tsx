@@ -5,8 +5,10 @@ import Link from 'next/link';
 import React, { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { PortfolioModel } from '../lib/models/portfolio.model';
-import Tag from '@/components/Tag';
-import { tags } from '../lib/data/tags.data';
+import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Icon } from '@iconify/react';
 
 export type PortfolioSquaredProps = {
   projects: PortfolioModel[];
@@ -16,6 +18,7 @@ export type Filter = 'web' | 'mobile' | 'full' | 'all';
 
 const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
   const [filter, setFilter] = useState<Filter>('all');
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   const filteredProjects = useMemo(
     () =>
@@ -79,51 +82,95 @@ const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
         >
           <AnimatePresence presenceAffectsLayout>
             {filteredProjects &&
-              filteredProjects.map((p) => (
+              filteredProjects.map((project, index) => (
                 <motion.div
-                  key={p.id}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  className={`filter-${p.category} w-full h-full aspect-[4/3]`}
-                  layout
+                  key={project.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
+                  onHoverStart={() => setHoveredId(project.id)}
+                  onHoverEnd={() => setHoveredId(null)}
+                  className="relative"
                 >
-                  <Link
-                    href={p.id.replace('.mdx', '')}
-                    className="w-full h-full block"
+                  <motion.div
+                    animate={{
+                      scale: hoveredId === project.id ? 1.05 : 1,
+                      zIndex: hoveredId === project.id ? 10 : 1,
+                    }}
+                    transition={{ duration: 0.3 }}
+                    className="relative"
                   >
-                    <div className="w-full h-full relative transition-all cursor-pointer bg-white/75 group">
-                      {p.imgUrl ? (
+                    <Card className="overflow-hidden bg-gray-900 border-gray-800 transition-all duration-300 hover:border-gray-700 rounded-none shadow-lg">
+                      <div className="relative aspect-square overflow-hidden">
                         <Image
-                          src={p.imgUrl}
-                          className="h-full w-full object-cover"
-                          alt={p.title}
-                          width={800}
-                          height={600}
+                          src={project.imgUrl || '/placeholder.svg'}
+                          alt={project.title}
+                          fill
+                          className="object-cover"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          priority={false}
                         />
-                      ) : null}
-                      <div className="absolute inset-0 z-50 flex flex-col items-center justify-center text-center transition-all opacity-0 backdrop-blur-md bg-white/50 group-hover:opacity-100">
-                        <h4 className="text-lg font-bold text-blue-900">
-                          {p.title}
-                        </h4>
-                        <div className="flex-row gap-1 mb-2 text-black d-flex">
-                          {p.tags &&
-                            p.tags.map((tagId) => {
-                              const t = tags.find((t) => t.id === tagId);
-                              return (
-                                <Tag
-                                  key={t?.id}
-                                  tag={t?.name ?? ''}
-                                  icon={t?.icon ?? ''}
-                                />
-                              );
-                            })}
-                        </div>
                       </div>
-                    </div>
-                  </Link>
+                    </Card>
+
+                    <motion.div
+                      className="absolute top-full left-0 right-0 p-4 bg-gray-900 shadow-lg border border-gray-800 rounded-b-none"
+                      initial={{ opacity: 0, y: -20 }}
+                      animate={{
+                        opacity: hoveredId === project.id ? 1 : 0,
+                        y: hoveredId === project.id ? 0 : -20,
+                        pointerEvents:
+                          hoveredId === project.id ? 'auto' : 'none',
+                      }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <h3 className="text-xl font-bold text-white mb-2">
+                        {project.title}
+                      </h3>
+                      <p className="text-gray-300 mb-4 line-clamp-2">
+                        {project.description}
+                      </p>
+
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.tags.map((tag) => (
+                          <Badge
+                            key={tag}
+                            variant="secondary"
+                            className="bg-gray-800 text-gray-300 hover:bg-gray-700"
+                          >
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+
+                      <div className="flex gap-3">
+                        <Button
+                          asChild
+                          size="sm"
+                          variant="default"
+                          className="gap-2"
+                        >
+                          <Link href={project.demoUrl ?? ''}>
+                            <Icon
+                              icon="mingcute:external-link-fill"
+                              className="h-4 w-4"
+                            />
+                            Demo
+                          </Link>
+                        </Button>
+                        <Button
+                          asChild
+                          size="sm"
+                          variant="outline"
+                          className="gap-2"
+                        >
+                          <Link href={project.repoUrl ?? ''}>
+                            <Icon icon="mdi:github" className="h-4 w-4" />
+                            Code
+                          </Link>
+                        </Button>
+                      </div>
+                    </motion.div>
+                  </motion.div>
                 </motion.div>
               ))}
           </AnimatePresence>

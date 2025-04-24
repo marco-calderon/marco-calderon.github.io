@@ -130,6 +130,13 @@ export default defineConfig({
             description: 'The thumbnail image',
           },
           {
+            type: 'string',
+            name: 'description',
+            label: 'Description',
+            description: 'The description of the project',
+            required: true,
+          },
+          {
             type: 'datetime',
             name: 'createdDate',
             label: 'Created date',

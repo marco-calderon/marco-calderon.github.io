@@ -6,8 +6,8 @@ const gradientBorderStyle = {
   borderWidth: '2px',
   borderRadius: '4px',
   borderStyle: 'solid',
-  mozBorderImage: 'linear-gradient(200deg, #2C80FF, #6C46EA) 1',
-  webkitBorderImage: 'linear-gradient(200deg, #2C80FF, #6C46EA) 1',
+  // mozBorderImage: 'linear-gradient(200deg, #2C80FF, #6C46EA) 1',
+  // webkitBorderImage: 'linear-gradient(200deg, #2C80FF, #6C46EA) 1',
   borderImage: 'linear-gradient(200deg, #2C80FF, #6C46EA) 1',
 };
 

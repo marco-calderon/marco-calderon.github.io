@@ -14,6 +14,9 @@ importers:
       '@iconify/react':
         specifier: ^5.2.1
         version: 5.2.1(react@19.1.0)
+      '@radix-ui/react-slot':
+        specifier: ^1.2.0
+        version: 1.2.0(@types/react@18.0.21)(react@19.1.0)
       '@tinacms/cli':
         specifier: 0.0.0-c6a6335-20250416234606
         version: 0.0.0-c6a6335-20250416234606(@codemirror/language@6.0.0)(@types/node@18.11.0)(@types/react-dom@18.0.6)(@types/react@18.0.21)(abstract-level@1.0.4)(graphql-sock@1.0.1(graphql@15.8.0))(immer@10.1.1)(lightningcss@1.29.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@3.29.5)(scheduler@0.26.0)(sucrase@3.35.0)

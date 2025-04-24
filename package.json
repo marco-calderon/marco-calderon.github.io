@@ -12,6 +12,7 @@
   "dependencies": {
     "@dotenvx/dotenvx": "^1.41.0",
     "@iconify/react": "^5.2.1",
+    "@radix-ui/react-slot": "^1.2.0",
     "@tinacms/cli": "0.0.0-c6a6335-20250416234606",
     "@vercel/analytics": "^1.0.0",
     "@vercel/og": "^0.5.4",
