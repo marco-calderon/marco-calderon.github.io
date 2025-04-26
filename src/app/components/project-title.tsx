@@ -11,7 +11,7 @@ export type ProjectTitleProps = {
 
 const ProjectTitle = ({ project }: ProjectTitleProps) => {
   return (
-    <div className="mb-4">
+    <div className="mb-4 w-full">
       <div className="flex flex-wrap justify-between mb-2">
         <h2 className="mb-4 text-4xl font-bold md:text-6xl">
           {project?.title}
@@ -54,7 +54,7 @@ const ProjectTitle = ({ project }: ProjectTitleProps) => {
           )}
         </div>
       </div>
-      <div className="flex flex-row gap-6 mb-2">
+      <div className="w-full flex flex-row flex-wrap gap-6 mb-2">
         {project?.tags &&
           project?.tags.map((tagId) => {
             const t = tags.find((t) => t.id == tagId);

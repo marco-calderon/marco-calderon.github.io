@@ -35,7 +35,7 @@ export default function DetailsPageContent({
       id="portfolio-details"
       className="flex flex-col items-center w-full"
     >
-      <div className="w-screen lg:w-[1300px] px-8 mt-20 md:px-20 lg:px-40 xl:px-40">
+      <div className="mx-auto w-full max-w-auto lg:max-w-[1300px] px-5 mt-20">
         <ProjectTitle project={data?.projects} />
 
         <TinaMarkdown content={content} components={components} />

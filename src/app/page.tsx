@@ -30,8 +30,8 @@ export default async function HomePage() {
       <Hero />
 
       <main id="main">
-        <section id="about">
-          <div className="w-full mt-20 px-5 md:px-40">
+        <section id="about" className="w-full">
+          <div className="mx-auto max-w-auto lg:max-w-[1300px] mt-20 px-5">
             <div className="grid grid-cols-1 gap-4 auto-rows-1fr lg:grid-cols-2">
               <div className="flex flex-col flex-1 gap-8">
                 <div className="flex flex-col mb-4">
