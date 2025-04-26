@@ -13,7 +13,7 @@ const ProjectTitle = ({ project }: ProjectTitleProps) => {
   return (
     <div className="mb-4 w-full">
       <div className="flex flex-wrap justify-between mb-2">
-        <h2 className="mb-4 text-4xl font-bold md:text-6xl">
+        <h2 className="mb-4 text-4xl font-medium md:text-5xl">
           {project?.title}
         </h2>
         <div className="flex flex-row gap-4">
