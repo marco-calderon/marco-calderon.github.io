@@ -1,7 +1,7 @@
 'use client';
 
-import ProjectTitle from '@/components/ProjectTitle';
-import Video from '@/components/Video';
+import ProjectTitle from '@/app/components/ProjectTitle';
+import Video from '@/app/components/Video';
 import { useTina } from 'tinacms/dist/react';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
 
@@ -35,7 +35,7 @@ export default function DetailsPageContent({
       id="portfolio-details"
       className="flex flex-col items-center w-full"
     >
-      <div className="w-[100vw] xs:w-[100vw] sm:w-[100vw] md:w-[100vw] lg:w-[1000px] xl:w-[1000px] px-8 mt-20 xs:px-12 sm:px-20 md:px-20 lg:px-40 xl:px-40">
+      <div className="w-screen lg:w-[1300px] px-8 mt-20 md:px-20 lg:px-40 xl:px-40">
         <ProjectTitle project={data?.projects} />
 
         <TinaMarkdown content={content} components={components} />

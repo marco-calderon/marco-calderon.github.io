@@ -9,7 +9,7 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Icon } from '@iconify/react';
-import Tag from '@/components/Tag';
+import Tag from '@/app/components/Tag';
 import { tags } from '@/lib/data/tags.data';
 
 export type PortfolioSquaredProps = {

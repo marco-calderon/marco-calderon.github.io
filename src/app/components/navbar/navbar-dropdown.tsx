@@ -1,4 +1,4 @@
-import ChevronDown from '@/icons/chevron-down';
+import ChevronDown from '@/components/icons/chevron-down';
 import React, { ButtonHTMLAttributes } from 'react';
 
 type NavbarDropdownProps = ButtonHTMLAttributes<HTMLButtonElement>;

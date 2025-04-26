@@ -1,9 +1,9 @@
 import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React from 'react';
-import { PortfolioModel } from '../lib/models/portfolio.model';
+import { PortfolioModel } from '../../lib/models/portfolio.model';
 import Tag from './Tag';
-import { tags } from '../lib/data/tags.data';
+import { tags } from '../../lib/data/tags.data';
 
 export type ProjectTitleProps = {
   project: PortfolioModel;

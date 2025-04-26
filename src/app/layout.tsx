@@ -1,8 +1,8 @@
 import localFont from 'next/font/local';
-import Footer from '@/components/Footer';
+import Footer from '@/app/components/Footer';
 import '../../styles/globals.css';
-import Navbar from '@/components/Navbar';
-import { ThemeProvider } from '@/components/theme-provider';
+import Navbar from '@/app/components/Navbar';
+import { ThemeProvider } from '@/app/components/theme-provider';
 
 const clashDisplay = localFont({
   variable: '--font-clash-display',

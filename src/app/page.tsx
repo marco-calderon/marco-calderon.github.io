@@ -1,11 +1,11 @@
-import Contact from '../containers/Contact';
-import Services from '../containers/Services';
-import Skills from '../containers/Skills';
-import PortfolioSquared from '../containers/PortfolioSquared';
 import { Metadata } from 'next';
 import Hero from './components/hero';
 import client from '../../tina/__generated__/client';
 import { PortfolioModel } from '@/lib/models/portfolio.model';
+import Services from './containers/Services';
+import Skills from './containers/Skills';
+import PortfolioSquared from './containers/PortfolioSquared';
+import Contact from './containers/Contact';
 
 export const metadata: Metadata = {
   title: 'Marco Calderon',

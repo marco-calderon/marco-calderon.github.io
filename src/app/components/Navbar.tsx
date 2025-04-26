@@ -6,7 +6,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import NavbarCtaButton from '@/app/components/navbar/navbar-cta-button';
-import ChevronRight from '@/icons/chevron-right';
+import ChevronRight from '@/components/icons/chevron-right';
 import { cn } from '@/utils/cn';
 
 export type NavbarProps = {

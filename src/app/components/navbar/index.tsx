@@ -1,7 +1,7 @@
 import React from 'react';
 import NavbarDropdown from './navbar-dropdown';
 import NavbarCtaButton from './navbar-cta-button';
-import ChevronRight from '@/icons/chevron-right';
+import ChevronRight from '@/components/icons/chevron-right';
 import Link from 'next/link';
 import Image from 'next/image';
 

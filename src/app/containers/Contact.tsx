@@ -1,4 +1,4 @@
-import ChevronRight from '@/icons/chevron-right';
+import ChevronRight from '@/components/icons/chevron-right';
 import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React from 'react';
