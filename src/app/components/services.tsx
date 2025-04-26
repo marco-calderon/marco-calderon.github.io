@@ -10,9 +10,9 @@ const Services = () => {
           <p className="text-4xl ">What I can do</p>
         </header>
 
-        <div className="grid gap-16 auto-rows-1fr xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-16 auto-rows-1fr grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           <div className="flex flex-col items-center justify-center h-full">
-            <div className="flex flex-col items-center justify-center flex-1 p-20 px-8 text-center transition-all border-b-4 border-blue-500 min-h-72 py-auto h-100 group rounded-3xl hover:bg-blue-500">
+            <div className="flex flex-col items-center justify-center flex-1 p-20 px-8 text-center transition-all border-b-4 border-blue-500 min-h-72 py-auto h-full group rounded-3xl hover:bg-blue-500">
               <div className="flex flex-col items-center justify-center w-24 h-24 mb-16 text-white bg-blue-500 group-hover:bg-white group-hover:text-blue-500 rounded-3xl">
                 <Icon icon="ri:window-line" className="text-5xl" />
               </div>
@@ -27,8 +27,8 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center h-100">
-            <div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-orange-500 min-h-72 py-auto h-100 group rounded-3xl hover:bg-orange-500">
+          <div className="flex flex-col items-center justify-center h-full">
+            <div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-orange-500 min-h-72 py-auto h-full group rounded-3xl hover:bg-orange-500">
               <div className="flex flex-col items-center justify-center w-24 h-24 mb-16 text-white bg-orange-500 group-hover:bg-white group-hover:text-orange-500 rounded-3xl">
                 <Icon icon="ri:server-line" className="text-5xl" />
               </div>
@@ -43,8 +43,8 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center h-100">
-            <div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-green-500 min-h-72 py-auto h-100 group rounded-3xl hover:bg-green-500">
+          <div className="flex flex-col items-center justify-center h-full">
+            <div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-green-500 min-h-72 py-auto h-full group rounded-3xl hover:bg-green-500">
               <div className="flex flex-col items-center justify-center w-24 h-24 mb-16 text-white bg-green-500 group-hover:bg-white group-hover:text-green-500 rounded-3xl">
                 <Icon icon="ri:global-line" className="text-5xl" />
               </div>
@@ -59,8 +59,8 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center h-100">
-            <div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-red-500 min-h-72 py-auto h-100 group rounded-3xl hover:bg-red-500">
+          <div className="flex flex-col items-center justify-center h-full">
+            <div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-red-500 min-h-72 py-auto h-full group rounded-3xl hover:bg-red-500">
               <div className="flex flex-col items-center justify-center w-24 h-24 mb-16 text-white bg-red-500 group-hover:bg-white group-hover:text-red-500 rounded-3xl">
                 <Icon icon="ri:database-2-line" className="text-5xl" />
               </div>
@@ -74,8 +74,8 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center h-100">
-            <div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-purple-500 min-h-72 py-auto h-100 group rounded-3xl hover:bg-purple-500">
+          <div className="flex flex-col items-center justify-center h-full">
+            <div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-purple-500 min-h-72 py-auto h-full group rounded-3xl hover:bg-purple-500">
               <div className="flex flex-col items-center justify-center w-24 h-24 mb-16 text-white bg-purple-500 group-hover:bg-white group-hover:text-purple-500 rounded-3xl">
                 <Icon icon="ri:pie-chart-line" className="text-5xl" />
               </div>
@@ -89,8 +89,8 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center h-100">
-            <div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-indigo-500 min-h-72 py-auto h-100 group rounded-3xl hover:bg-indigo-500">
+          <div className="flex flex-col items-center justify-center h-full">
+            <div className="flex flex-col items-center justify-center flex-1 px-8 pt-20 text-center transition-all border-b-4 border-indigo-500 min-h-72 py-auto h-full group rounded-3xl hover:bg-indigo-500">
               <div className="flex flex-col items-center justify-center w-24 h-24 mb-16 text-white bg-indigo-500 group-hover:bg-white group-hover:text-indigo-500 rounded-3xl">
                 <Icon icon="ri:cloud-line" className="text-5xl" />
               </div>
