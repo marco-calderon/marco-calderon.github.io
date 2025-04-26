@@ -1,6 +1,6 @@
 'use client';
 
-import Products from '@/app/containers/Products';
+import Products from '@/app/containers/products';
 import { ProductModel } from '@/lib/models/product.model';
 import { useTina } from 'tinacms/dist/react';
 

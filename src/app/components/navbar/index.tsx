@@ -1,15 +1,28 @@
-import React from 'react';
-import NavbarDropdown from './navbar-dropdown';
-import NavbarCtaButton from './navbar-cta-button';
-import ChevronRight from '@/components/icons/chevron-right';
-import Link from 'next/link';
-import Image from 'next/image';
+'use client';
 
-const Navbar: React.FC = () => {
+import { Icon } from '@iconify/react';
+import Link from 'next/link';
+import React, { useState } from 'react';
+import Image from 'next/image';
+import NavbarCtaButton from '@/app/components/navbar/navbar-cta-button';
+import ChevronRight from '@/components/icons/chevron-right';
+import { cn } from '@/lib/utils';
+import FullScreenMenu from '@/app/containers/full-screen-menu';
+
+export type NavbarProps = {
+  transparent?: boolean;
+} & React.HTMLProps<HTMLElement>;
+
+const Navbar = ({ className }: NavbarProps) => {
+  const [menuOpened, setMenuOpened] = useState(false);
+
   return (
-    <nav className="w-full h-[88px] flex flex-row items-center justify-center absolute top-0 left-0 right-0 z-10">
-      <div className="min-w-[1300px] flex flex-row justify-between items-center gap-4">
-        <div className="flex flex-row items-center gap-[70px]">
+    <>
+      <header
+        id="header"
+        className={cn('z-100 w-full print:hidden', className)}
+      >
+        <div className="flex items-center max-w-full lg:max-w-[1300px] h-[88px] mx-auto gap-[70px] px-5">
           <Link href="/">
             <Image
               src="/logo.svg"
@@ -19,20 +32,77 @@ const Navbar: React.FC = () => {
             />
           </Link>
 
-          <div className="flex flex-row gap-12">
-            <NavbarDropdown>About</NavbarDropdown>
-            <NavbarDropdown>Solutions</NavbarDropdown>
-            <NavbarDropdown>Case Studies</NavbarDropdown>
-            <NavbarDropdown>Resources</NavbarDropdown>
+          <nav
+            id="navbar"
+            className="hidden w-full lg:flex flex-row items-center gap-8"
+          >
+            <ul className="flex flex-row gap-[70px] bg-transparent text-white">
+              <li>
+                <Link
+                  className="text-[15px] font-medium text-white hover:text-white"
+                  href="/#about"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-[15px] font-medium text-white hover:text-white"
+                  href="/#services"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-[15px] font-medium text-white hover:text-white"
+                  href="/#skills"
+                >
+                  Skills
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-[15px] font-medium text-white hover:text-white"
+                  href="/#portfolio"
+                >
+                  Case Studies
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-[15px] font-medium text-white hover:text-white"
+                  href="/Resume_Marco_Calderon.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </Link>
+              </li>
+            </ul>
+
+            <div className="flex-1" />
+
+            <Link href="/#contact">
+              <NavbarCtaButton className="hidden lg:flex flex-row items-center gap-2">
+                Contact
+                <ChevronRight />
+              </NavbarCtaButton>
+            </Link>
+          </nav>
+
+          <div className="inline-block fixed top-5 right-5 sm:inline-block md:hidden z-100">
+            <Icon
+              icon="bi:list"
+              className="w-8 h-8 text-black cursor-pointer dark:text-white"
+              onClick={() => setMenuOpened(!menuOpened)}
+            ></Icon>
           </div>
         </div>
+      </header>
 
-        <NavbarCtaButton className="flex flex-row items-center gap-2">
-          Contact
-          <ChevronRight />
-        </NavbarCtaButton>
-      </div>
-    </nav>
+      <FullScreenMenu open={menuOpened} onClose={() => setMenuOpened(false)} />
+    </>
   );
 };
 

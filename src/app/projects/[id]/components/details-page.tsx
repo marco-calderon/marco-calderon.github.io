@@ -1,7 +1,7 @@
 'use client';
 
-import ProjectTitle from '@/app/components/ProjectTitle';
-import Video from '@/app/components/Video';
+import ProjectTitle from '@/app/components/project-title';
+import Video from '@/app/components/video';
 import { useTina } from 'tinacms/dist/react';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
 

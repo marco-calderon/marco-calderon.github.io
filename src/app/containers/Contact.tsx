@@ -5,7 +5,7 @@ import React from 'react';
 const Contact = () => {
   return (
     <section id="contact" className="mb-5 contact">
-      <div className="" data-aos="fade-up">
+      <div className="">
         <header className="flex flex-col items-center mb-5 w-full">
           <h2 className="text-base font-bold text-blue-700 uppercase dark:text-blue-300">
             Contact

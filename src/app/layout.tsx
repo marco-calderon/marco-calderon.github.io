@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-head-element */
 import localFont from 'next/font/local';
-import Footer from '@/app/components/Footer';
 import '../../styles/globals.css';
-import Navbar from '@/app/components/Navbar';
 import { ThemeProvider } from '@/app/components/theme-provider';
+import Navbar from './components/navbar';
+import Footer from './components/footer';
 
 const clashDisplay = localFont({
   variable: '--font-clash-display',
