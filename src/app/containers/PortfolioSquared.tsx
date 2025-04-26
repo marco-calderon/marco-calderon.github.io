@@ -4,13 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { PortfolioModel } from '../lib/models/portfolio.model';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Icon } from '@iconify/react';
 import Tag from '@/app/components/Tag';
 import { tags } from '@/lib/data/tags.data';
+import { PortfolioModel } from '@/lib/models/portfolio.model';
 
 export type PortfolioSquaredProps = {
   projects: PortfolioModel[];

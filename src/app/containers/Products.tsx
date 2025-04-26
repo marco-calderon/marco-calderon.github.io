@@ -1,8 +1,8 @@
 import React from 'react';
-import { ProductModel } from '../lib/models/product.model';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
+import { ProductModel } from '@/lib/models/product.model';
 
 export type ProductsProps = {
   products: ProductModel[];
