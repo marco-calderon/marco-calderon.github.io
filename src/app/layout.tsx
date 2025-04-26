@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-head-element */
 import localFont from 'next/font/local';
 import Footer from '@/app/components/Footer';
 import '../../styles/globals.css';
