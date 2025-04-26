@@ -2,11 +2,8 @@ import React from 'react';
 
 const Skills = () => {
   return (
-    <section id="skills" data-aos="fade-up">
-      <div
-        className="w-full px-5 mx-auto md:w-3/4 xl:w-2/3"
-        data-aos-delay="200"
-      >
+    <section id="skills">
+      <div className="w-full px-5 mx-auto md:w-3/4 xl:w-2/3">
         <div className="row">
           <div className="col-12">
             <header className="flex flex-col items-center mb-5 w-full">

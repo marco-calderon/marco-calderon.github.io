@@ -28,16 +28,12 @@ const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
 
   return (
     <section id="portfolio">
-      <div className="w-full mt-20" data-aos="fade-up">
+      <div className="w-full mt-20">
         <header className="flex flex-col flex-wrap items-center w-full mb-5">
           <h1 className="text-4xl md:text-5xl font-medium">Case Studies</h1>
         </header>
 
-        <div
-          className="flex flex-row items-center justify-center"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <div className="flex flex-row items-center justify-center">
           <ul className="flex flex-row flex-wrap items-center justify-center gap-4 mb-8">
             <li
               className={`rounded-full whitespace-nowrap overflow-hidden px-8 py-2 cursor-pointer border border-blue-500 transition-all ${
@@ -73,11 +69,7 @@ const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
             </li>
           </ul>
         </div>
-        <div
-          className="grid transition-all xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <div className="grid transition-all xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
           <AnimatePresence presenceAffectsLayout>
             {filteredProjects &&
               filteredProjects.map((p) => (
