@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
       <Image
         src="/hero-waves.svg"
         alt="Hero Image"
-        className="absolute top-0 left-0 right-0 bottom-0 object-cover w-full h-full opacity-60"
+        className="absolute inset-0 object-cover w-full h-full opacity-60"
         width={1920}
         height={1080}
         priority
