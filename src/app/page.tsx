@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import Hero from './components/hero';
 import client from '../../tina/__generated__/client';
 import { PortfolioModel } from '@/lib/models/portfolio.model';
-import PortfolioSquared from './components/portfolio-squared';
 import Services from './components/services';
 import Skills from './components/skills';
 import Contact from './components/contact';
+import dynamic from 'next/dynamic';
 
 export const metadata: Metadata = {
   title: 'Marco Calderon',
@@ -14,6 +14,29 @@ export const metadata: Metadata = {
     images: ['https://marco-calderon.vercel.app/api/og'],
   },
 };
+
+const PortfolioSquared = dynamic(
+  () => import('./components/portfolio-squared').then((mod) => mod.default),
+  {
+    loading() {
+      return (
+        <div className="flex items-center justify-center w-full h-full">
+          <svg
+            className="w-10 h-10 animate-spin text-blue-500"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8.009,8.009,0,0,1,12,20Z"
+            />
+            <path fill="currentColor" d="M12.5,6.5h-1v7h1Zm0,9h-1v1h1Z" />
+          </svg>
+        </div>
+      );
+    },
+  }
+);
 
 export default async function HomePage() {
   const { data } = await client.queries.projectsConnection({

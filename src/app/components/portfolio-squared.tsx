@@ -16,7 +16,6 @@ export type Filter = 'web' | 'mobile' | 'full' | 'all';
 
 const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
   const [filter, setFilter] = useState<Filter>('all');
-  const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   const filteredProjects = useMemo(
     () =>
