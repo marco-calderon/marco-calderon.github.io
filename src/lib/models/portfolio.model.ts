@@ -1,5 +1,3 @@
-import { TagModel } from './tag.model';
-
 export interface PortfolioModel {
   id: string;
   title: string;
