@@ -1,5 +1,4 @@
 import React from 'react';
-import { Icon } from '@iconify/react';
 import ServiceCard from './service-card';
 
 const Services = () => {

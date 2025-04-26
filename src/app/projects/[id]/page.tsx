@@ -1,6 +1,27 @@
 import React from 'react';
 import client from '../../../../tina/__generated__/client';
 import DetailsPageContent from './components/details-page';
+import type { Metadata } from 'next';
+
+type Props = {
+  params: Promise<{ id: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+
+  const { data } = await client.queries.projects({
+    relativePath: `${id}.mdx`,
+  });
+
+  return {
+    title: data.projects.title,
+    openGraph: {
+      images: [data.projects.imgUrl ?? ''],
+    },
+  };
+}
 
 export default async function ProjectDetailsPage({
   params,
