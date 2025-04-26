@@ -7,7 +7,7 @@ import Image from 'next/image';
 import NavbarCtaButton from '@/app/components/navbar/navbar-cta-button';
 import ChevronRight from '@/components/icons/chevron-right';
 import { cn } from '@/lib/utils';
-import FullScreenMenu from '@/app/containers/full-screen-menu';
+import FullScreenMenu from '@/app/components/full-screen-menu';
 
 export type NavbarProps = {
   transparent?: boolean;

@@ -1,7 +1,7 @@
 import React from 'react';
 import client from '../../../tina/__generated__/client';
 import { PortfolioModel } from '@/lib/models/portfolio.model';
-import PortfolioSquared from '../containers/portfolio-squared';
+import PortfolioSquared from '../components/portfolio-squared';
 
 export default async function ProjectsPage() {
   const { data } = await client.queries.projectsConnection({

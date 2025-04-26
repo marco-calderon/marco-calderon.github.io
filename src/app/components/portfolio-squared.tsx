@@ -6,7 +6,7 @@ import React, { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { tags } from '@/lib/data/tags.data';
 import { PortfolioModel } from '@/lib/models/portfolio.model';
-import ProjectTag from '../components/project-tag';
+import ProjectTag from './project-tag';
 
 export type PortfolioSquaredProps = {
   projects: PortfolioModel[];
