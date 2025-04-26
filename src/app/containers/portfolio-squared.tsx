@@ -6,7 +6,7 @@ import React, { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { tags } from '@/lib/data/tags.data';
 import { PortfolioModel } from '@/lib/models/portfolio.model';
-import Tag from '../components/tag';
+import ProjectTag from '../components/project-tag';
 
 export type PortfolioSquaredProps = {
   projects: PortfolioModel[];
@@ -106,7 +106,7 @@ const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
                             p.tags.map((tagId) => {
                               const t = tags.find((t) => t.id === tagId);
                               return (
-                                <Tag
+                                <ProjectTag
                                   key={t?.id}
                                   tag={t?.name ?? ''}
                                   icon={t?.icon ?? ''}

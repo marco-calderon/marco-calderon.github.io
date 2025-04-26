@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React from 'react';
 
-export default function Footer() {
+export default function PageFooter() {
   return (
     <footer className="flex flex-row items-start justify-start md:justify-center w-full px-10 py-16 text-white bg-[#10061F]">
       <div className="min-w-auto lg:min-w-[1300px]">

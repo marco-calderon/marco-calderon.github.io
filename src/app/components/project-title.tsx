@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import { PortfolioModel } from '../../lib/models/portfolio.model';
 import { tags } from '../../lib/data/tags.data';
-import Tag from './tag';
+import ProjectTag from './project-tag';
 
 export type ProjectTitleProps = {
   project: PortfolioModel;
@@ -58,7 +58,13 @@ const ProjectTitle = ({ project }: ProjectTitleProps) => {
         {project?.tags &&
           project?.tags.map((tagId) => {
             const t = tags.find((t) => t.id == tagId);
-            return <Tag key={t?.id} tag={t?.name ?? ''} icon={t?.icon ?? ''} />;
+            return (
+              <ProjectTag
+                key={t?.id}
+                tag={t?.name ?? ''}
+                icon={t?.icon ?? ''}
+              />
+            );
           })}
       </div>
     </div>

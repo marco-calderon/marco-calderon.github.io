@@ -6,7 +6,7 @@ export type VideoProps = {
   src: string;
 };
 
-const Video = ({ width, height, src }: VideoProps) => {
+const ProjectVideo = ({ width, height, src }: VideoProps) => {
   return (
     <div className="w-full mx-auto">
       <video
@@ -23,4 +23,4 @@ const Video = ({ width, height, src }: VideoProps) => {
   );
 };
 
-export default Video;
+export default ProjectVideo;

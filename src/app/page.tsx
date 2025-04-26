@@ -31,8 +31,8 @@ export default async function HomePage() {
 
       <main id="main">
         <section id="about">
-          <div className="w-full mt-20 px-5 sm:px-20 md:px-40 lg:px-40 xl:px-40">
-            <div className="grid grid-cols-1 gap-4 auto-rows-1fr xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
+          <div className="w-full mt-20 px-5 md:px-40">
+            <div className="grid grid-cols-1 gap-4 auto-rows-1fr lg:grid-cols-2">
               <div className="flex flex-col flex-1 gap-8">
                 <div className="flex flex-col mb-4">
                   <h4 className="mb-2 text-xl font-bold">Front end</h4>

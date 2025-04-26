@@ -1,13 +1,13 @@
 'use client';
 
 import ProjectTitle from '@/app/components/project-title';
-import Video from '@/app/components/video';
+import ProjectVideo from '@/app/components/project-video';
 import { useTina } from 'tinacms/dist/react';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
 
 const components = {
   Video: (props: any) => (
-    <Video width={props.width} height={props.height} src={props.src} />
+    <ProjectVideo width={props.width} height={props.height} src={props.src} />
   ),
 };
 
