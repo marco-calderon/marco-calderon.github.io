@@ -4,6 +4,7 @@ import '../../styles/globals.css';
 import { ThemeProvider } from '@/app/components/theme-provider';
 import Navbar from './components/navbar';
 import PageFooter from './components/page-footer';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const clashDisplay = localFont({
   variable: '--font-clash-display',
@@ -59,6 +60,7 @@ export default function RootLayout({
           forcedTheme="dark"
           disableTransitionOnChange
         >
+          <SpeedInsights />
           <div className="flex flex-col items-center text-gray-800 dark:text-white relative">
             <Navbar className="absolute top-0 left-0 right-0" />
             <div className="w-full">{children}</div>
