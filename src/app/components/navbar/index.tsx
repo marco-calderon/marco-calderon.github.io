@@ -72,7 +72,7 @@ const Navbar = ({ className }: NavbarProps) => {
               <li>
                 <Link
                   className="text-[15px] font-medium text-white hover:text-white"
-                  href="/Resume_Marco_Calderon.pdf"
+                  href="/Marco_Calderon_CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
