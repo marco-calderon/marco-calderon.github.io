@@ -1,6 +1,7 @@
 import ChevronRight from '@/components/icons/chevron-right';
 import Link from 'next/link';
 import React from 'react';
+import NavbarCtaButton from './navbar/navbar-cta-button';
 
 const Contact = () => {
   return (
@@ -10,11 +11,11 @@ const Contact = () => {
           <h2 className="text-base font-bold text-blue-700 uppercase dark:text-blue-300">
             Contact
           </h2>
-          <p className="text-4xl">Let&apos;s talk</p>
+          <p className="text-4xl">Let&apos;s connect</p>
         </header>
 
-        <div className="flex flex-col gap-4">
-          <div className="flex flex-col items-center col-12">
+        <div className="flex flex-col gap-4 items-center">
+          <div className="flex flex-col md:flex-row items-center col-12 gap-5">
             <Link
               href="https://www.upwork.com/freelancers/~01b28af275156f5d9e"
               target="_blank"
@@ -27,6 +28,17 @@ const Contact = () => {
 
                 <ChevronRight />
               </button>
+            </Link>
+
+            <Link
+              href="https://www.linkedin.com/in/mcalderondev/"
+              target="_blank"
+            >
+              <NavbarCtaButton>
+                <span>LinkedIn Profile</span>
+
+                <ChevronRight />
+              </NavbarCtaButton>
             </Link>
           </div>
         </div>
