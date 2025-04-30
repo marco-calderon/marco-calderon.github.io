@@ -44,13 +44,15 @@ export default function PageFooter() {
                   className="text-inherit hover:text-inherit"
                   href="/#portfolio"
                 >
-                  Portfolio
+                  Case Studies
                 </Link>
               </li>
               <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
                 <Link
                   className="text-inherit dark:hover:text-blue-300"
-                  href="/resume"
+                  href="/Marco_Calderon_CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Resume
                 </Link>
