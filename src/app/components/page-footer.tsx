@@ -92,6 +92,14 @@ export default function PageFooter() {
 
             <Link
               className="transition-all text-inherit dark:hover:text-blue-300"
+              href="https://www.linkedin.com/in/mcalderondev/"
+              target="_blank"
+            >
+              <Icon icon="simple-icons:linkedin" className="text-2xl" />
+            </Link>
+
+            <Link
+              className="transition-all text-inherit dark:hover:text-blue-300"
               href="https://www.upwork.com/freelancers/~01b28af275156f5d9e"
               target="_blank"
             >
