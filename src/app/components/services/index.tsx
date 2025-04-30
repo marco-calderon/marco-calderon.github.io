@@ -4,7 +4,7 @@ import ServiceCard from './service-card';
 const Services = () => {
   return (
     <section id="services" className="w-full">
-      <div className="w-full px-5 mt-20 mx-auto max-w-auto lg:max-w-[1300px]">
+      <div className="w-full px-5 lg:px-0 mt-20 mx-auto max-w-auto lg:w-[1300px] lg:max-w-[1300px]">
         <header className="flex flex-col items-center mb-5 w-full">
           <h2 className="text-base font-bold text-blue uppercase">Services</h2>
           <p className="text-4xl ">What I can do</p>
