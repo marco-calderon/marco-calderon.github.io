@@ -39,7 +39,15 @@ const DropSubItemsContext = React.createContext<{
 });
 
 export const useDropSubItems = () => {
-  return React.useContext(DropSubItemsContext);
+  const context = React.useContext(DropSubItemsContext);
+
+  if (!context) {
+    throw new Error(
+      'useDropSubItems must be called inside a DropSubItems component.'
+    );
+  }
+
+  return context;
 };
 
 export const DropSubItems = ({ children }: { children: React.ReactNode }) => {
@@ -112,9 +120,9 @@ export const DropSubItemsContainer = React.forwardRef<
       {open && (
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
+          initial={{ opacity: 0, paddingTop: 20, paddingBottom: 20 }}
+          animate={{ opacity: 1, paddingTop: 40, paddingBottom: 40 }}
+          exit={{ opacity: 0, paddingTop: 20, paddingBottom: 20 }}
           transition={{ duration: 0.2 }}
           className="absolute top-[88px] left-0 z-50 w-full border-b bg-background-secondary shadow-lg"
           onMouseEnter={() => setOpen(true)}

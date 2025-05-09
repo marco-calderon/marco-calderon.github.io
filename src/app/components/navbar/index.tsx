@@ -8,6 +8,13 @@ import NavbarCtaButton from '@/app/components/navbar/navbar-cta-button';
 import ChevronRight from '@/components/icons/chevron-right';
 import { cn } from '@/lib/utils';
 import FullScreenMenu from '@/app/components/full-screen-menu';
+import {
+  DropSubItems,
+  DropSubItemsContainer,
+  DropSubItemsContainerItem,
+  DropSubItemsTrigger,
+  DropSubItemsTriggerArrow,
+} from './drop-sub-items';
 
 export type NavbarProps = {
   transparent?: boolean;
@@ -15,13 +22,14 @@ export type NavbarProps = {
 
 const Navbar = ({ className }: NavbarProps) => {
   const [menuOpened, setMenuOpened] = useState(false);
+  const [dropMenuOpened, setDropMenuOpened] = useState(false);
 
   return (
-    <>
-      <header
-        id="header"
-        className={cn('z-100 w-full print:hidden', className)}
-      >
+    <div
+      className="relative z-100 w-full print:hidden"
+      onMouseLeave={() => setDropMenuOpened(false)}
+    >
+      <header id="header" className={cn('w-full', className)}>
         <div className="flex items-center max-w-full lg:max-w-[1300px] h-[88px] mx-auto gap-[70px] px-5 lg:px-0">
           <Link href="/">
             <Image
@@ -34,10 +42,10 @@ const Navbar = ({ className }: NavbarProps) => {
 
           <nav
             id="navbar"
-            className="hidden w-full lg:flex flex-row items-center gap-8"
+            className="hidden w-full lg:flex flex-row items-center gap-8 h-[88px]"
           >
-            <ul className="flex flex-row gap-[70px] bg-transparent text-white">
-              <li>
+            <ul className="flex flex-row gap-[70px] bg-transparent text-white h-full">
+              <li className="flex items-center">
                 <Link
                   className="text-[15px] font-medium text-white hover:text-white"
                   href="/#about"
@@ -45,23 +53,58 @@ const Navbar = ({ className }: NavbarProps) => {
                   About
                 </Link>
               </li>
-              <li>
+
+              <DropSubItems>
+                <DropSubItemsTrigger className="flex items-center group">
+                  <Link
+                    className="px-4 py-3 rounded-lg group-hover:bg-background-secondary transition-all text-[15px] font-medium text-foreground flex flex-row items-center gap-2"
+                    href="/#services"
+                  >
+                    Services
+                    <DropSubItemsTriggerArrow />
+                  </Link>
+                </DropSubItemsTrigger>
+                <DropSubItemsContainer className=" px-40 flex flex-row gap-4 py-5">
+                  <div className="transition-all bg-transparent hover:bg-black/30 p-4 rounded-lg space-y-3">
+                    <h4 className="text-3xl">Frontend</h4>
+                    <p>
+                      Modern Front End development with React, Angular and plain
+                      HTML, JavaScript and CSS. I can also work with Bootstrap,
+                      TailwindCSS, Foundation, and other styling solutions for
+                      your projects.
+                    </p>
+                  </div>
+                  <div className="transition-all bg-transparent hover:bg-black/30 p-4 rounded-lg space-y-3">
+                    <h4 className="text-3xl">Backend</h4>
+                    <p>
+                      Using modern technologies and used frameworks such as
+                      Django, ASP.NET, Spring Framework, Express, Nest.js, Ruby
+                      on Rails. If you have another option, we can discuss it.
+                    </p>
+                  </div>
+                  <div className="transition-all bg-transparent hover:bg-black/30 p-4 rounded-lg space-y-3">
+                    <h4 className="text-3xl">API Development</h4>
+                    <p>
+                      Integrating, implementing REST APIs with your selected
+                      technology. Optimization of existing code for performance
+                      (in time and memory).
+                    </p>
+                  </div>
+                </DropSubItemsContainer>
+              </DropSubItems>
+
+              <li className="flex items-center">
                 <Link
-                  className="text-[15px] font-medium text-white hover:text-white"
-                  href="/#services"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-[15px] font-medium text-white hover:text-white"
+                  className="px-4 py-3 rounded-lg group-hover:bg-background-secondary transition-all text-[15px] font-medium text-foreground flex flex-row items-center gap-2"
                   href="/#skills"
                 >
                   Skills
                 </Link>
               </li>
-              <li>
+              <li
+                className="flex items-center"
+                onMouseEnter={() => setDropMenuOpened(true)}
+              >
                 <Link
                   className="text-[15px] font-medium text-white hover:text-white"
                   href="/#portfolio"
@@ -69,7 +112,7 @@ const Navbar = ({ className }: NavbarProps) => {
                   Case Studies
                 </Link>
               </li>
-              <li>
+              <li className="flex items-center">
                 <Link
                   className="text-[15px] font-medium text-white hover:text-white"
                   href="/Marco_Calderon_CV.pdf"
@@ -102,7 +145,7 @@ const Navbar = ({ className }: NavbarProps) => {
       </header>
 
       <FullScreenMenu open={menuOpened} onClose={() => setMenuOpened(false)} />
-    </>
+    </div>
   );
 };
 
