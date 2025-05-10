@@ -20,56 +20,25 @@ export default function PageFooter() {
         <div className="flex flex-col md:flex-row items-start justify-between w-full gap-5">
           <div className="flex flex-col items-start">
             <h4 className="mb-4 text-lg font-bold">Links</h4>
-            <ul className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2">
               <PageFooterLink href="/">Home</PageFooterLink>
-              <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
-                <Link className="text-inherit hover:text-inherit" href="/">
-                  Home
-                </Link>
-              </li>
-              <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
-                <Link
-                  className="text-inherit hover:text-inherit"
-                  href="/#about"
-                >
-                  About
-                </Link>
-              </li>
-              <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
-                <Link
-                  className="text-inherit hover:text-inherit"
-                  href="/#services"
-                >
-                  Services
-                </Link>
-              </li>
-              <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
-                <Link
-                  className="text-inherit hover:text-inherit"
-                  href="/#skills"
-                >
-                  Skills
-                </Link>
-              </li>
-              <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
-                <Link
-                  className="text-inherit hover:text-inherit"
-                  href="/#portfolio"
-                >
-                  Case Studies
-                </Link>
-              </li>
-              <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
-                <Link
-                  className="text-inherit dark:hover:text-blue-300"
-                  href="/Marco_Calderon_CV.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Resume
-                </Link>
-              </li>
-            </ul>
+
+              <PageFooterLink href="/#about">About</PageFooterLink>
+
+              <PageFooterLink href="/#services">Services</PageFooterLink>
+
+              <PageFooterLink href="/#skills">Skills</PageFooterLink>
+
+              <PageFooterLink href="/#portfolio">Case studies</PageFooterLink>
+
+              <PageFooterLink
+                href="/Marco_Calderon_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </PageFooterLink>
+            </div>
           </div>
 
           <div className="flex flex-col items-start">
