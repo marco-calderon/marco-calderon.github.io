@@ -5,32 +5,10 @@ import { AnimatePresence, motion } from 'motion/react';
 import Link, { LinkProps } from 'next/link';
 import React, { AnchorHTMLAttributes, HTMLAttributes, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
-const subItems = [
-  {
-    title: 'Analytics Platform',
-    href: '/products/analytics',
-    description: 'Powerful analytics tools for your business',
-  },
-  {
-    title: 'Marketing Suite',
-    href: '/products/marketing',
-    description: 'All-in-one marketing solution',
-  },
-  {
-    title: 'CRM System',
-    href: '/products/crm',
-    description: 'Customer relationship management',
-  },
-  {
-    title: 'E-commerce Tools',
-    href: '/products/ecommerce',
-    description: 'Build and scale your online store',
-  },
-];
 
-export type DropSubItemsTriggerProps = HTMLAttributes<HTMLDivElement>;
+export type DropSectionTriggerProps = HTMLAttributes<HTMLDivElement>;
 
-const DropSubItemsContext = React.createContext<{
+const DropSectionContext = React.createContext<{
   open?: boolean;
   setOpen: (open: boolean) => void;
 }>({
@@ -38,34 +16,34 @@ const DropSubItemsContext = React.createContext<{
   setOpen: () => {},
 });
 
-export const useDropSubItems = () => {
-  const context = React.useContext(DropSubItemsContext);
+export const useDropSection = () => {
+  const context = React.useContext(DropSectionContext);
 
   if (!context) {
     throw new Error(
-      'useDropSubItems must be called inside a DropSubItems component.'
+      'useDropSection must be called inside a DropSubItems component.'
     );
   }
 
   return context;
 };
 
-export const DropSubItems = ({ children }: { children: React.ReactNode }) => {
+export const DropSection = ({ children }: { children: React.ReactNode }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <DropSubItemsContext.Provider value={{ open, setOpen }}>
+    <DropSectionContext.Provider value={{ open, setOpen }}>
       {children}
-    </DropSubItemsContext.Provider>
+    </DropSectionContext.Provider>
   );
 };
 
-type DropSubItemsTriggerArrowProps = HTMLAttributes<HTMLDivElement>;
+type DropSectionTriggerArrowProps = HTMLAttributes<HTMLDivElement>;
 
-export const DropSubItemsTriggerArrow = ({
+export const DropSectionTriggerArrow = ({
   className,
-}: DropSubItemsTriggerArrowProps) => {
-  const { open } = useDropSubItems();
+}: DropSectionTriggerArrowProps) => {
+  const { open } = useDropSection();
 
   return (
     <ChevronDown
@@ -78,12 +56,12 @@ export const DropSubItemsTriggerArrow = ({
   );
 };
 
-export const DropSubItemsTrigger = ({
+export const DropSectionTrigger = ({
   className,
   children,
   ...props
-}: DropSubItemsTriggerProps) => {
-  const { setOpen } = useDropSubItems();
+}: DropSectionTriggerProps) => {
+  const { setOpen } = useDropSection();
 
   const handleMouseEnter = () => {
     setOpen(true);
@@ -105,15 +83,15 @@ export const DropSubItemsTrigger = ({
   );
 };
 
-export type DropSubItemsContainerProps = {
+export type DropSectionContainerProps = {
   ref?: React.RefObject<HTMLDivElement>;
 } & HTMLAttributes<HTMLDivElement>;
 
-export const DropSubItemsContainer = React.forwardRef<
+export const DropSectionContainer = React.forwardRef<
   HTMLDivElement,
-  DropSubItemsContainerProps
+  DropSectionContainerProps
 >(({ children, className }, ref) => {
-  const { open, setOpen } = useDropSubItems();
+  const { open, setOpen } = useDropSection();
 
   return (
     <AnimatePresence>
@@ -144,18 +122,18 @@ export const DropSubItemsContainer = React.forwardRef<
   );
 });
 
-type DropSubItemsContainerItemProps = AnchorHTMLAttributes<HTMLAnchorElement> &
+type DropSectionContainerItemProps = AnchorHTMLAttributes<HTMLAnchorElement> &
   LinkProps & {
     title: string;
     description: string;
   };
 
-export const DropSubItemsContainerItem = ({
+export const DropSectionContainerItem = ({
   className,
   title,
   description,
   ...props
-}: DropSubItemsContainerItemProps) => {
+}: DropSectionContainerItemProps) => {
   return (
     <Link
       className={cn(
@@ -170,4 +148,4 @@ export const DropSubItemsContainerItem = ({
   );
 };
 
-DropSubItemsContainer.displayName = 'DropSubItemsContainer';
+DropSectionContainer.displayName = 'DropSectionContainer';

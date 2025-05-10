@@ -9,11 +9,10 @@ import ChevronRight from '@/components/icons/chevron-right';
 import { cn } from '@/lib/utils';
 import FullScreenMenu from '@/app/components/full-screen-menu';
 import {
-  DropSubItems,
-  DropSubItemsContainer,
-  DropSubItemsContainerItem,
-  DropSubItemsTrigger,
-  DropSubItemsTriggerArrow,
+  DropSection,
+  DropSectionContainer,
+  DropSectionTrigger,
+  DropSectionTriggerArrow,
 } from './drop-sub-items';
 
 export type NavbarProps = {
@@ -22,13 +21,9 @@ export type NavbarProps = {
 
 const Navbar = ({ className }: NavbarProps) => {
   const [menuOpened, setMenuOpened] = useState(false);
-  const [dropMenuOpened, setDropMenuOpened] = useState(false);
 
   return (
-    <div
-      className="relative z-100 w-full print:hidden"
-      onMouseLeave={() => setDropMenuOpened(false)}
-    >
+    <div className="relative z-100 w-full print:hidden">
       <header id="header" className={cn('w-full', className)}>
         <div className="flex items-center max-w-full lg:max-w-[1300px] h-[88px] mx-auto gap-[70px] px-5 lg:px-0">
           <Link href="/">
@@ -54,17 +49,17 @@ const Navbar = ({ className }: NavbarProps) => {
                 </Link>
               </li>
 
-              <DropSubItems>
-                <DropSubItemsTrigger className="flex items-center group">
+              <DropSection>
+                <DropSectionTrigger className="flex items-center group">
                   <Link
                     className="px-4 py-3 rounded-lg group-hover:bg-background-secondary transition-all text-[15px] font-medium text-foreground flex flex-row items-center gap-2"
                     href="/#services"
                   >
                     Services
-                    <DropSubItemsTriggerArrow />
+                    <DropSectionTriggerArrow />
                   </Link>
-                </DropSubItemsTrigger>
-                <DropSubItemsContainer className=" px-40 flex flex-row gap-4 py-5">
+                </DropSectionTrigger>
+                <DropSectionContainer className=" px-40 flex flex-row gap-4 py-5">
                   <div className="transition-all bg-transparent hover:bg-black/30 p-4 rounded-lg space-y-3">
                     <h4 className="text-3xl">Frontend</h4>
                     <p>
@@ -90,8 +85,8 @@ const Navbar = ({ className }: NavbarProps) => {
                       (in time and memory).
                     </p>
                   </div>
-                </DropSubItemsContainer>
-              </DropSubItems>
+                </DropSectionContainer>
+              </DropSection>
 
               <li className="flex items-center">
                 <Link
@@ -101,10 +96,7 @@ const Navbar = ({ className }: NavbarProps) => {
                   Skills
                 </Link>
               </li>
-              <li
-                className="flex items-center"
-                onMouseEnter={() => setDropMenuOpened(true)}
-              >
+              <li className="flex items-center">
                 <Link
                   className="text-[15px] font-medium text-white hover:text-white"
                   href="/#portfolio"
