@@ -10,13 +10,13 @@ export default function PageFooter() {
       <Image
         src="/hero-waves.svg"
         alt="Hero Image"
-        className="absolute inset-0 object-cover object-bottom rotate-180 object- w-full h-full opacity-60"
+        className="absolute inset-0 object-cover object-bottom-right rotate-180 object- w-full h-full opacity-60"
         width={1920}
         height={1080}
         priority
       />
 
-      <div className="w-auto lg:w-[1300px] lg:max-w-[1300px]">
+      <div className="w-auto lg:w-[1300px] lg:max-w-[1300px] z-10">
         <div className="flex flex-col md:flex-row items-start justify-between w-full gap-5">
           <div className="flex flex-col items-start">
             <h4 className="mb-4 text-lg font-bold">Links</h4>
