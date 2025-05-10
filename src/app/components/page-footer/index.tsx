@@ -1,15 +1,27 @@
 import { Icon } from '@iconify/react';
 import Link from 'next/link';
+import PageFooterLink from './page-footer-link';
+import Image from 'next/image';
 import React from 'react';
 
 export default function PageFooter() {
   return (
-    <footer className="flex flex-row items-start justify-start md:justify-center w-full px-10 lg:px-0 py-16 text-white bg-[#10061F]">
+    <footer className="flex flex-row items-start justify-start md:justify-center w-full px-10 lg:px-0 py-16 text-white relative">
+      <Image
+        src="/hero-waves.svg"
+        alt="Hero Image"
+        className="absolute inset-0 object-cover object-bottom rotate-180 object- w-full h-full opacity-60"
+        width={1920}
+        height={1080}
+        priority
+      />
+
       <div className="w-auto lg:w-[1300px] lg:max-w-[1300px]">
         <div className="flex flex-col md:flex-row items-start justify-between w-full gap-5">
           <div className="flex flex-col items-start">
             <h4 className="mb-4 text-lg font-bold">Links</h4>
             <ul className="flex flex-col gap-2">
+              <PageFooterLink href="/">Home</PageFooterLink>
               <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
                 <Link className="text-inherit hover:text-inherit" href="/">
                   Home
