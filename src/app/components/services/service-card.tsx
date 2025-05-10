@@ -1,17 +1,21 @@
+'use client';
+
 import { cn } from '@/lib/utils';
 import { Icon } from '@iconify/react';
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 
 type ServiceCardProps = {
   icon: string;
   iconContainerClassName?: string;
+  backgroundClassName?: string;
   title: string;
   description: string;
-} & React.HTMLProps<HTMLDivElement>;
+} & HTMLAttributes<HTMLDivElement>;
 
-const ServiceCard = ({
+export const ServiceCard = ({
   icon,
   iconContainerClassName,
+  backgroundClassName,
   title,
   description,
   className,
@@ -20,25 +24,36 @@ const ServiceCard = ({
   return (
     <div
       className={cn(
-        'flex flex-col items-center justify-center flex-1 p-20 px-8 text-center transition-all border-b-4 min-h-72 py-auto h-full group rounded-3xl',
-        className
+        'transition-all relative flex items-center justify-center group p-4 min-h-72'
       )}
-      {...rest}
     >
       <div
         className={cn(
-          'flex flex-col items-center justify-center w-24 h-24 mb-16 text-white group-hover:bg-white rounded-3xl',
-          iconContainerClassName
+          'transition-all scale-95 group-hover:scale-100 absolute rounded-xl inset-0',
+          backgroundClassName
         )}
+      ></div>
+
+      <div
+        className={cn(
+          'flex flex-col items-center justify-center flex-1 p-20 px-8 text-center transition-all py-auto h-full group rounded-3xl z-10',
+          className
+        )}
+        {...rest}
       >
-        <Icon icon={icon} className="text-5xl" />
+        <div
+          className={cn(
+            'flex flex-col items-center justify-center w-24 h-24 mb-16 rounded-3xl',
+            iconContainerClassName
+          )}
+        >
+          <Icon icon={icon} className="text-5xl" />
+        </div>
+        <h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
+          {title}
+        </h3>
+        <p className="flex-1 grow group-hover:text-white">{description}</p>
       </div>
-      <h3 className="mb-2 font-bold text-gray-800 dark:text-gray-300 group-hover:text-white">
-        {title}
-      </h3>
-      <p className="flex-1 grow group-hover:text-white">{description}</p>
     </div>
   );
 };
-
-export default ServiceCard;
