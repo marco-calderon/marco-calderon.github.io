@@ -8,7 +8,7 @@ const Contact = () => {
     <section id="contact" className="mb-5 contact">
       <div className="">
         <header className="flex flex-col items-center mb-5 w-full">
-          <h2 className="text-base font-bold text-blue-700 uppercase dark:text-blue-300">
+          <h2 className="text-base font-bold text-gray-700 uppercase dark:text-gray-300">
             Contact
           </h2>
           <p className="text-4xl">Let&apos;s connect</p>
@@ -22,7 +22,7 @@ const Contact = () => {
             >
               <button
                 type="button"
-                className="flex flex-row items-center justify-center gap-2 px-8 h-[50px] text-white bg-linear-200 from-blue to-purple/50 rounded align-self-center cursor-pointer"
+                className="flex flex-row items-center justify-center gap-2 px-8 h-[50px] text-white bg-linear-200 from-gray to-light-gray/50 rounded align-self-center cursor-pointer"
               >
                 <span>Hire me on Upwork</span>
 

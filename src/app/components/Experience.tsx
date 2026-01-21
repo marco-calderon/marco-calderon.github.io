@@ -14,7 +14,7 @@ const Experience = ({
 	responsibilities,
 }: ExperienceProps) => (
 	<div className="flex flex-col gap-2 mb-4">
-		<h5 className="text-xl text-blue-500 dark:text-blue-300">{title}</h5>
+		<h5 className="text-xl text-gray-500 dark:text-gray-300">{title}</h5>
 		<h6 className="text-lg font-bold">{location}</h6>
 		<p className="text-base">{timeframe}</p>
 		<ul>

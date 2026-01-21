@@ -21,7 +21,7 @@ const ProjectTitle = ({ project }: ProjectTitleProps) => {
             <Link href={project?.repoUrl} target="_blank">
               <button
                 type="button"
-                className="inline-flex items-center justify-center px-4 py-2 text-blue-500 transition-all border border-blue-500 rounded hover:text-blue-700 hover:border-blue-700 dark:hover:text-blue-300 dark:hover:border-blue-300 cursor-pointer"
+                className="inline-flex items-center justify-center px-4 py-2 text-gray-500 transition-all border border-gray-500 rounded hover:text-gray-700 hover:border-gray-700 dark:hover:text-gray-300 dark:hover:border-gray-300 cursor-pointer"
               >
                 <span>Repository</span>&nbsp;
                 <Icon icon="bi:github" />

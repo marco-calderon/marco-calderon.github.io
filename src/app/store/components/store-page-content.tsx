@@ -27,7 +27,7 @@ export default function StorePageContent({ ...props }: StorePageContentProps) {
         id="header"
         className="w-full flex flex-col items-center justify-center h-[40vh]"
       >
-        <h1 className="mb-8 font-extrabold text-transparent text-7xl bg-clip-text bg-linear-to-r from-green-300 to-blue-300">
+        <h1 className="mb-8 font-extrabold text-transparent text-7xl bg-clip-text bg-linear-to-r from-green-300 to-gray-300">
           Store
         </h1>
         <h2 className="text-xl text-center text-gray-700 dark:text-white">

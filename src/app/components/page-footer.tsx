@@ -4,18 +4,18 @@ import React from 'react';
 
 export default function PageFooter() {
   return (
-    <footer className="flex flex-row items-start justify-start md:justify-center w-full px-10 lg:px-0 py-16 text-white bg-[#10061F]">
+    <footer className="flex flex-row items-start justify-start md:justify-center w-full px-10 lg:px-0 py-16 text-white bg-gray-900">
       <div className="w-auto lg:w-[1300px] lg:max-w-[1300px]">
         <div className="flex flex-col md:flex-row items-start justify-between w-full gap-5">
           <div className="flex flex-col items-start">
             <h4 className="mb-4 text-lg font-bold">Links</h4>
             <ul className="flex flex-col gap-2">
-              <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
+              <li className="flex flex-row items-center transition-all dark:hover:text-gray-300">
                 <Link className="text-inherit hover:text-inherit" href="/">
                   Home
                 </Link>
               </li>
-              <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
+              <li className="flex flex-row items-center transition-all dark:hover:text-gray-300">
                 <Link
                   className="text-inherit hover:text-inherit"
                   href="/#about"
@@ -23,7 +23,7 @@ export default function PageFooter() {
                   About
                 </Link>
               </li>
-              <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
+              <li className="flex flex-row items-center transition-all dark:hover:text-gray-300">
                 <Link
                   className="text-inherit hover:text-inherit"
                   href="/#services"
@@ -31,7 +31,7 @@ export default function PageFooter() {
                   Services
                 </Link>
               </li>
-              <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
+              <li className="flex flex-row items-center transition-all dark:hover:text-gray-300">
                 <Link
                   className="text-inherit hover:text-inherit"
                   href="/#skills"
@@ -39,7 +39,7 @@ export default function PageFooter() {
                   Skills
                 </Link>
               </li>
-              <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
+              <li className="flex flex-row items-center transition-all dark:hover:text-gray-300">
                 <Link
                   className="text-inherit hover:text-inherit"
                   href="/#portfolio"
@@ -47,9 +47,9 @@ export default function PageFooter() {
                   Case Studies
                 </Link>
               </li>
-              <li className="flex flex-row items-center transition-all dark:hover:text-blue-300">
+              <li className="flex flex-row items-center transition-all dark:hover:text-gray-300">
                 <Link
-                  className="text-inherit dark:hover:text-blue-300"
+                  className="text-inherit dark:hover:text-gray-300"
                   href="/Marco_Calderon_CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -83,7 +83,7 @@ export default function PageFooter() {
 
           <div className="text-center text-md-start flex items-center justify-center gap-4">
             <Link
-              className="transition-all text-inherit dark:hover:text-blue-300"
+              className="transition-all text-inherit dark:hover:text-gray-300"
               href="https://github.com/marco-calderon"
               target="_blank"
             >
@@ -91,7 +91,7 @@ export default function PageFooter() {
             </Link>
 
             <Link
-              className="transition-all text-inherit dark:hover:text-blue-300"
+              className="transition-all text-inherit dark:hover:text-gray-300"
               href="https://www.linkedin.com/in/mcalderondev/"
               target="_blank"
             >
@@ -99,7 +99,7 @@ export default function PageFooter() {
             </Link>
 
             <Link
-              className="transition-all text-inherit dark:hover:text-blue-300"
+              className="transition-all text-inherit dark:hover:text-gray-300"
               href="https://www.upwork.com/freelancers/~01b28af275156f5d9e"
               target="_blank"
             >

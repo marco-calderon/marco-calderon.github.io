@@ -22,7 +22,7 @@ const PortfolioSquared = dynamic(
       return (
         <div className="flex items-center justify-center w-full h-full">
           <svg
-            className="w-10 h-10 animate-spin text-blue-500"
+            className="w-10 h-10 animate-spin text-gray-500"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -82,8 +82,8 @@ export default async function HomePage() {
                 </div>
               </div>
               <div className="flex flex-col justify-center flex-1">
-                <div className="flex flex-col p-12 bg-blue-300 rounded-3xl dark:bg-blue-700">
-                  <h3 className="mb-4 font-bold text-blue-700 upercase dark:text-blue-200">
+                <div className="flex flex-col p-12 bg-gray-300 rounded-3xl dark:bg-gray-700">
+                  <h3 className="mb-4 font-bold text-gray-700 upercase dark:text-gray-200">
                     About Me
                   </h3>
                   <p>

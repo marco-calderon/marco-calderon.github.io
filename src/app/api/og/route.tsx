@@ -176,7 +176,7 @@ export function GET(request: NextRequest) {
                   y2="31.6452"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#2C80FF" />
+                  <stop stop-color="#6e6e6e" />
                   <stop offset="1" stop-color="#6C46EA" stop-opacity="0.5" />
                 </linearGradient>
               </defs>

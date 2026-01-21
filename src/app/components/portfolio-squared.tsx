@@ -35,32 +35,32 @@ const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
         <div className="flex flex-row items-center justify-center">
           <ul className="flex flex-row flex-wrap items-center justify-center gap-4 mb-8">
             <li
-              className={`rounded-full whitespace-nowrap overflow-hidden px-8 py-2 cursor-pointer border border-blue-500 transition-all ${
-                filter === 'all' ? 'bg-blue-500 text-white' : ''
+              className={`rounded-full whitespace-nowrap overflow-hidden px-8 py-2 cursor-pointer border border-gray-500 transition-all ${
+                filter === 'all' ? 'bg-gray-500 text-white' : ''
               }`}
               onClick={() => setFilter('all')}
             >
               All
             </li>
             <li
-              className={`rounded-full whitespace-nowrap overflow-hidden px-8 py-2 cursor-pointer border border-blue-500 transition-all ${
-                filter === 'full' ? 'bg-blue-500 text-white' : ''
+              className={`rounded-full whitespace-nowrap overflow-hidden px-8 py-2 cursor-pointer border border-gray-500 transition-all ${
+                filter === 'full' ? 'bg-gray-500 text-white' : ''
               }`}
               onClick={() => setFilter('full')}
             >
               Web App
             </li>
             <li
-              className={`rounded-full whitespace-nowrap overflow-hidden px-8 py-2 cursor-pointer border border-blue-500 transition-all ${
-                filter === 'mobile' ? 'bg-blue-500 text-white' : ''
+              className={`rounded-full whitespace-nowrap overflow-hidden px-8 py-2 cursor-pointer border border-gray-500 transition-all ${
+                filter === 'mobile' ? 'bg-gray-500 text-white' : ''
               }`}
               onClick={() => setFilter('mobile')}
             >
               Mobile
             </li>
             <li
-              className={`rounded-full whitespace-nowrap overflow-hidden px-8 py-2 cursor-pointer border border-blue-500 transition-all ${
-                filter === 'web' ? 'bg-blue-500 text-white' : ''
+              className={`rounded-full whitespace-nowrap overflow-hidden px-8 py-2 cursor-pointer border border-gray-500 transition-all ${
+                filter === 'web' ? 'bg-gray-500 text-white' : ''
               }`}
               onClick={() => setFilter('web')}
             >
@@ -97,7 +97,7 @@ const PortfolioSquared = ({ projects }: PortfolioSquaredProps) => {
                         />
                       ) : null}
                       <div className="absolute inset-0 z-50 flex flex-col items-center justify-center text-center transition-all opacity-0 backdrop-blur-md bg-white/50 group-hover:opacity-100">
-                        <h4 className="text-lg font-bold text-blue-900">
+                        <h4 className="text-lg font-bold text-gray-900">
                           {p.title}
                         </h4>
                         <div className="flex-row gap-1 mb-2 text-black d-flex">

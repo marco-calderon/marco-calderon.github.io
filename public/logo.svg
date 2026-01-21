@@ -18,7 +18,7 @@
       <feOffset dy="0.232598" />
       <feGaussianBlur stdDeviation="1.40802" />
       <feComposite in2="hardAlpha" operator="out" />
-      <feColorMatrix type="matrix" values="0 0 0 0 0.424575 0 0 0 0 0.27451 0 0 0 0 0.917647 0 0 0 0.5 0" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.3924 0 0 0 0 0.3924 0 0 0 0 0.3924 0 0 0 0.5 0" />
       <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6479_2" />
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6479_2" result="shape" />
     </filter>
@@ -27,7 +27,7 @@
     </clipPath>
     <linearGradient id="paint0_linear_6479_2" x1="32.8898" y1="26.5267" x2="27.9959" y2="31.6452"
       gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2C80FF" />
+      <stop stop-color="#757575" />
       <stop offset="1" stop-color="#6C46EA" stop-opacity="0.5" />
     </linearGradient>
   </defs>
